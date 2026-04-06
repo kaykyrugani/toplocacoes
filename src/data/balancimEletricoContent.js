@@ -1,11 +1,11 @@
 export const balancimEletricoContent = {
   hero: {
-    title: "Balancim Elétrico",
-    subtitle: "Solução profissional para acesso em altura com movimentação elétrica suave e produtividade máxima",
+    title: "Balancim Elétrico para Grande Obras",
+    subtitle: "Capacidade 400kg, até 100m. Movimentação elétrica suave. Entrega em 24h. Fale agora com especialista.",
     primaryCTA: {
-      text: "Solicitar Orçamento",
+      text: "Pedir Orçamento Elétrico",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de solicitar orçamento para balancim elétrico."
+      message: "Olá, preciso de orçamento para balancim elétrico em minha obra."
     },
     secondaryCTA: {
       text: "Ver Especificações",
@@ -14,24 +14,24 @@ export const balancimEletricoContent = {
   },
   
   summary: {
-    title: "Eficiência e Segurança para sua Obra",
-    description: "O balancim elétrico é a escolha ideal para projetos que exigem produtividade e precisão. Com sistema de movimentação elétrica, oferece operação suave, capacidade elevada e segurança para equipe em trabalhos em grandes fachadas e estruturas.",
+    title: "Produtividade Máxima para Sua Obra",
+    description: "O balancim elétrico é a escolha inteligente para grandes projetos. Com movimentação elétrica suave e capacidade de 400kg, oferece 3x mais produtividade que sistemas manuais. Ideal para fachadas de edifícios, obras industriais e projetos que exigem precisão e velocidade.",
     benefits: [
       {
-        title: "Produtividade Máxima",
-        description: "Movimentação elétrica contínua reduz tempo de operação"
+        title: "Produtividade 3x Maior",
+        description: "Movimentação contínua reduz tempo de operação drasticamente"
       },
       {
         title: "Operação Intuitiva",
-        description: "Controles simples que exigem mínimo treinamento"
+        description: "Controles simples que qualquer operador domina em minutos"
       },
       {
-        title: "Capacidade Elevada",
-        description: "Suporta até 400kg com total segurança"
+        title: "Capacidade Robusta",
+        description: "Suporta 400kg com segurança total para equipe e materiais"
       },
       {
-        title: "Baixo Ruído",
-        description: "Operação silenciosa, ideal para áreas urbanas"
+        title: "Operação Silenciosa",
+        description: "Perfeito para áreas urbanas sem incomodar vizinhos"
       }
     ]
   },
@@ -41,25 +41,25 @@ export const balancimEletricoContent = {
     images: [
       {
         id: 1,
-        title: "Vista frontal do balancim elétrico",
-        placeholder: "Imagem frontal - placeholder"
+        title: "Balancim elétrico em operação",
+        placeholder: "Equipamento em uso - placeholder"
       },
       {
         id: 2,
-        title: "Sistema de controle elétrico",
-        placeholder: "Painel de controle - placeholder"
+        title: "Painel de controle elétrico",
+        placeholder: "Sistema de controle - placeholder"
       },
       {
         id: 3,
-        title: "Detalhe da estrutura",
-        placeholder: "Estrutura reforçada - placeholder"
+        title: "Estrutura reforçada",
+        placeholder: "Detalhe da estrutura - placeholder"
       }
     ]
   },
   
   specifications: {
-    title: "Especificações Técnicas",
-    subtitle: "Informações técnicas para dimensionamento e planejamento",
+    title: "Ficha Técnica Completa",
+    subtitle: "Todas as especificações para planejamento seguro",
     specs: [
       {
         category: "Capacidade e Dimensões",
@@ -85,7 +85,7 @@ export const balancimEletricoContent = {
         category: "Segurança",
         items: [
           { label: "Sistema de Freio", value: "Automático por falta de energia" },
-          { label: "Limitador de Curso", value: "Adjustable com parada suave" },
+          { label: "Limitador de Curso", value: "Ajustável com parada suave" },
           { label: "Cinto de Segurança", value: "2 pontos com mosquetão" },
           { label: "Material da Plataforma", value: "Alumínio antiderrapante" },
           { label: "Certificação", value: "Conforme normas de segurança" }
@@ -95,27 +95,27 @@ export const balancimEletricoContent = {
   },
   
   applications: {
-    title: "Aplicações Ideais",
-    subtitle: "Perfeito para diversos tipos de obras e serviços",
+    title: "Onde Usar o Balancim Elétrico",
+    subtitle: "Perfeito para projetos que exigem produtividade e precisão",
     scenarios: [
       {
-        title: "Fachadas de Edifícios",
-        description: "Revestimento, pintura e manutenção de grandes fachadas comerciais e residenciais",
+        title: "Grandes Fachadas",
+        description: "Edifícios comerciais e residenciais com múltiplos andares",
         icon: "🏢"
       },
       {
-        title: "Manutenção Industrial",
-        description: "Serviços em estruturas industriais, tanques e silos",
+        title: "Obras Industriais",
+        description: "Fábricas, silos e estruturas industriais de grande porte",
         icon: "🏭"
       },
       {
-        title: "Limpeza de Vidros",
-        description: "Limpeza e manutenção de janelas e fachadas de vidro em edifícios altos",
+        title: "Limpeza Profissional",
+        description: "Limpeza de vidros em prédios altos e fachadas corporativas",
         icon: "🪟"
       },
       {
         title: "Instalações Elétricas",
-        description: "Montagem e reparo de sistemas elétricos em altura",
+        description: "Montagem de sistemas elétricos em altura e prediais",
         icon: "⚡"
       },
       {
@@ -124,127 +124,127 @@ export const balancimEletricoContent = {
         icon: "🔧"
       },
       {
-        title: "Instalação de Ar-Condicionado",
-        description: "Montagem de unidades externas em andares superiores",
+        title: "Ar-Condicionado",
+        description: "Instalação de unidades externas em andares superiores",
         icon: "❄️"
       }
     ]
   },
   
   safety: {
-    title: "Segurança e Normas",
-    subtitle: "Equipamento preparado para operação com foco em segurança",
+    title: "Segurança Garantida",
+    subtitle: "Equipamento preparado para operação segura e conforme exigências",
     points: [
       {
         title: "Estrutura Reforçada",
-        description: "Construção em alumínio de alta resistência com soldas certificadas"
+        description: "Alumínio de alta resistência com soldas certificadas e testadas"
       },
       {
-        title: "Sistema de Freio Automático",
-        description: "Parada imediata em caso de interrupção de energia"
+        title: "Freio Automático",
+        description: "Parada imediata e segura em caso de interrupção de energia"
       },
       {
-        title: "Controles de Segurança",
-        description: "Botões de parada de emergência e limitadores de curso"
+        title: "Controles de Emergência",
+        description: "Botões de parada e limitadores de curso em todos os pontos"
       },
       {
         title: "Treinamento Incluso",
-        description: "Orientação completa sobre operação segura do equipamento"
+        description: "Orientação completa sobre operação segura no momento da entrega"
       },
       {
         title: "Manutenção Preventiva",
-        description: "Equipamentos verificados antes de cada locação"
+        description: "Verificação completa antes de cada locação garantindo segurança"
       },
       {
-        title: "Conformidade",
-        description: "Equipamento preparado conforme exigências e boas práticas de uso em obra"
+        title: "Conformidade Total",
+        description: "Equipamento preparado conforme exigências e boas práticas"
       }
     ]
   },
   
   differentials: {
-    title: "Por que Alugar com a TopLocações?",
+    title: "Por que Alugar Elétrico com TopLocações?",
     subtitle: "Diferenciais que fazem a diferença no seu projeto",
     items: [
       {
         icon: "🚀",
         title: "Entrega Imediata",
-        description: "Equipamento disponível para entrega em até 24h na região"
+        description: "Equipamento pronto em até 24h na sua obra"
       },
       {
         icon: "📞",
-        title: "Suporte Técnico",
-        description: "Equipe especializada disponível para dúvidas e orientação"
+        title: "Suporte Especializado",
+        description: "Equipe técnica disponível para dúvidas e orientação"
       },
       {
         icon: "📋",
         title: "Contrato Flexível",
-        description: "Períodos de locação adaptados à sua necessidade"
+        description: "Aluguel pelo período exato que sua obra precisa"
       },
       {
         icon: "🔧",
-        title: "Instalação Inclusa",
-        description: "Montagem e desmontagem realizadas pela nossa equipe"
+        title: "Instalação Completa",
+        description: "Montagem, teste e treinamento inclusos no serviço"
       },
       {
         icon: "💰",
         title: "Preço Competitivo",
-        description: "Melhor custo-benefício do mercado sem perder qualidade"
+        description: "Melhor custo-benefício sem perder qualidade e segurança"
       },
       {
         icon: "🛡️",
         title: "Segurança Garantida",
-        description: "Equipamentos com manutenção em dia e certificação"
+        description: "Equipamentos com manutenção e certificação em dia"
       }
     ]
   },
   
   cta: {
-    title: "Pronto para otimizar sua obra?",
-    subtitle: "Entre em contato agora e receba uma proposta personalizada para locação do balancim elétrico",
+    title: "Precisa de Balancim Elétrico para Sua Obra?",
+    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida em 24h.",
     primaryCTA: {
-      text: "Solicitar Proposta",
+      text: "Pedir Orçamento Elétrico Agora",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de solicitar proposta para locação de balancim elétrico."
+      message: "Olá, preciso de proposta urgente para balancim elétrico em minha obra."
     },
     secondaryCTA: {
       text: "Falar com Especialista",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de falar com um especialista sobre o balancim elétrico."
+      message: "Olá, gostaria de falar com especialista sobre balancim elétrico."
     },
     contact: {
       phone: "(00) 0000-0000",
       email: "contato@toplocacoes.com",
-      hours: "Atendimento: Seg a Sex 8h-18h, Sáb 8h-12h"
+      hours: "Atendimento Imediato: 8h-18h"
     }
   },
   
   faq: {
-    title: "Dúvidas Frequentes",
+    title: "Dúvidas sobre Balancim Elétrico",
     questions: [
       {
         question: "Qual o prazo mínimo de locação?",
-        answer: "Trabalhamos com locação mínima de 7 dias, mas temos flexibilidade conforme sua necessidade."
+        answer: "Trabalhamos com locação mínima de 7 dias, com flexibilidade conforme sua necessidade."
       },
       {
         question: "O equipamento inclui treinamento?",
-        answer: "Sim, fornecemos treinamento completo sobre operação segura no momento da instalação."
+        answer: "Sim, fornecemos treinamento completo na instalação. Operador domina em minutos."
       },
       {
         question: "Qual a altura máxima de operação?",
-        answer: "O balancim elétrico opera até 100 metros de altura com total segurança."
+        answer: "Opera até 100 metros com total segurança, ideal para edifícios altos."
       },
       {
-        question: "Como funciona a entrega e instalação?",
-        answer: "Nossa equipe entrega, instala e faz o primeiro teste de operação no local da obra."
+        question: "Como funciona entrega e instalação?",
+        answer: "Nossa equipe entrega, instala, testa e treina no local. Tudo incluso."
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Inclui o balancim completo, sistema de controle, cintos de segurança e suporte técnico."
+        answer: "Balancim completo, painel de controle, cintos de segurança e suporte técnico."
       },
       {
-        question: "Preciso fornecer energia elétrica no local?",
-        answer: "Sim, é necessário ter ponto de energia 220V ou 380V próximo à área de operação."
+        question: "Preciso fornecer energia elétrica?",
+        answer: "Sim, necessário ponto 220V ou 380V próximo à área de operação."
       }
     ]
   }

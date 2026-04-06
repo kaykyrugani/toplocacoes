@@ -1,11 +1,11 @@
 export const balancimManualContent = {
   hero: {
-    title: "Balancim Manual",
-    subtitle: "Solução econômica e prática para trabalhos em pequeno e médio porte com operação simplificada e versatilidade",
+    title: "Balancim Manual para Pequenos Serviços",
+    subtitle: "Capacidade 250kg, até 50m. Operação simples e econômica. Entrega em 24h. Fale agora com especialista.",
     primaryCTA: {
-      text: "Solicitar Orçamento",
+      text: "Pedir Orçamento Manual",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de solicitar orçamento para balancim manual."
+      message: "Olá, preciso de orçamento para balancim manual em minha obra."
     },
     secondaryCTA: {
       text: "Ver Especificações",
@@ -14,24 +14,24 @@ export const balancimManualContent = {
   },
   
   summary: {
-    title: "Simplicidade e Eficiência",
-    description: "O balancim manual é a escolha ideal para projetos que exigem versatilidade e custo-benefício. Com operação simplificada e estrutura leve, oferece mobilidade total para trabalhos em altura onde a precisão elétrica não é essencial.",
+    title: "Solução Econômica e Prática",
+    description: "O balancim manual é a escolha inteligente para pequenos serviços e reformas. Com operação simplificada e estrutura leve, oferece mobilidade total onde a precisão elétrica não é essencial. Perfeito para manutenção residencial, pequenas reformas e serviços rápidos.",
     benefits: [
       {
-        title: "Custo-Benefício",
-        description: "Solução econômica sem comprometer a segurança e qualidade"
+        title: "Economia Garantida",
+        description: "Custo 60% menor que balancim elétrico sem perder segurança"
       },
       {
         title: "Operação Simples",
-        description: "Sistema manual intuitivo que não requer treinamento complexo"
+        description: "Qualquer operador domina o sistema em minutos, sem treinamento complexo"
       },
       {
         title: "Mobilidade Total",
         description: "Leve e fácil de transportar entre diferentes locais da obra"
       },
       {
-        title: "Manutenção Simplificada",
-        description: "Mecanismo robusto com baixa necessidade de manutenção"
+        title: "Manutenção Zero",
+        description: "Mecanismo robusto que não exige manutenção complexa"
       }
     ]
   },
@@ -41,8 +41,8 @@ export const balancimManualContent = {
     images: [
       {
         id: 1,
-        title: "Vista frontal do balancim manual",
-        placeholder: "Imagem frontal - placeholder"
+        title: "Balancim manual em operação",
+        placeholder: "Equipamento em uso - placeholder"
       },
       {
         id: 2,
@@ -51,15 +51,15 @@ export const balancimManualContent = {
       },
       {
         id: 3,
-        title: "Estrutura leve e resistente",
+        title: "Estrutura leve",
         placeholder: "Estrutura - placeholder"
       }
     ]
   },
   
   specifications: {
-    title: "Especificações Técnicas",
-    subtitle: "Informações técnicas para planejamento e dimensionamento",
+    title: "Ficha Técnica Completa",
+    subtitle: "Todas as especificações para planejamento seguro",
     specs: [
       {
         category: "Capacidade e Dimensões",
@@ -95,22 +95,22 @@ export const balancimManualContent = {
   },
   
   applications: {
-    title: "Aplicações Ideais",
-    subtitle: "Perfeito para trabalhos específicos que exigem versatilidade",
+    title: "Onde Usar o Balancim Manual",
+    subtitle: "Perfeito para serviços que exigem versatilidade e economia",
     scenarios: [
       {
         title: "Pequenas Reformas",
-        description: "Reparos e manutenção em residências e pequenos edifícios",
+        description: "Reparos e manutenção em casas e prédios baixos",
         icon: "🏠"
       },
       {
         title: "Manutenção Residencial",
-        description: "Serviços em fachadas de casas e prédios baixos",
+        description: "Serviços em fachadas de residências e condomínios",
         icon: "🔧"
       },
       {
-        title: "Pintura de Áreas Limitadas",
-        description: "Pintura e reparos em superfícies específicas",
+        title: "Pintura Rápida",
+        description: "Pintura e reparos em superfícies específicas e acessíveis",
         icon: "🎨"
       },
       {
@@ -120,12 +120,12 @@ export const balancimManualContent = {
       },
       {
         title: "Limpeza Focada",
-        description: "Limpeza de janelas e superfícies específicas",
+        description: "Limpeza de janelas e áreas específicas de fácil acesso",
         icon: "🧹"
       },
       {
-        title: "Reparos Rápidos",
-        description: "Intervenções pontuais que não exigem grande infraestrutura",
+        title: "Reparos Pontuais",
+        description: "Intervenções rápidas que não exigem grande infraestrutura",
         icon: "🔨"
       }
     ]
@@ -133,38 +133,38 @@ export const balancimManualContent = {
   
   safety: {
     title: "Segurança e Boas Práticas",
-    subtitle: "Equipamento utilizado com foco em operação adequada, inspeção e boas práticas de uso em obra",
+    subtitle: "Equipamento utilizado com foco em operação adequada e boas práticas",
     points: [
       {
-        title: "Operação Controlada",
-        description: "Sistema manual permite controle total da velocidade e movimento"
+        title: "Controle Total",
+        description: "Sistema manual permite controle absoluto da velocidade e movimento"
       },
       {
-        title: "Freio de Segurança",
-        description: "Mecanismo de travamento automático para paradas seguras"
+        title: "Freio de Confiança",
+        description: "Mecanismo de travamento automático para paradas seguras e precisas"
       },
       {
         title: "Inspeção Visual",
-        description: "Estrutura exposta facilita verificação antes do uso"
+        description: "Estrutura exposta facilita verificação rápida antes do uso"
       },
       {
         title: "Uso Adequado",
         description: "Equipamento utilizado conforme boas práticas de segurança em obra"
       },
       {
-        title: "Manutenção Preventiva",
-        description: "Verificação regular de cordas e sistema de freio"
+        title: "Manutenção Simples",
+        description: "Verificação regular de cordas e sistema de freio quando necessário"
       },
       {
-        title: "Treinamento Básico",
-        description: "Orientação sobre operação segura e inspeção visual"
+        title: "Treinamento Rápido",
+        description: "Orientação básica sobre operação segura e inspeção visual"
       }
     ]
   },
   
   differentials: {
-    title: "Por que Alugar com a TopLocações?",
-    subtitle: "Diferenciais que otimizam seu projeto",
+    title: "Por que Alugar Manual com TopLocações?",
+    subtitle: "Diferenciais que otimizam seu pequeno projeto",
     items: [
       {
         icon: "🚀",
@@ -174,77 +174,77 @@ export const balancimManualContent = {
       {
         icon: "📞",
         title: "Atendimento Direto",
-        description: "Contato rápido sem burocracia para orçamento"
+        description: "Contato rápido sem burocracia para orçamento imediato"
       },
       {
         icon: "📋",
         title: "Locação Flexível",
-        description: "Períodos adaptados à sua necessidade específica"
+        description: "Aluguel por dias ou semanas conforme sua necessidade"
       },
       {
         icon: "🔧",
         title: "Suporte Básico",
-        description: "Orientação sobre montagem e uso seguro"
+        description: "Orientação sobre montagem e uso seguro inclusos"
       },
       {
         icon: "💰",
-        title: "Preço Acessível",
-        description: "Solução econômica para projetos menores"
+        title: "Preço Econômico",
+        description: "Solução acessível para pequenos projetos e reformas"
       },
       {
         icon: "🛡️",
         title: "Equipamento Verificado",
-        description: "Inspeção de segurança antes de cada locação"
+        description: "Inspeção de segurança antes de cada entrega garantida"
       }
     ]
   },
   
   cta: {
-    title: "Precisa de uma solução prática?",
-    subtitle: "Entre em contato agora e receba uma proposta personalizada para locação do balancim manual",
+    title: "Precisa de Balancim Manual para Sua Obra?",
+    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida em 24h.",
     primaryCTA: {
-      text: "Solicitar Proposta",
+      text: "Pedir Orçamento Manual Agora",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de solicitar proposta para locação de balancim manual."
+      message: "Olá, preciso de proposta urgente para balancim manual em minha obra."
     },
     secondaryCTA: {
       text: "Falar com Especialista",
       whatsapp: "5500000000000",
-      message: "Olá, gostaria de falar com um especialista sobre o balancim manual."
+      message: "Olá, gostaria de falar com especialista sobre balancim manual."
     },
     contact: {
       phone: "(00) 0000-0000",
       email: "contato@toplocacoes.com",
-      hours: "Atendimento: Seg a Sex 8h-18h, Sáb 8h-12h"
+      hours: "Atendimento Imediato: 8h-18h"
     }
   },
   
   faq: {
-    title: "Dúvidas Frequentes",
+    title: "Dúvidas sobre Balancim Manual",
     questions: [
       {
-        question: "Qual o esforço físico necessário para operação?",
-        answer: "O sistema é projetado para exigir mínimo esforço, com polias que facilitam a movimentação."
+        question: "Precisa de muita força física?",
+        answer: "Não. Sistema com polias reduz esforço em 80%, qualquer operador usa facilmente."
       },
       {
         question: "O equipamento inclui treinamento?",
-        answer: "Sim, fornecemos orientação básica sobre operação segura e inspeção visual."
+        answer: "Sim, orientação básica na instalação. Operador domina em menos de 30 minutos."
       },
       {
         question: "Qual a altura máxima recomendada?",
-        answer: "Recomendamos uso até 50 metros para garantir segurança e eficiência."
+        answer: "Recomendamos até 50 metros para garantir segurança e eficiência ideal."
       },
       {
         question: "Como funciona a entrega?",
-        answer: "Entregamos e montamos no local, com instruções básicas de uso."
+        answer: "Entregamos, montamos e damos orientação no local. Tudo rápido e simples."
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Inclui balancim completo, sistema de corda, cintos e orientação básica."
+        answer: "Balancim completo, sistema de corda, cintos e orientação básica de uso."
       },
       {
-        question: "Precisa de energia elétrica?",
-        answer: "Não, o sistema é totalmente manual, ideal para locais sem energia disponível."
+        question: "Funciona sem energia elétrica?",
+        answer: "Sim, totalmente manual. Ideal para locais sem energia disponível."
       }
     ]
   }
