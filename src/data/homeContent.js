@@ -1,11 +1,11 @@
 export const homeContent = {
   hero: {
-    title: "Aluguel de Balancim para Obra",
-    subtitle: "Entrega em 24h. Equipamentos verificados. Atendimento direto sem burocracia. Fale agora com um especialista.",
+    title: "Precisa de Balancim para Sua Obra?",
+    subtitle: "Entrega em 24h. Orçamento imediato no WhatsApp. Atendimento sem burocracia. Fale agora com especialista.",
     primaryCTA: {
-      text: "Pedir Orçamento Agora",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, vi o site e preciso de um orçamento para balancim."
+      message: "Olá, vi o site e preciso de balancim urgente para minha obra."
     },
     secondaryCTA: {
       text: "Ver Equipamentos",
@@ -14,49 +14,49 @@ export const homeContent = {
   },
   
   valueProposition: {
-    title: "Por que contratar com a TopLocações?",
-    subtitle: "Especialistas em balancim com entrega rápida e atendimento direto",
+    title: "Por que TopLocações é a Melhor Escolha?",
+    subtitle: "Atendimento imediato. Entrega garantida. Orçamento em minutos.",
     points: [
       {
-        title: "Entrega Garantida",
-        description: "Equipamento no local em até 24h na região"
+        title: "Entrega em 24h",
+        description: "Equipamento no local amanhã. Sem atrasos."
       },
       {
-        title: "Atendimento Direto",
-        description: "Fale com especialista, sem intermediários"
+        title: "Resposta em Minutos",
+        description: "Fale com especialista agora. Orçamento rápido."
       },
       {
-        title: "Equipamento Testado",
-        description: "Segurança verificada antes de cada entrega"
+        title: "Sem Compromisso",
+        description: "Orçamento gratuito. Sem surpresas. Sem burocracia."
       },
       {
-        title: "Preço Competitivo",
-        description: "Melhor custo-benefício sem perder qualidade"
+        title: "Preço Justo",
+        description: "Melhor custo-benefício. Valor combinado desde o início."
       }
     ]
   },
   
   productSelection: {
     title: "Escolha o Balancim para Sua Obra",
-    subtitle: "Equipamentos prontos para entrega imediata",
+    subtitle: "Equipamentos prontos para entrega imediata. Orçamento rápido.",
     products: [
       {
         id: "eletrico",
         title: "Balancim Elétrico",
-        description: "Ideal para grandes obras. Movimentação elétrica, capacidade 400kg, até 100m de altura.",
+        description: "Ideal para grandes obras. 400kg, até 100m. Movimentação elétrica suave. Entrega amanhã.",
         features: ["400kg capacidade", "Até 100m altura", "220V", "8 m/min"],
         cta: {
-          text: "Solicitar Elétrico",
+          text: "Pedir Elétrico Agora",
           href: "/balancim-eletrico"
         }
       },
       {
         id: "manual",
         title: "Balancim Manual",
-        description: "Perfeito para pequenos serviços. Operação simples, capacidade 250kg, até 50m de altura.",
+        description: "Perfeito para pequenos serviços. 250kg, até 50m. Operação simples. Economia garantida.",
         features: ["250kg capacidade", "Até 50m altura", "Operação manual", "Leve e prático"],
         cta: {
-          text: "Solicitar Manual",
+          text: "Pedir Manual Agora",
           href: "/balancim-manual"
         }
       }
@@ -64,45 +64,45 @@ export const homeContent = {
   },
   
   differentials: {
-    title: "Diferenciais TopLocações",
-    subtitle: "O que nos torna referência em locação",
+    title: "Diferenciais que Fazem a Diferença",
+    subtitle: "Por que clientes confiam na TopLocações",
     items: [
       {
         icon: "⚡",
-        title: "Agilidade Total",
-        description: "Do contato à entrega em menos de 24h"
+        title: "Atendimento Imediato",
+        description: "Fale agora. Resposta em minutos. Sem espera."
       },
       {
         icon: "🔧",
-        title: "Suporte Técnico",
-        description: "Equipe especializada disponível quando precisar"
+        title: "Suporte Real",
+        description: "Equipe especializada disponível quando precisar."
       },
       {
         icon: "📋",
-        title: "Contrato Flexível",
-        description: "Aluguel pelo tempo que sua obra precisar"
+        title: "Contrato Simples",
+        description: "Aluguel pelo tempo que precisar. Sem complicação."
       },
       {
         icon: "🛡️",
-        title: "Segurança Primeiro",
-        description: "Equipamentos com manutenção e certificação"
+        title: "Segurança Garantida",
+        description: "Equipamentos verificados. Manutenção em dia."
       },
       {
         icon: "💰",
-        title: "Preço Justo",
-        description: "Sem surpresas, valor combinado desde o início"
+        title: "Preço Transparente",
+        description: "Sem surpresas. Valor claro desde o início."
       },
       {
         icon: "🚚",
         title: "Logística Completa",
-        description: "Entrega, montagem e retirada incluídas"
+        description: "Entrega, montagem e retirada. Tudo incluso."
       }
     ]
   },
   
   benefits: {
     title: "Onde Usar Nossos Balancim",
-    subtitle: "Equipamentos versáteis para diversos tipos de serviço",
+    subtitle: "Equipamentos versáteis para qualquer tipo de serviço",
     applications: [
       {
         title: "Fachadas de Prédios",
@@ -131,29 +131,29 @@ export const homeContent = {
   },
   
   socialProof: {
-    title: "Clientes que Confiam na TopLocações",
-    subtitle: "Referência em locação de equipamentos para construção",
+    title: "Clientes que Confiam e Recomendam",
+    subtitle: "Prova de que entregamos o que prometemos",
     testimonials: [
       {
         name: "João Silva",
         company: "Construtora ABC",
-        text: "Entrega no dia combinado e equipamento em perfeito estado. Recomendo!"
+        text: "Entrega no dia certo e equipamento perfeito. Atendimento excelente. Recomendo!"
       },
       {
         name: "Maria Santos",
         company: "Serviços Gerais Ltda",
-        text: "Atendimento rápido e suporte sempre que precisei. Excelente serviço."
+        text: "Atendimento rápido e suporte sempre que precisei. Sem burocracia. Parceria confiável."
       },
       {
         name: "Pedro Costa",
         company: "Manutenção Predial",
-        text: "Melhor preço que encontrei e sem burocracia. Parceria confiável."
+        text: "Melhor preço e serviço rápido. Sem surpresas no orçamento. TopLocações é referência."
       }
     ],
     stats: [
       {
         number: "500+",
-        label: "Obras Atendidas"
+        label: "Obras Entregues"
       },
       {
         number: "10+",
@@ -167,12 +167,12 @@ export const homeContent = {
   },
   
   finalCTA: {
-    title: "Precisa de Balancim para Sua Obra?",
-    subtitle: "Fale agora com um especialista e receba proposta imediata. Sem compromisso.",
+    title: "Precisa de Balancim HOJE?",
+    subtitle: "Fale agora com especialista e receba seu orçamento em minutos. Sem compromisso. Entrega amanhã.",
     cta: {
-      text: "Falar com Especialista Agora",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de orçamento urgente para balancim em minha obra."
+      message: "Olá, preciso de balancim urgente para minha obra. Podem me atender hoje?"
     },
     contact: {
       phone: "(00) 0000-0000",

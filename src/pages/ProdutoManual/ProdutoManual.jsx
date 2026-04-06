@@ -3,11 +3,13 @@ import MetaTags from '../../components/sections/MetaTags'
 import { balancimManualContent } from '../../data/balancimManualContent'
 import ProductHero from '../../components/sections/ProductHero'
 import ProductSummary from '../../components/sections/ProductSummary'
+import IdealFor from '../../components/sections/IdealFor'
 import ProductGallery from '../../components/sections/ProductGallery'
 import ProductSpecs from '../../components/sections/ProductSpecs'
 import ProductApplications from '../../components/sections/ProductApplications'
 import ProductSafety from '../../components/sections/ProductSafety'
 import ProductDifferentials from '../../components/sections/ProductDifferentials'
+import YouReceive from '../../components/sections/YouReceive'
 import ProductCTA from '../../components/sections/ProductCTA'
 import ProductFAQ from '../../components/sections/ProductFAQ'
 
@@ -22,11 +24,19 @@ const ProdutoManual = () => {
       <div className="produto-manual">
         <ProductHero content={balancimManualContent.hero} />
         <ProductSummary content={balancimManualContent.summary} />
+        <IdealFor 
+          title="Ideal para:" 
+          items={balancimManualContent.idealFor}
+        />
         <ProductGallery content={balancimManualContent.gallery} />
         <ProductSpecs content={balancimManualContent.specifications} />
         <ProductApplications content={balancimManualContent.applications} />
         <ProductSafety content={balancimManualContent.safety} />
         <ProductDifferentials content={balancimManualContent.differentials} />
+        <YouReceive 
+          title="Você recebe:" 
+          items={balancimManualContent.youReceive}
+        />
         <ProductCTA content={balancimManualContent.cta} />
         <ProductFAQ content={balancimManualContent.faq} />
       </div>

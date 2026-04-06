@@ -1,0 +1,110 @@
+.you-receive {
+  padding: var(--space-2xl) 0;
+  background-color: var(--bg);
+}
+
+.you-receive__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.you-receive__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--bg-alt) 100%);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--surface);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.you-receive__item:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.15);
+}
+
+.you-receive__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-strong), var(--primary));
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.you-receive__icon-wrapper {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-bottom: var(--space-md);
+}
+
+.you-receive__icon {
+  font-size: 1.5rem;
+  color: var(--bg);
+}
+
+.you-receive__content {
+  flex: 1;
+}
+
+.you-receive__title {
+  font-family: var(--font-sub);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 var(--space-sm) 0;
+  line-height: 1.3;
+}
+
+.you-receive__description {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .you-receive {
+    padding: var(--space-xl) 0;
+  }
+  
+  .you-receive__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .you-receive__item {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-lg);
+  }
+  
+  .you-receive__icon-wrapper {
+    margin-bottom: var(--space-md);
+    margin-right: 0;
+  }
+  
+  .you-receive__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .you-receive__description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

@@ -1,11 +1,11 @@
 export const balancimManualContent = {
   hero: {
-    title: "Balancim Manual para Pequenos Serviços",
-    subtitle: "Capacidade 250kg, até 50m. Operação simples e econômica. Entrega em 24h. Fale agora com especialista.",
+    title: "Precisa de Balancim Manual HOJE?",
+    subtitle: "250kg, até 50m. Operação simples e econômica. Entrega amanhã. Orçamento rápido no WhatsApp.",
     primaryCTA: {
-      text: "Pedir Orçamento Manual",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de orçamento para balancim manual em minha obra."
+      message: "Olá, preciso de balancim manual urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
       text: "Ver Especificações",
@@ -14,12 +14,12 @@ export const balancimManualContent = {
   },
   
   summary: {
-    title: "Solução Econômica e Prática",
+    title: "Economia 60% Menor com Segurança Total",
     description: "O balancim manual é a escolha inteligente para pequenos serviços e reformas. Com operação simplificada e estrutura leve, oferece mobilidade total onde a precisão elétrica não é essencial. Perfeito para manutenção residencial, pequenas reformas e serviços rápidos.",
     benefits: [
       {
-        title: "Economia Garantida",
-        description: "Custo 60% menor que balancim elétrico sem perder segurança"
+        title: "Economia 60% Menor",
+        description: "Custo drasticamente reduzido sem perder segurança e qualidade"
       },
       {
         title: "Operação Simples",
@@ -32,6 +32,64 @@ export const balancimManualContent = {
       {
         title: "Manutenção Zero",
         description: "Mecanismo robusto que não exige manutenção complexa"
+      }
+    ],
+    idealFor: [
+      {
+        icon: "🏠",
+        text: "Pequenas reformas"
+      },
+      {
+        icon: "🔧",
+        text: "Manutenção residencial"
+      },
+      {
+        icon: "🎨",
+        text: "Pintura rápida"
+      },
+      {
+        icon: "⚙️",
+        text: "Instalações simples"
+      },
+      {
+        icon: "🧹",
+        text: "Limpeza focada"
+      },
+      {
+        icon: "🔨",
+        text: "Reparos pontuais"
+      }
+    ],
+    youReceive: [
+      {
+        icon: "🚀",
+        title: "Entrega em 24h",
+        description: "Equipamento no local amanhã sem atrasos"
+      },
+      {
+        icon: "📋",
+        title: "Contrato simples",
+        description: "Aluguel pelo tempo exato que você precisa"
+      },
+      {
+        icon: "🔧",
+        title: "Treinamento rápido",
+        description: "Operador domina em menos de 30 minutos"
+      },
+      {
+        icon: "🛡️",
+        title: "Segurança garantida",
+        description: "Equipamento verificado antes de cada entrega"
+      },
+      {
+        icon: "💰",
+        title: "Preço justo",
+        description: "Melhor custo-benefício para pequenos projetos"
+      },
+      {
+        icon: "🚚",
+        title: "Logística completa",
+        description: "Entrega, montagem e retirada inclusos"
       }
     ]
   },
@@ -95,7 +153,7 @@ export const balancimManualContent = {
   },
   
   applications: {
-    title: "Onde Usar o Balancim Manual",
+    title: "Ideal para Pequenos Serviços",
     subtitle: "Perfeito para serviços que exigem versatilidade e economia",
     scenarios: [
       {
@@ -168,17 +226,17 @@ export const balancimManualContent = {
     items: [
       {
         icon: "🚀",
-        title: "Disponibilidade Imediata",
+        title: "Entrega Imediata",
         description: "Equipamento pronto para entrega em até 24h"
       },
       {
         icon: "📞",
-        title: "Atendimento Direto",
-        description: "Contato rápido sem burocracia para orçamento imediato"
+        title: "Atendimento Rápido",
+        description: "Contato direto sem burocracia para orçamento imediato"
       },
       {
         icon: "📋",
-        title: "Locação Flexível",
+        title: "Contrato Simples",
         description: "Aluguel por dias ou semanas conforme sua necessidade"
       },
       {
@@ -200,12 +258,12 @@ export const balancimManualContent = {
   },
   
   cta: {
-    title: "Precisa de Balancim Manual para Sua Obra?",
-    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida em 24h.",
+    title: "Precisa de Balancim Manual HOJE?",
+    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida amanhã. Sem compromisso.",
     primaryCTA: {
-      text: "Pedir Orçamento Manual Agora",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de proposta urgente para balancim manual em minha obra."
+      message: "Olá, preciso de balancim manual urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
       text: "Falar com Especialista",

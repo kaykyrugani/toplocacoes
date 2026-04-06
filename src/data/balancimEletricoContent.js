@@ -1,11 +1,11 @@
 export const balancimEletricoContent = {
   hero: {
-    title: "Balancim Elétrico para Grande Obras",
-    subtitle: "Capacidade 400kg, até 100m. Movimentação elétrica suave. Entrega em 24h. Fale agora com especialista.",
+    title: "Precisa de Balancim Elétrico HOJE?",
+    subtitle: "400kg, até 100m. Movimentação elétrica suave. Entrega amanhã. Orçamento rápido no WhatsApp.",
     primaryCTA: {
-      text: "Pedir Orçamento Elétrico",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de orçamento para balancim elétrico em minha obra."
+      message: "Olá, preciso de balancim elétrico urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
       text: "Ver Especificações",
@@ -14,7 +14,7 @@ export const balancimEletricoContent = {
   },
   
   summary: {
-    title: "Produtividade Máxima para Sua Obra",
+    title: "Produtividade 3x Maior para Sua Obra",
     description: "O balancim elétrico é a escolha inteligente para grandes projetos. Com movimentação elétrica suave e capacidade de 400kg, oferece 3x mais produtividade que sistemas manuais. Ideal para fachadas de edifícios, obras industriais e projetos que exigem precisão e velocidade.",
     benefits: [
       {
@@ -32,6 +32,60 @@ export const balancimEletricoContent = {
       {
         title: "Operação Silenciosa",
         description: "Perfeito para áreas urbanas sem incomodar vizinhos"
+      }
+    ],
+    idealFor: [
+      {
+        icon: "🏢",
+        text: "Grandes fachadas de edifícios"
+      },
+      {
+        icon: "🏭",
+        text: "Obras industriais complexas"
+      },
+      {
+        icon: "⏰",
+        text: "Projetos com prazo curto"
+      },
+      {
+        icon: "🎯",
+        text: "Serviços que exigem precisão"
+      },
+      {
+        icon: "⚡",
+        text: "Locais com energia disponível"
+      }
+    ],
+    youReceive: [
+      {
+        icon: "🚀",
+        title: "Entrega garantida em 24h",
+        description: "Equipamento no local amanhã sem atrasos"
+      },
+      {
+        icon: "🔧",
+        title: "Montagem e treinamento inclusos",
+        description: "Equipe especializada monta e treina sua equipe"
+      },
+      {
+        icon: "📞",
+        title: "Suporte técnico durante locação",
+        description: "Assistência sempre que precisar durante o contrato"
+      },
+      {
+        icon: "🛡️",
+        title: "Equipamento verificado e seguro",
+        description: "Manutenção em dia e certificação garantida"
+      },
+      {
+        icon: "📋",
+        title: "Contrato simples e flexível",
+        description: "Aluguel pelo período exato que sua obra precisa"
+      },
+      {
+        icon: "🚚",
+        title: "Retirada sem custo adicional",
+        description: "Equipe busca o equipamento ao final da locação"
       }
     ]
   },
@@ -95,7 +149,7 @@ export const balancimEletricoContent = {
   },
   
   applications: {
-    title: "Onde Usar o Balancim Elétrico",
+    title: "Ideal para Grandes Obras",
     subtitle: "Perfeito para projetos que exigem produtividade e precisão",
     scenarios: [
       {
@@ -173,12 +227,12 @@ export const balancimEletricoContent = {
       },
       {
         icon: "📞",
-        title: "Suporte Especializado",
+        title: "Atendimento Rápido",
         description: "Equipe técnica disponível para dúvidas e orientação"
       },
       {
         icon: "📋",
-        title: "Contrato Flexível",
+        title: "Contrato Simples",
         description: "Aluguel pelo período exato que sua obra precisa"
       },
       {
@@ -188,7 +242,7 @@ export const balancimEletricoContent = {
       },
       {
         icon: "💰",
-        title: "Preço Competitivo",
+        title: "Preço Transparente",
         description: "Melhor custo-benefício sem perder qualidade e segurança"
       },
       {
@@ -200,12 +254,12 @@ export const balancimEletricoContent = {
   },
   
   cta: {
-    title: "Precisa de Balancim Elétrico para Sua Obra?",
-    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida em 24h.",
+    title: "Precisa de Balancim Elétrico HOJE?",
+    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida amanhã. Sem compromisso.",
     primaryCTA: {
-      text: "Pedir Orçamento Elétrico Agora",
+      text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de proposta urgente para balancim elétrico em minha obra."
+      message: "Olá, preciso de balancim elétrico urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
       text: "Falar com Especialista",
