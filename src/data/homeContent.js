@@ -25,45 +25,51 @@ export const homeContent = {
     subtitle: "Atendimento imediato. Entrega garantida. Orçamento em minutos.",
     points: [
       {
-        title: "Entrega em 24h",
-        description: "Equipamento no local amanhã. Sem atrasos."
+        title: "Entrega rápida em até 24h",
+        description: "Equipamento no local amanhã. Sem atrasos.",
+        icon: "Truck"
       },
       {
-        title: "Resposta em Minutos",
-        description: "Fale com especialista agora. Orçamento rápido."
+        title: "Resposta em poucos minutos",
+        description: "Fale com especialista agora. Orçamento rápido.",
+        icon: "MessageCircle"
       },
       {
-        title: "Sem Compromisso",
-        description: "Orçamento gratuito. Sem surpresas. Sem burocracia."
+        title: "Orçamento sem compromisso",
+        description: "Orçamento gratuito. Sem surpresas. Sem burocracia.",
+        icon: "ShieldCheck"
       },
       {
-        title: "Preço Justo",
-        description: "Melhor custo-benefício. Valor combinado desde o início."
+        title: "Preço justo e transparente",
+        description: "Melhor custo-benefício. Valor combinado desde o início.",
+        icon: "BadgePercent"
       }
     ]
   },
   
   productSelection: {
-    title: "Escolha o Balancim para Sua Obra",
-    subtitle: "Equipamentos prontos para entrega imediata. Orçamento rápido.",
+    title: "Escolha o balancim ideal para sua obra",
+    subtitle: "Equipamentos prontos para entrega rápida. Compare os modelos e fale com um especialista.",
     products: [
       {
         id: "eletrico",
         title: "Balancim Elétrico",
-        description: "Ideal para grandes obras. 400kg, até 100m. Movimentação elétrica suave. Entrega amanhã.",
-        features: ["400kg capacidade", "Até 100m altura", "220V", "8 m/min"],
+        description: "Ideal para obras maiores, com mais agilidade e operação elétrica.",
+        features: ["400kg de capacidade", "Até 100m de altura", "Operação elétrica", "Mais produtividade na obra"],
+        image: "/src/assets/images/baEle (1).png",
         cta: {
-          text: "Pedir Elétrico Agora",
+          text: "Ver balancim elétrico",
           href: "/balancim-eletrico"
         }
       },
       {
         id: "manual",
         title: "Balancim Manual",
-        description: "Perfeito para pequenos serviços. 250kg, até 50m. Operação simples. Economia garantida.",
-        features: ["250kg capacidade", "Até 50m altura", "Operação manual", "Leve e prático"],
+        description: "Perfeito para serviços menores, com operação simples e excelente custo-benefício.",
+        features: ["250kg de capacidade", "Até 50m de altura", "Operação manual", "Mais leve e prático"],
+        image: "/src/assets/images/baMan.png",
         cta: {
-          text: "Pedir Manual Agora",
+          text: "Ver balancim manual",
           href: "/balancim-manual"
         }
       }
