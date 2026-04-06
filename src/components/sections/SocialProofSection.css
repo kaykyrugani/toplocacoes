@@ -1,0 +1,126 @@
+.social-proof-section {
+  padding: var(--space-3xl) 0;
+  background-color: var(--bg);
+}
+
+.social-proof-section__content {
+  margin-top: var(--space-2xl);
+}
+
+.social-proof__testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.testimonial-card {
+  background-color: var(--surface);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border-top: 3px solid var(--primary);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  font-size: 3rem;
+  color: var(--primary);
+  opacity: 0.2;
+  font-family: var(--font-heading);
+}
+
+.testimonial-card__content {
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-lg);
+}
+
+.testimonial-card__text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.testimonial-card__info {
+  text-align: right;
+}
+
+.testimonial-card__name {
+  font-family: var(--font-sub);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+
+.testimonial-card__company {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.social-proof__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.stat-item {
+  background: linear-gradient(135deg, var(--surface), var(--bg-alt));
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--surface);
+}
+
+.stat-item__number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: var(--space-sm);
+}
+
+.stat-item__label {
+  font-family: var(--font-sub);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .social-proof-section {
+    padding: var(--space-xl) 0;
+  }
+  
+  .social-proof__testimonials {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .social-proof__stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  
+  .stat-item__number {
+    font-size: 2rem;
+  }
+  
+  .stat-item__label {
+    font-size: 0.875rem;
+  }
+}

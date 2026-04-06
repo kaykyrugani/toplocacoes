@@ -1,0 +1,118 @@
+.product-faq {
+  padding: var(--space-3xl) 0;
+  background-color: var(--bg);
+}
+
+.product-faq__questions {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: var(--space-2xl);
+}
+
+.faq-item {
+  background-color: var(--surface);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  border: 1px solid var(--bg-alt);
+  transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--primary);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: var(--bg-alt);
+}
+
+.faq-question.active {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--surface);
+}
+
+.faq-question__text {
+  font-family: var(--font-sub);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+  margin-right: var(--space-md);
+}
+
+.faq-question__toggle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--bg);
+  transition: all 0.3s ease;
+}
+
+.faq-question.active .faq-question__toggle {
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.active {
+  max-height: 200px;
+  padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.faq-answer p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .product-faq {
+    padding: var(--space-xl) 0;
+  }
+  
+  .faq-question {
+    padding: var(--space-md);
+  }
+  
+  .faq-question__text {
+    font-size: 0.95rem;
+  }
+  
+  .faq-question__toggle {
+    width: 25px;
+    height: 25px;
+    font-size: 1.25rem;
+  }
+  
+  .faq-answer.active {
+    padding: 0 var(--space-md) var(--space-md);
+  }
+}
