@@ -114,8 +114,8 @@ export const homeContent = {
   },
   
   benefits: {
-    title: "Onde Usar Nossos Balancim",
-    subtitle: "Equipamentos versáteis para qualquer tipo de serviço",
+    title: "Onde usar nossos balancins",
+    subtitle: "Equipamentos versáteis para diferentes tipos de serviço em altura.",
     applications: [
       {
         title: "Fachadas de Prédios",
@@ -137,7 +137,7 @@ export const homeContent = {
     benefits: [
       "Produtividade 3x maior",
       "Economia de mão de obra",
-      "Segurança garantida para equipe",
+      "Segurança garantida",
       "Versatilidade de uso",
       "Operação simplificada"
     ]
