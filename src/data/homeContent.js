@@ -1,16 +1,23 @@
 export const homeContent = {
   hero: {
-    title: "Precisa de Balancim para Sua Obra?",
-    subtitle: "Entrega em 24h. Orçamento imediato no WhatsApp. Atendimento sem burocracia. Fale agora com especialista.",
+    badge: "Especialistas em balancins",
+    title: "Precisa de balancim para sua obra hoje?",
+    subtitle: "Entrega rápida na obra. Orçamento imediato no WhatsApp. Atendimento direto, sem burocracia.",
+    microbenefits: [
+      "Entrega rápida na obra",
+      "Atendimento direto no WhatsApp", 
+      "Orçamento sem compromisso"
+    ],
     primaryCTA: {
-      text: "Chamar no WhatsApp Agora",
+      text: "CHAMAR NO WHATSAPP AGORA",
       whatsapp: "5500000000000",
       message: "Olá, vi o site e preciso de balancim urgente para minha obra."
     },
     secondaryCTA: {
-      text: "Ver Equipamentos",
+      text: "Ver modelos disponíveis",
       href: "#produtos"
-    }
+    },
+    microProof: "Atendimento em poucos minutos • Sem compromisso"
   },
   
   valueProposition: {
@@ -167,17 +174,56 @@ export const homeContent = {
   },
   
   finalCTA: {
-    title: "Precisa de Balancim HOJE?",
-    subtitle: "Fale agora com especialista e receba seu orçamento em minutos. Sem compromisso. Entrega amanhã.",
-    cta: {
-      text: "Chamar no WhatsApp Agora",
+    headline: "Precisa de balancim hoje? Fale agora e resolva em minutos.",
+    subheadline: "Fale com um especialista agora e receba seu orçamento direto no WhatsApp. Sem burocracia. Sem compromisso.",
+    microbenefits: [
+      "Atendimento imediato",
+      "Resposta em poucos minutos",
+      "Entrega rápida na obra"
+    ],
+    primaryCTA: {
+      text: "CHAMAR NO WHATSAPP AGORA",
       whatsapp: "5500000000000",
-      message: "Olá, preciso de balancim urgente para minha obra. Podem me atender hoje?"
+      message: "Olá, vi o site e preciso de balancim urgente para minha obra."
     },
-    contact: {
-      phone: "(00) 0000-0000",
-      email: "contato@toplocacoes.com",
-      hours: "Atendimento Imediato: 8h-18h"
-    }
+    microProof: "Resposta em poucos minutos",
+    form: {
+      title: "Prefere que a gente te chame?",
+      subtitle: "Deixe seus dados e nossa equipe entra em contato em poucos minutos.",
+      fields: {
+        name: {
+          label: "Nome",
+          placeholder: "Seu nome",
+          required: true
+        },
+        phone: {
+          label: "Telefone",
+          placeholder: "Seu WhatsApp",
+          required: true
+        },
+        city: {
+          label: "Cidade",
+          placeholder: "Cidade da obra",
+          required: true
+        },
+        state: {
+          label: "Estado",
+          placeholder: "Selecione o estado",
+          required: true,
+          options: [
+            { value: "", label: "Selecione o estado" },
+            { value: "MG", label: "MG" },
+            { value: "SP", label: "SP" }
+          ]
+        },
+        email: {
+          label: "Email",
+          placeholder: "Seu email (opcional)",
+          required: false
+        }
+      },
+      submitText: "Receber orçamento"
+    },
+    trustText: "Entramos em contato em poucos minutos"
   }
 }
