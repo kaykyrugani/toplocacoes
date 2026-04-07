@@ -1,0 +1,4 @@
+- [x] Analisar `src/components/layout/Footer.css` e validar requisitos de layout em coluna.
+- [x] Ajustar `src/components/layout/Footer.css` para manter footer 100% em coluna em todos os breakpoints.
+- [x] Revisar media queries para impedir retorno ao layout horizontal.
+- [x] Marcar conclusão e preparar entrega final (arquivo alterado + CSS completo + resumo curto).

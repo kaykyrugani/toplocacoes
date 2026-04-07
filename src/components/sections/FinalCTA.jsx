@@ -5,7 +5,6 @@ import ContactForm from '../ui/ContactForm'
 import './FinalCTA.css'
 
 const FinalCTA = ({ content }) => {
-  const [showForm, setShowForm] = useState(false)
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
@@ -47,7 +46,6 @@ const FinalCTA = ({ content }) => {
     // Resetar após 5 segundos
     setTimeout(() => {
       setFormSubmitted(false)
-      setShowForm(false)
     }, 5000)
   }
 
