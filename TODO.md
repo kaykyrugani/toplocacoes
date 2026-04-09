@@ -1,42 +1,54 @@
-# Plano: Layout Vertical - Seção Especificações Técnicas
+# Plano: Redesign + Animações da HERO de Produto (Balancim Elétrico)
 
 ## ✅ Status: Plano Aprovado e Em Andamento
 
-### 1. [✅] Editar ProductSpecs.css - COMPLETO
-- [✅] `.product-specs__categories`: `grid-template-columns: 1fr`, `width: 100%`
-- [✅] `.spec-category`: `width: 100%`
-- [✅] `.spec-item`: `gap: var(--space-sm)`, `line-height: 1.4`
-- [✅] Desktop: sempre 1 coluna (removido auto-fit)
-- [✅] Identidade visual preservada
+### 1. [ ] Estruturar conteúdo orientado a dados
+- [ ] Revisar `src/data/balancimEletricoContent.js` e adicionar campos da hero quando necessário:
+  - [ ] `eyebrow`
+  - [ ] `trustBullets` (3 itens)
+  - [ ] `visualCard` (título, badge opcional, highlights técnicos)
 
-### 2. [✅] Testar Alterações - VALIDADO
-- [✅] `npm run dev` executado (localhost:5174)
-- [✅] Desktop: cards empilhados verticalmente, 100% largura
-- [✅] Mobile: responsividade preservada (1fr grid)
-- [✅] Label esquerda / valor direita com gap melhorado
+### 2. [ ] Atualizar JSX da HERO (`src/components/sections/ProductHero.jsx`)
+- [ ] Manter estrutura em duas colunas sem quebrar layout
+- [ ] Coluna esquerda na ordem:
+  - [ ] eyebrow
+  - [ ] headline
+  - [ ] subheadline
+  - [ ] bullets de confiança
+  - [ ] CTA principal
+  - [ ] CTA secundário
+- [ ] Coluna direita:
+  - [ ] substituir placeholder por card técnico premium escaneável
+  - [ ] título do produto + 3 highlights + badge opcional
 
-### 3. [✅] Ajustes Finos - NÃO NECESSÁRIO
-- [✅] HTML/JSX perfeito (sem mudanças)
-- [✅] Line-height e flex resolvem quebra de texto
+### 3. [ ] Atualizar CSS da HERO (`src/components/sections/ProductHero.css`)
+- [ ] Reforçar hierarquia tipográfica (headline dominante, subheadline legível)
+- [ ] Melhorar espaçamentos verticais e ritmo visual
+- [ ] Manter paleta preto + amarelo com visual premium/técnico
+- [ ] Implementar microinterações:
+  - [ ] CTA principal: lift + glow no hover
+  - [ ] CTA secundário: ajuste sutil de fundo/borda
+  - [ ] card técnico: lift + borda/glow sutil
 
-### 4. [✅] Layout Vertical - Fase 1 Completa
+### 4. [ ] Implementar animações suaves (CSS-first)
+- [ ] Entrada em sequência on-load:
+  - [ ] eyebrow
+  - [ ] headline
+  - [ ] subheadline
+  - [ ] bullets (stagger)
+  - [ ] botões
+  - [ ] card (fade + scale 0.98→1 + leve slide horizontal)
+- [ ] Duração entre 0.5s e 0.8s
+- [ ] Delay entre elementos entre ~80ms e 120ms
+- [ ] Sem bounce / sem exageros
 
-## 🆕 Fase 2: Refinamento Visual "Card Técnico Premium"
+### 5. [ ] Responsividade mobile
+- [ ] Empilhar mantendo ordem solicitada
+- [ ] Garantir CTA principal visível cedo na dobra
+- [ ] Reduzir tamanhos e espaçamentos com equilíbrio
+- [ ] Evitar quebra feia de texto
 
-### 5. [INICIAR] Cards Premium
-- [ ] `.spec-category`: gradiente sutil, sombra suave, borda discreta
-- [ ] Hover: translateY(-2px a -4px), sombra reforçada
-- [ ] `.spec-category__title`: font-weight 700, letter-spacing técnico
-
-### 6. [PENDENTE] Itens refinados
-- [ ] `.spec-item`: padding vertical maior, hover translúcido leve
-- [ ] `.spec-item__label`: cinza neutro, peso 400
-- [ ] `.spec-item__value`: branco forte, peso 700
-
-### 7. [PENDENTE] Responsivo Premium
-- [ ] Mobile: sombras reduzidas
-- [ ] Touch-friendly
-
-### 8. [FINAL] Validação Visual
-- [ ] Testar efeitos hover
-- [ ] Confirmar coerência visual
+### 6. [ ] Verificação final
+- [ ] Validar visualmente consistência com restante do site
+- [ ] Confirmar que nenhuma seção externa à hero foi impactada
+- [ ] Revisar acessibilidade básica (aria-labels / contraste / foco)

@@ -1,14 +1,29 @@
 export const balancimEletricoContent = {
   hero: {
-    title: "Precisa de Balancim Elétrico HOJE?",
-    subtitle: "400kg, até 100m. Movimentação elétrica suave. Entrega amanhã. Orçamento rápido no WhatsApp.",
+    eyebrow: "Locação técnica para obras em altura",
+    title: "Aluguel de Balancim Elétrico com Entrega Rápida na Obra",
+    subtitle: "Ideal para fachadas, manutenção predial e serviços em altura. Equipamentos revisados e atendimento imediato no WhatsApp.",
+    trustBullets: [
+      "Entrega rápida na região",
+      "Atendimento direto no WhatsApp",
+      "Equipamentos revisados e seguros"
+    ],
+    visualCard: {
+      title: "Balancim Elétrico",
+      badge: "Entrega rápida",
+      highlights: [
+        "400kg de capacidade",
+        "até 100m de altura",
+        "operação elétrica suave"
+      ]
+    },
     primaryCTA: {
-      text: "Chamar no WhatsApp Agora",
+      text: "CHAMAR NO WHATSAPP AGORA",
       whatsapp: "5500000000000",
       message: "Olá, preciso de balancim elétrico urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
-      text: "Ver Especificações",
+      text: "Ver ficha técnica",
       href: "#especificacoes"
     }
   },
