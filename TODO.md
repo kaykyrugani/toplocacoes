@@ -1,54 +1,32 @@
-# Plano: Redesign + Animações da HERO de Produto (Balancim Elétrico)
+# Plano: Evolução da HERO - Imagem Real + Card Técnico Integrado
 
 ## ✅ Status: Plano Aprovado e Em Andamento
 
-### 1. [ ] Estruturar conteúdo orientado a dados
-- [ ] Revisar `src/data/balancimEletricoContent.js` e adicionar campos da hero quando necessário:
-  - [ ] `eyebrow`
-  - [ ] `trustBullets` (3 itens)
-  - [ ] `visualCard` (título, badge opcional, highlights técnicos)
+### 1. [✅] Atualizar composição visual da coluna direita (ProductHero.jsx)
+- [✅] Importar e usar `src/assets/images/baEle (1).png`
+- [✅] Criar wrapper principal `.product-hero__visual-stage`
+- [✅] Inserir imagem real como elemento principal da composição
+- [✅] Manter card técnico existente integrado/sobreposto à imagem
+- [✅] Preservar legibilidade e foco de conversão
 
-### 2. [ ] Atualizar JSX da HERO (`src/components/sections/ProductHero.jsx`)
-- [ ] Manter estrutura em duas colunas sem quebrar layout
-- [ ] Coluna esquerda na ordem:
-  - [ ] eyebrow
-  - [ ] headline
-  - [ ] subheadline
-  - [ ] bullets de confiança
-  - [ ] CTA principal
-  - [ ] CTA secundário
-- [ ] Coluna direita:
-  - [ ] substituir placeholder por card técnico premium escaneável
-  - [ ] título do produto + 3 highlights + badge opcional
+### 2. [✅] Refinar CSS da composição premium (ProductHero.css)
+- [✅] Construir stage visual escuro com profundidade
+- [✅] Adicionar overlays/máscaras sutis para integrar a imagem ao tema
+- [✅] Aplicar glow controlado e bordas discretas
+- [✅] Evitar aparência de catálogo/e-commerce
 
-### 3. [ ] Atualizar CSS da HERO (`src/components/sections/ProductHero.css`)
-- [ ] Reforçar hierarquia tipográfica (headline dominante, subheadline legível)
-- [ ] Melhorar espaçamentos verticais e ritmo visual
-- [ ] Manter paleta preto + amarelo com visual premium/técnico
-- [ ] Implementar microinterações:
-  - [ ] CTA principal: lift + glow no hover
-  - [ ] CTA secundário: ajuste sutil de fundo/borda
-  - [ ] card técnico: lift + borda/glow sutil
+### 3. [✅] Ajustar animações e microinterações
+- [✅] Entrada da imagem: fade + leve scale/slide
+- [✅] Entrada do card: fade + slide/scale suave
+- [✅] Hover discreto no conjunto da direita (lift/glow leve)
+- [✅] Manter timing suave sem exageros
 
-### 4. [ ] Implementar animações suaves (CSS-first)
-- [ ] Entrada em sequência on-load:
-  - [ ] eyebrow
-  - [ ] headline
-  - [ ] subheadline
-  - [ ] bullets (stagger)
-  - [ ] botões
-  - [ ] card (fade + scale 0.98→1 + leve slide horizontal)
-- [ ] Duração entre 0.5s e 0.8s
-- [ ] Delay entre elementos entre ~80ms e 120ms
-- [ ] Sem bounce / sem exageros
+### 4. [✅] Responsividade e equilíbrio de layout
+- [✅] Desktop: composição imagem + card bem ancorada na coluna direita
+- [✅] Tablet/mobile: reduzir excessos e manter leitura limpa
+- [✅] Evitar que a composição empurre CTA principal para baixo
 
-### 5. [ ] Responsividade mobile
-- [ ] Empilhar mantendo ordem solicitada
-- [ ] Garantir CTA principal visível cedo na dobra
-- [ ] Reduzir tamanhos e espaçamentos com equilíbrio
-- [ ] Evitar quebra feia de texto
-
-### 6. [ ] Verificação final
-- [ ] Validar visualmente consistência com restante do site
-- [ ] Confirmar que nenhuma seção externa à hero foi impactada
-- [ ] Revisar acessibilidade básica (aria-labels / contraste / foco)
+### 5. [ ] Verificação final
+- [ ] Revisar consistência visual com paleta escura + amarelo
+- [ ] Confirmar que estrutura de duas colunas foi mantida
+- [ ] Validar legibilidade do card técnico sobre a imagem

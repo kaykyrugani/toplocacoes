@@ -1,14 +1,30 @@
 export const balancimManualContent = {
   hero: {
-    title: "Precisa de Balancim Manual HOJE?",
-    subtitle: "250kg, até 50m. Operação simples e econômica. Entrega amanhã. Orçamento rápido no WhatsApp.",
+    eyebrow: "Solução econômica para obras em altura",
+    title: "Balancim Manual com Melhor Custo-Benefício para Sua Obra",
+    subtitle: "Ideal para obras menores e serviços pontuais. Solução econômica, segura e com entrega rápida na região.",
+    trustBullets: [
+      "Opção mais econômica para sua obra",
+      "Equipamentos seguros e revisados",
+      "Entrega rápida na região"
+    ],
+    visualTone: "subtle",
+    visualCard: {
+      title: "Balancim Manual",
+      badge: "Mais econômico",
+      highlights: [
+        "250kg de capacidade",
+        "até 50m de altura",
+        "operação simples e econômica"
+      ]
+    },
     primaryCTA: {
       text: "Chamar no WhatsApp Agora",
       whatsapp: "5500000000000",
       message: "Olá, preciso de balancim manual urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
-      text: "Ver Especificações",
+      text: "Ver ficha técnica",
       href: "#especificacoes"
     }
   },
