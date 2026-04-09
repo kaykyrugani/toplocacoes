@@ -15,15 +15,15 @@ body {
 }
 
 /* Premium global background wrapper
-   - Base: near-black background for a refined industrial feel
-   - ::before: subtle diagonal texture (more visible on sides)
-   - ::after: dark overlay that softens/cleans center behind content */
+   - Base: near-black foundation for a refined industrial/technical feel
+   - ::before: subtle blueprint-style grid (horizontal + vertical)
+   - ::after: center-softening depth + gentle vignette for focus */
 .site-bg {
   position: relative;
   min-height: 100vh;
   background:
-    radial-gradient(120% 100% at 50% -10%, rgba(255, 255, 255, 0.02) 0%, transparent 55%),
-    linear-gradient(180deg, #0a0a0a 0%, #090909 45%, #070707 100%);
+    radial-gradient(120% 95% at 50% -10%, rgba(255, 255, 255, 0.018) 0%, transparent 54%),
+    linear-gradient(180deg, #0a0a0a 0%, #090909 48%, #080808 100%);
   isolation: isolate;
 }
 
@@ -36,18 +36,17 @@ body {
   background:
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.46) 0%,
-      rgba(0, 0, 0, 0.12) 22%,
-      rgba(0, 0, 0, 0) 36%,
-      rgba(0, 0, 0, 0) 64%,
-      rgba(0, 0, 0, 0.12) 78%,
-      rgba(0, 0, 0, 0.46) 100%
+      rgba(0, 0, 0, 0.40) 0%,
+      rgba(0, 0, 0, 0.10) 22%,
+      rgba(0, 0, 0, 0.01) 36%,
+      rgba(0, 0, 0, 0.01) 64%,
+      rgba(0, 0, 0, 0.10) 78%,
+      rgba(0, 0, 0, 0.40) 100%
     ),
-    repeating-linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.022) 0 1px,
-      transparent 1px 14px
-    );
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  background-position: center, center, center;
 }
 
 .site-bg::after {
@@ -58,10 +57,21 @@ body {
   z-index: -1;
   background:
     radial-gradient(
-      120% 90% at 50% 32%,
-      rgba(0, 0, 0, 0.58) 0%,
-      rgba(0, 0, 0, 0.26) 44%,
-      rgba(0, 0, 0, 0.54) 100%
+      120% 90% at 50% 34%,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.16) 44%,
+      rgba(0, 0, 0, 0.44) 100%
+    ),
+    radial-gradient(
+      60% 40% at 50% 22%,
+      rgba(255, 180, 0, 0.05) 0%,
+      rgba(255, 180, 0, 0.016) 45%,
+      transparent 72%
+    ),
+    radial-gradient(
+      150% 120% at 50% 50%,
+      transparent 56%,
+      rgba(0, 0, 0, 0.20) 100%
     );
 }
 
@@ -75,27 +85,36 @@ body {
     background:
       linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.40) 0%,
-        rgba(0, 0, 0, 0.10) 20%,
-        rgba(0, 0, 0, 0) 35%,
-        rgba(0, 0, 0, 0) 65%,
-        rgba(0, 0, 0, 0.10) 80%,
-        rgba(0, 0, 0, 0.40) 100%
+        rgba(0, 0, 0, 0.38) 0%,
+        rgba(0, 0, 0, 0.10) 22%,
+        rgba(0, 0, 0, 0.01) 36%,
+        rgba(0, 0, 0, 0.01) 64%,
+        rgba(0, 0, 0, 0.10) 78%,
+        rgba(0, 0, 0, 0.38) 100%
       ),
-      repeating-linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.014) 0 1px,
-        transparent 1px 18px
-      );
+      linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.024) 1px, transparent 1px);
+    background-size: 100% 100%, 42px 42px, 42px 42px;
   }
 
   .site-bg::after {
     background:
       radial-gradient(
-        130% 95% at 50% 30%,
-        rgba(0, 0, 0, 0.62) 0%,
-        rgba(0, 0, 0, 0.34) 46%,
-        rgba(0, 0, 0, 0.60) 100%
+        130% 92% at 50% 30%,
+        rgba(0, 0, 0, 0.48) 0%,
+        rgba(0, 0, 0, 0.24) 46%,
+        rgba(0, 0, 0, 0.50) 100%
+      ),
+      radial-gradient(
+        70% 42% at 50% 20%,
+        rgba(255, 180, 0, 0.032) 0%,
+        rgba(255, 180, 0, 0.010) 46%,
+        transparent 74%
+      ),
+      radial-gradient(
+        170% 130% at 50% 50%,
+        transparent 58%,
+        rgba(0, 0, 0, 0.22) 100%
       );
   }
 }
