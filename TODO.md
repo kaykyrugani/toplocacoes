@@ -2,3 +2,10 @@
 - [x] Ajustar `src/components/layout/Footer.css` para manter footer 100% em coluna em todos os breakpoints.
 - [x] Revisar media queries para impedir retorno ao layout horizontal.
 - [x] Marcar conclusão e preparar entrega final (arquivo alterado + CSS completo + resumo curto).
+
+- [x] Mapear arquivos globais para implementação de background reutilizável (`src/styles/globals.css` e `src/components/layout/Layout.jsx`).
+- [x] Criar classe `.site-bg` com camadas premium (base escura, linhas diagonais sutis em `::before`, overlay de limpeza central em `::after`).
+- [x] Configurar responsividade para reduzir contraste/densidade visual em mobile.
+- [x] Aplicar `.site-bg` no wrapper global sem alterar estrutura interna.
+- [x] Validar empilhamento (`position`/`z-index`) para manter conteúdo acima das camadas decorativas.
+- [x] Revisar implementação final e preparar entrega.
