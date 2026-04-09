@@ -1,32 +1,35 @@
-# Plano: Evolução da HERO - Imagem Real + Card Técnico Integrado
+# Plano: Redesign do Footer Global (Premium, leve e organizado)
 
 ## ✅ Status: Plano Aprovado e Em Andamento
 
-### 1. [✅] Atualizar composição visual da coluna direita (ProductHero.jsx)
-- [✅] Importar e usar `src/assets/images/baEle (1).png`
-- [✅] Criar wrapper principal `.product-hero__visual-stage`
-- [✅] Inserir imagem real como elemento principal da composição
-- [✅] Manter card técnico existente integrado/sobreposto à imagem
-- [✅] Preservar legibilidade e foco de conversão
+### 1. [✅] Atualizar estrutura do Footer (Footer.jsx)
+- [✅] Manter conteúdo atual de contatos e redes sociais
+- [✅] Reorganizar markup para duas colunas principais mais claras
+- [✅] Estruturar melhor a área de redes sociais (título + linha decorativa)
+- [✅] Preparar wrappers semânticos para tipografia e espaçamento
 
-### 2. [✅] Refinar CSS da composição premium (ProductHero.css)
-- [✅] Construir stage visual escuro com profundidade
-- [✅] Adicionar overlays/máscaras sutis para integrar a imagem ao tema
-- [✅] Aplicar glow controlado e bordas discretas
-- [✅] Evitar aparência de catálogo/e-commerce
+### 2. [✅] Refatorar estilo principal do Footer (Footer.css)
+- [✅] Converter layout principal para grid de duas colunas no desktop
+- [✅] Reduzir peso visual dos contatos (sem cards grandes e pesados)
+- [✅] Aplicar ícones e texto com hierarquia premium e limpa
+- [✅] Refinar visuais de links e hover com sutileza
 
-### 3. [✅] Ajustar animações e microinterações
-- [✅] Entrada da imagem: fade + leve scale/slide
-- [✅] Entrada do card: fade + slide/scale suave
-- [✅] Hover discreto no conjunto da direita (lift/glow leve)
-- [✅] Manter timing suave sem exageros
+### 3. [✅] Ajustar bloco de redes sociais (Footer.css)
+- [✅] Manter Instagram e WhatsApp com destaque equilibrado
+- [✅] Deixar ícones alinhados em linha com aparência técnica e elegante
+- [✅] Evitar glow/bordas exageradas, mantendo consistência com tema
 
-### 4. [✅] Responsividade e equilíbrio de layout
-- [✅] Desktop: composição imagem + card bem ancorada na coluna direita
-- [✅] Tablet/mobile: reduzir excessos e manter leitura limpa
-- [✅] Evitar que a composição empurre CTA principal para baixo
+### 4. [✅] Responsividade completa (Footer.css)
+- [✅] Desktop: duas colunas + contatos em grid interna
+- [✅] Tablet: reorganização com boa leitura e espaçamento
+- [✅] Mobile: empilhar seções e contatos em coluna única
 
-### 5. [ ] Verificação final
-- [ ] Revisar consistência visual com paleta escura + amarelo
-- [ ] Confirmar que estrutura de duas colunas foi mantida
-- [ ] Validar legibilidade do card técnico sobre a imagem
+### 5. [✅] Linha inferior e acabamento final
+- [✅] Ajustar separação visual superior sutil no rodapé inferior
+- [✅] Centralizar copyright
+- [✅] Garantir coerência com paleta escura + amarelo/âmbar do projeto
+
+### 6. [✅] Verificação final
+- [✅] Validar que o footer continua global sem quebrar layout
+- [✅] Confirmar escaneabilidade, leveza visual e equilíbrio espacial
+- [✅] Revisar consistência com o restante do site

@@ -54,13 +54,13 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="site-footer__content">
-        <section className="site-footer__section">
+        <section className="site-footer__section site-footer__section--contact">
           <h3 className="site-footer__title">Entre em Contato</h3>
           <div className="site-footer__contact-grid">
             {contactInfo.map(({ icon: Icon, title, description, link }) => (
               <article className="site-footer__contact-item" key={title}>
                 <Icon className="site-footer__item-icon" aria-hidden="true" />
-                <div>
+                <div className="site-footer__item-content">
                   <h4 className="site-footer__item-title">{title}</h4>
                   {link ? (
                     <a
@@ -80,8 +80,9 @@ const Footer = () => {
           </div>
         </section>
 
-        <section className="site-footer__section">
+        <section className="site-footer__section site-footer__section--social">
           <h3 className="site-footer__title">Redes Sociais</h3>
+          <span className="site-footer__social-divider" aria-hidden="true" />
           <div className="site-footer__social-links">
             {socialLinks.map(({ icon: Icon, url, label }) => (
               <a
