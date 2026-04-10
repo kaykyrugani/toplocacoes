@@ -49,11 +49,6 @@ const FinalCTA = ({ content }) => {
     }, 5000)
   }
 
-  const handleWhatsAppClick = () => {
-    const whatsappUrl = `https://wa.me/${content.primaryCTA.whatsapp}?text=${encodeURIComponent(content.primaryCTA.message)}`
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
-  }
-
   return (
     <section className="final-cta" ref={sectionRef}>
       <Container>
@@ -64,37 +59,7 @@ const FinalCTA = ({ content }) => {
             <p className="final-cta__subheadline">{content.subheadline}</p>
           </div>
 
-          {/* Microbenefícios */}
-          <div className={`final-cta__benefits ${isVisible ? 'final-cta__benefits--visible' : ''}`}>
-            {content.microbenefits.map((benefit, index) => (
-              <div key={index} className="final-cta__benefit">
-                <span className="final-cta__benefit-icon">✓</span>
-                <span>{benefit}</span>
-              </div>
-            ))}
-          </div>
 
-          {/* CTA principal - WhatsApp */}
-          <div className={`final-cta__primary-action ${isVisible ? 'final-cta__primary-action--visible' : ''}`}>
-            <Button 
-              variant="primary"
-              size="large"
-              onClick={handleWhatsAppClick}
-              className="final-cta__whatsapp-btn"
-            >
-              {content.primaryCTA.text}
-            </Button>
-            
-            {/* Micro prova abaixo do botão */}
-            <p className="final-cta__micro-proof">{content.microProof}</p>
-          </div>
-
-          {/* Divisor OU */}
-          <div className={`final-cta__divider ${isVisible ? 'final-cta__divider--visible' : ''}`}>
-            <div className="final-cta__divider-line"></div>
-            <span className="final-cta__divider-text">OU</span>
-            <div className="final-cta__divider-line"></div>
-          </div>
 
           {/* Formulário secundário */}
           <div className={`final-cta__form-section ${isVisible ? 'final-cta__form-section--visible' : ''}`}>
