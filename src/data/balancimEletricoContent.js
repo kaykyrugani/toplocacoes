@@ -109,19 +109,25 @@ export const balancimEletricoContent = {
     title: "Visualização do Equipamento",
     images: [
       {
-        id: 1,
+        id: "eletrico-1",
         title: "Balancim elétrico em operação",
-        placeholder: "Equipamento em uso - placeholder"
+        description: "Movimentação contínua e estável para produtividade em fachadas e serviços em altura.",
+        image: "/src/assets/images/baEle (1).png",
+        alt: "Balancim elétrico operando em fachada predial"
       },
       {
-        id: 2,
+        id: "eletrico-2",
         title: "Painel de controle elétrico",
-        placeholder: "Sistema de controle - placeholder"
+        description: "Controle intuitivo para subida e descida com resposta suave durante a operação.",
+        image: "/src/assets/images/obrebalancim.png",
+        alt: "Painel de controle do balancim elétrico"
       },
       {
-        id: 3,
+        id: "eletrico-3",
         title: "Estrutura reforçada",
-        placeholder: "Detalhe da estrutura - placeholder"
+        description: "Base robusta com foco em segurança operacional e estabilidade em grandes obras.",
+        image: "/src/assets/images/baEle (1).webp",
+        alt: "Estrutura reforçada de balancim elétrico"
       }
     ]
   },
