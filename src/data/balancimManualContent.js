@@ -117,21 +117,21 @@ export const balancimManualContent = {
         id: "manual-1",
         title: "Balancim manual em operação",
         description: "Equipamento leve para serviços pontuais com deslocamento controlado e seguro.",
-        image: "/src/assets/images/baMan.png",
+        image: "/src/assets/images/imgBM1.png",
         alt: "Balancim manual instalado em fachada para manutenção"
       },
       {
         id: "manual-2",
         title: "Sistema de operação manual",
         description: "Comandos simples por alavanca e corda, ideais para rotina de pequenas reformas.",
-        image: "/src/assets/images/obrebalancim.png",
+        image: "/src/assets/images/imgBM2.png",
         alt: "Detalhe do sistema de operação manual do balancim"
       },
       {
         id: "manual-3",
         title: "Estrutura leve",
         description: "Estrutura otimizada para mobilidade entre frentes de trabalho com montagem prática.",
-        image: "/src/assets/images/baMan.webp",
+        image: "/src/assets/images/imgBM3.png",
         alt: "Estrutura leve de balancim manual pronta para uso"
       }
     ]

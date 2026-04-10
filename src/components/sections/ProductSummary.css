@@ -198,8 +198,8 @@
 
 .secondary-card {
   padding: var(--space-md);
-  padding-top: calc(var(--space-md) + 1.7rem);
-  padding-right: calc(var(--space-md) + 2rem);
+  padding-top: calc(var(--space-md) + 1.95rem);
+  padding-right: calc(var(--space-md) + 2.75rem);
 }
 
 .secondary-card .benefit-card__icon {
@@ -217,8 +217,8 @@
 
 .benefit-card__icon {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.35rem;
+  right: 1.35rem;
   width: 50px;
   height: 50px;
   background-color: var(--primary);
@@ -293,19 +293,19 @@
   }
 
   .benefit-card__icon {
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 1.2rem;
+    right: 1.2rem;
   }
 
   .secondary-card,
   .benefit-card {
-    padding-top: calc(var(--space-lg) + 1.5rem);
-    padding-right: calc(var(--space-lg) + 1.75rem);
+    padding-top: calc(var(--space-lg) + 1.7rem);
+    padding-right: calc(var(--space-lg) + 2.1rem);
   }
 
   .secondary-card {
-    padding-top: calc(var(--space-md) + 1.5rem);
-    padding-right: calc(var(--space-md) + 1.75rem);
+    padding-top: calc(var(--space-md) + 1.7rem);
+    padding-right: calc(var(--space-md) + 2.35rem);
   }
 }
 
@@ -330,8 +330,8 @@
   .secondary-card,
   .benefit-card {
     padding: var(--space-md);
-    padding-top: calc(var(--space-md) + 1.5rem);
-    padding-right: calc(var(--space-md) + 1.65rem);
+    padding-top: calc(var(--space-md) + 1.65rem);
+    padding-right: calc(var(--space-md) + 2rem);
   }
 
   .featured-card__content {
@@ -346,8 +346,8 @@
   }
 
   .benefit-card__icon {
-    top: 1rem;
-    right: 1rem;
+    top: 1.05rem;
+    right: 1.05rem;
   }
 
   .featured-card__title {
