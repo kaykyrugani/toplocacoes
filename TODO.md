@@ -1,4 +1,8 @@
-- [x] Atualizar gallery.images em src/data/balancimManualContent.js para imgBM1, imgBM2, imgBM3 (ordem correta)
-- [x] Atualizar gallery.images em src/data/balancimEletricoContent.js para imgBE1, imgBE2, imgBE3 (ordem correta)
-- [x] Revisar os dois arquivos para garantir paths e ordem
-- [x] Corrigir corte das imagens no carrossel (object-fit: contain + object-position: center)
+# TODO - Product Applications Refinement
+
+- [x] Atualizar copy de applications.scenarios no balancim manual (microTag, título e descrição estratégica)
+- [x] Atualizar copy de applications.scenarios no balancim elétrico (microTag, título e descrição estratégica)
+- [x] Refatorar ProductApplications.jsx para hierarquia editorial interna sem alterar layout assimétrico
+- [x] Substituir emojis por ícones consistentes com lucide-react
+- [x] Refinar ProductApplications.css (layout interno, hover premium, microinterações, responsividade preservada)
+- [x] Revisar SEO semântico e consistência visual final

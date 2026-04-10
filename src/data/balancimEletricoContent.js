@@ -170,38 +170,44 @@ export const balancimEletricoContent = {
   },
   
   applications: {
-    title: "Ideal para Grandes Obras",
-    subtitle: "Perfeito para projetos que exigem produtividade e precisão",
+    title: "Aplicações de Alta Demanda em Obras em Altura",
+    subtitle: "Cenários técnicos onde o balancim elétrico amplia produtividade com acesso seguro e operação contínua",
     scenarios: [
       {
-        title: "Grandes Fachadas",
-        description: "Edifícios comerciais e residenciais com múltiplos andares",
-        icon: "🏢"
+        microTag: "Manutenção predial",
+        title: "Grandes fachadas com operação contínua",
+        description: "Indicado para manutenção predial em edifícios altos, com deslocamento estável para equipes e materiais em longos trechos.",
+        icon: "building-2"
       },
       {
-        title: "Obras Industriais",
-        description: "Fábricas, silos e estruturas industriais de grande porte",
-        icon: "🏭"
+        microTag: "Uso industrial",
+        title: "Obras industriais de maior escala",
+        description: "Atende obras industriais com rotina intensa, garantindo acesso em altura para montagem, inspeção e intervenções técnicas.",
+        icon: "factory"
       },
       {
-        title: "Limpeza Profissional",
-        description: "Limpeza de vidros em prédios altos e fachadas corporativas",
-        icon: "🪟"
+        microTag: "Limpeza técnica",
+        title: "Limpeza de fachadas corporativas",
+        description: "Otimiza limpeza de fachadas e panos de vidro em prédios comerciais, com ganho de produtividade e padrão visual.",
+        icon: "sparkles"
       },
       {
-        title: "Instalações Elétricas",
-        description: "Montagem de sistemas elétricos em altura e prediais",
-        icon: "⚡"
+        microTag: "Instalação em altura",
+        title: "Instalações elétricas e sistemas prediais",
+        description: "Facilita instalação em altura de infraestrutura elétrica, cabos e componentes externos em prédios e complexos técnicos.",
+        icon: "zap"
       },
       {
-        title: "Reparos Estruturais",
-        description: "Inspeção e reparos em concreto e estruturas externas",
-        icon: "🔧"
+        microTag: "Reparos estruturais",
+        title: "Recuperação de concreto e estruturas externas",
+        description: "Suporte para reparos estruturais, inspeção de fissuras e recuperação de pontos críticos em fachadas e elementos aparentes.",
+        icon: "wrench"
       },
       {
-        title: "Ar-Condicionado",
-        description: "Instalação de unidades externas em andares superiores",
-        icon: "❄️"
+        microTag: "Serviço técnico especializado",
+        title: "Instalação de equipamentos HVAC em altura",
+        description: "Acelera instalação e substituição de condensadoras e equipamentos externos com acesso seguro em pavimentos elevados.",
+        icon: "snowflake"
       }
     ]
   },

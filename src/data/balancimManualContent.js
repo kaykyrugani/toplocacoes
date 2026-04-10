@@ -175,38 +175,44 @@ export const balancimManualContent = {
   },
   
   applications: {
-    title: "Ideal para Pequenos Serviços",
-    subtitle: "Perfeito para serviços que exigem versatilidade e economia",
+    title: "Aplicações Reais em Serviços de Menor Escala",
+    subtitle: "Cenários de uso em que o balancim manual entrega acesso seguro, agilidade e economia",
     scenarios: [
       {
-        title: "Pequenas Reformas",
-        description: "Reparos e manutenção em casas e prédios baixos",
-        icon: "🏠"
+        microTag: "Aplicação residencial",
+        title: "Pequenas reformas com acesso seguro em altura",
+        description: "Ideal para intervenções em casas e prédios baixos, com manutenção em altura de forma prática e controle total da operação.",
+        icon: "home"
       },
       {
-        title: "Manutenção Residencial",
-        description: "Serviços em fachadas de residências e condomínios",
-        icon: "🔧"
+        microTag: "Manutenção predial leve",
+        title: "Manutenção de fachada em condomínios",
+        description: "Facilita inspeções, ajustes e reparos localizados em fachadas residenciais, reduzindo tempo de execução da equipe.",
+        icon: "building"
       },
       {
-        title: "Pintura Rápida",
-        description: "Pintura e reparos em superfícies específicas e acessíveis",
-        icon: "🎨"
+        microTag: "Pintura de fachada",
+        title: "Pintura técnica em áreas específicas",
+        description: "Permite pintura de fachada com posicionamento estável para acabamento mais uniforme em trechos de difícil acesso.",
+        icon: "paint-roller"
       },
       {
-        title: "Instalações Simples",
-        description: "Montagem de estruturas e equipamentos em baixa altura",
-        icon: "⚙️"
+        microTag: "Serviço técnico",
+        title: "Instalação em altura de baixa complexidade",
+        description: "Apoia serviços técnicos como fixação de suportes, passagens e componentes externos em intervenções rápidas.",
+        icon: "wrench"
       },
       {
-        title: "Limpeza Focada",
-        description: "Limpeza de janelas e áreas específicas de fácil acesso",
-        icon: "🧹"
+        microTag: "Limpeza técnica",
+        title: "Limpeza de fachadas e esquadrias",
+        description: "Indicado para limpeza de fachadas, vidros e pontos específicos, com mobilidade para rotinas recorrentes de conservação.",
+        icon: "sparkles"
       },
       {
-        title: "Reparos Pontuais",
-        description: "Intervenções rápidas que não exigem grande infraestrutura",
-        icon: "🔨"
+        microTag: "Reparo estrutural leve",
+        title: "Reparos pontuais em áreas externas",
+        description: "Atende correções localizadas de revestimento e pequenos reparos estruturais sem exigir uma estrutura pesada de acesso.",
+        icon: "hammer"
       }
     ]
   },
