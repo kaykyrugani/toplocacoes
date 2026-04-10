@@ -1,25 +1,18 @@
-# Refatoração ProductSummary - Hierarquia Visual
+# Product Summary Polish TODO
 
-## ✅ Plano Aprovado
-- [x] Análise completa dos arquivos (ProductSummary.jsx/css, data, pages)
-- [x] Plano de refatoração confirmado pelo usuário
+- [ ] Atualizar `ProductSummary.jsx` com refinamentos sem mudar estrutura 1+3
+  - [ ] Título principal com spans por linha para underline sequencial
+  - [ ] CTA discreto apenas no card principal com ícone e microinteração
+  - [ ] Melhorias semânticas e acessibilidade (aria-label / foco visível)
 
-## 🔄 Implementação
-- [x] 1. Refatorar ProductSummary.jsx (featured + secondary cards)
-- [x] 2. Atualizar ProductSummary.css (novos estilos preservando tema escuro)
-- [x] 3. Testar responsividade desktop/tablet/mobile  
-- [x] 4. Verificar ambas páginas de produto (manual/elétrico)
-- [x] 5. Finalizar e demonstrar resultado
+- [ ] Refinar `ProductSummary.css`
+  - [ ] Hover premium no card principal (elevação + zoom leve da imagem + transição suave)
+  - [ ] Hover sutil nos cards secundários (borda/sombra consistente)
+  - [ ] Underline animado sequencial no título do card principal
+  - [ ] Underline simples nos títulos dos cards secundários
 
-## ✅ Critérios de Sucesso
-- [x] Header preservado (title + description)
-- [x] 1 card principal destacado com imagem
-- [x] 3 cards secundários em grid hierárquico
-- [x] Tema escuro 100% preservado
-- [x] Hover effects mantidos
-- [x] Totalmente responsivo
-- [x] Reutilizável nas 2 páginas
+- [ ] Atualizar copy do card principal nos dados
+  - [ ] `src/data/balancimManualContent.js`
+  - [ ] `src/data/balancimEletricoContent.js`
 
-## 🎉 Concluído
-Refatoração da seção ProductSummary finalizada com hierarquia visual aprimorada.
-Servidor rodando em http://localhost:5174 - acesse /produto-manual para verificar.
+- [ ] Revisar responsividade e consistência visual

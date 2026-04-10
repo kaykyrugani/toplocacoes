@@ -34,8 +34,8 @@ export const balancimManualContent = {
     description: "O balancim manual é a escolha inteligente para pequenos serviços e reformas. Com operação simplificada e estrutura leve, oferece mobilidade total onde a precisão elétrica não é essencial. Perfeito para manutenção residencial, pequenas reformas e serviços rápidos.",
     benefits: [
       {
-        title: "Economia 60% Menor",
-        description: "Custo drasticamente reduzido sem perder segurança e qualidade"
+        title: "Equipe próxima|Resposta rápida|Orçamento sem fricção",
+        description: "Atendimento direto com suporte técnico ágil para alinhar escopo, preço e prazo em minutos."
       },
       {
         title: "Operação Simples",

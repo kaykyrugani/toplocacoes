@@ -33,8 +33,8 @@ export const balancimEletricoContent = {
     description: "O balancim elétrico é a escolha inteligente para grandes projetos. Com movimentação elétrica suave e capacidade de 400kg, oferece 3x mais produtividade que sistemas manuais. Ideal para fachadas de edifícios, obras industriais e projetos que exigem precisão e velocidade.",
     benefits: [
       {
-        title: "Produtividade 3x Maior",
-        description: "Movimentação contínua reduz tempo de operação drasticamente"
+        title: "Equipe dedicada|Atendimento ágil|Orçamento imediato",
+        description: "Suporte direto para responder rápido, ajustar escopo técnico e acelerar sua decisão sem burocracia."
       },
       {
         title: "Operação Intuitiva",
