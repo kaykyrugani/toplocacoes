@@ -10,7 +10,7 @@ import ProductApplications from '../../components/sections/ProductApplications'
 import ProductSafety from '../../components/sections/ProductSafety'
 import ProductDifferentials from '../../components/sections/ProductDifferentials'
 import YouReceive from '../../components/sections/YouReceive'
-import ProductCTA from '../../components/sections/ProductCTA'
+import ProductForm from '../../components/sections/ProductForm'
 import ProductFAQ from '../../components/sections/ProductFAQ'
 
 const ProdutoManual = () => {
@@ -37,7 +37,7 @@ const ProdutoManual = () => {
           title="Você recebe:" 
           items={balancimManualContent.youReceive}
         />
-        <ProductCTA content={balancimManualContent.cta} />
+        <ProductForm content={balancimManualContent.cta} />
         <ProductFAQ content={balancimManualContent.faq} />
       </div>
     </>

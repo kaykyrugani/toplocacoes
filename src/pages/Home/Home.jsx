@@ -1,13 +1,14 @@
 import React from 'react'
 import MetaTags from '../../components/sections/MetaTags'
 import { homeContent } from '../../data/homeContent'
+import { valueSectionData } from '../../data/valueSectionData'
 import HomeHero from '../../components/sections/HomeHero'
 import ValueSection from '../../components/sections/ValueSection'
 import ProductSelection from '../../components/sections/ProductSelection'
 import DifferentialsSection from '../../components/sections/DifferentialsSection'
 import BenefitsSection from '../../components/sections/BenefitsSection'
 import SocialProofSection from '../../components/sections/SocialProofSection'
-import FinalCTA from '../../components/sections/FinalCTA'
+import ProductForm from '../../components/sections/ProductForm'
 
 const Home = () => {
   return (
@@ -19,12 +20,16 @@ const Home = () => {
       />
       <div className="home">
         <HomeHero content={homeContent.hero} />
-        <ValueSection content={homeContent.valueProposition} />
+        <ValueSection 
+          title={valueSectionData.title}
+          subtitle={valueSectionData.subtitle}
+          items={valueSectionData.items}
+        />
         <ProductSelection content={homeContent.productSelection} />
         <DifferentialsSection content={homeContent.differentials} />
         <BenefitsSection content={homeContent.benefits} />
         <SocialProofSection content={homeContent.socialProof} />
-        <FinalCTA content={homeContent.finalCTA} />
+        <ProductForm content={homeContent.finalCTA} />
       </div>
     </>
   )

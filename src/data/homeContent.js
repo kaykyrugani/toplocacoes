@@ -180,56 +180,17 @@ export const homeContent = {
   },
   
   finalCTA: {
-    headline: "Precisa de balancim hoje? Fale agora e resolva em minutos.",
-    subheadline: "Fale com um especialista agora e receba seu orçamento direto no WhatsApp. Sem burocracia. Sem compromisso.",
-    microbenefits: [
-      "Atendimento imediato",
-      "Resposta em poucos minutos",
-      "Entrega rápida na obra"
-    ],
-    primaryCTA: {
-      text: "CHAMAR NO WHATSAPP AGORA",
-      whatsapp: "5500000000000",
-      message: "Olá, vi o site e preciso de balancim urgente para minha obra."
+    title: "Precisa de balancim hoje?",
+    subtitle: "Receba retorno rápido da nossa equipe.",
+    formTitle: "Quer que a gente te chame?",
+    formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
+    placeholders: {
+      name: "Ex: João Silva",
+      whatsapp: "Ex: (11) 91234-5678",
+      state: "Selecione o estado da obra",
+      email: "Ex: seuemail@empresa.com (opcional)"
     },
-    microProof: "Resposta em poucos minutos",
-    form: {
-      title: "Prefere que a gente te chame?",
-      subtitle: "Deixe seus dados e nossa equipe entra em contato em poucos minutos.",
-      fields: {
-        name: {
-          label: "Nome",
-          placeholder: "Seu nome",
-          required: true
-        },
-        phone: {
-          label: "Telefone",
-          placeholder: "Seu WhatsApp",
-          required: true
-        },
-        city: {
-          label: "Cidade",
-          placeholder: "Cidade da obra",
-          required: true
-        },
-        state: {
-          label: "Estado",
-          placeholder: "Selecione o estado",
-          required: true,
-          options: [
-            { value: "", label: "Selecione o estado" },
-            { value: "MG", label: "MG" },
-            { value: "SP", label: "SP" }
-          ]
-        },
-        email: {
-          label: "Email",
-          placeholder: "Seu email (opcional)",
-          required: false
-        }
-      },
-      submitText: "Receber orçamento"
-    },
-    trustText: "Entramos em contato em poucos minutos"
+    buttonText: "Quero receber contato",
+    microcopy: "Retorno rápido • Sem compromisso"
   }
 }

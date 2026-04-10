@@ -1,0 +1,127 @@
+.product-form {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--bg-alt) 0%, var(--surface) 100%);
+}
+
+.product-form__content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-form__form-container {
+  margin: var(--space-2xl) 0;
+}
+
+.product-form__card {
+  background-color: var(--bg);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--surface);
+  box-shadow: var(--shadow-md);
+}
+
+.product-form__card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 var(--space-md) 0;
+  line-height: 1.3;
+}
+
+.product-form__card-description {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-xl) 0;
+  line-height: 1.6;
+}
+
+.product-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.product-form__field {
+  text-align: left;
+}
+
+.product-form__input,
+.product-form__select {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  border: 2px solid var(--surface);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-alt);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.product-form__input:focus,
+.product-form__select:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: var(--bg);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.1);
+}
+
+.product-form__input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.product-form__select {
+  cursor: pointer;
+}
+
+.product-form__select option {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.product-form__button {
+  width: 100%;
+  margin-top: var(--space-md);
+  font-size: 1.125rem;
+  padding: var(--space-lg) var(--space-2xl);
+  font-weight: 600;
+}
+
+.product-form__microcopy {
+  font-family: var(--font-sub);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: var(--space-md) 0 0 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .product-form {
+    padding: var(--space-xl) 0;
+  }
+  
+  .product-form__card {
+    padding: var(--space-xl);
+  }
+  
+  .product-form__card-title {
+    font-size: 1.25rem;
+  }
+  
+  .product-form__input,
+  .product-form__select {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.95rem;
+  }
+  
+  .product-form__button {
+    font-size: 1rem;
+    padding: var(--space-md) var(--space-xl);
+  }
+}

@@ -286,23 +286,18 @@ export const balancimManualContent = {
   },
   
   cta: {
-    title: "Precisa de Balancim Manual HOJE?",
-    subtitle: "Fale agora com especialista e receba proposta imediata. Entrega garantida amanhã. Sem compromisso.",
-    primaryCTA: {
-      text: "Chamar no WhatsApp Agora",
-      whatsapp: "5500000000000",
-      message: "Olá, preciso de balancim manual urgente para minha obra. Podem me atender hoje?"
+    title: "Precisa de balancim hoje?",
+    subtitle: "Receba retorno rápido da nossa equipe.",
+    formTitle: "Quer que a gente te chame?",
+    formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
+    placeholders: {
+      name: "Ex: João Silva",
+      whatsapp: "Ex: (11) 91234-5678",
+      state: "Selecione o estado da obra",
+      email: "Ex: seuemail@empresa.com (opcional)"
     },
-    secondaryCTA: {
-      text: "Falar com Especialista",
-      whatsapp: "5500000000000",
-      message: "Olá, gostaria de falar com especialista sobre balancim manual."
-    },
-    contact: {
-      phone: "(00) 0000-0000",
-      email: "contato@toplocacoes.com",
-      hours: "Atendimento Imediato: 8h-18h"
-    }
+    buttonText: "Quero receber contato",
+    microcopy: "Retorno rápido • Sem compromisso"
   },
   
   faq: {
