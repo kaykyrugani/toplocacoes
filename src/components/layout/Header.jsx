@@ -27,15 +27,15 @@ const Header = () => {
           </button>
           
           <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-            <li><Link to="/" className={isActive('/') ? 'active' : ''}>Início</Link></li>
-            <li><Link to="/balancim-eletrico" className={isActive('/balancim-eletrico') ? 'active' : ''}>Balancim Elétrico</Link></li>
-            <li><Link to="/balancim-manual" className={isActive('/balancim-manual') ? 'active' : ''}>Balancim Manual</Link></li>
+            <li><Link to="/" className={isActive('/') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Início</Link></li>
+            <li><Link to="/balancim-eletrico" className={isActive('/balancim-eletrico') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Balancim Elétrico</Link></li>
+            <li><Link to="/balancim-manual" className={isActive('/balancim-manual') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Balancim Manual</Link></li>
             <li className="nav-list__cta">
               <a 
                 href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary btn-small"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Orçamento
               </a>

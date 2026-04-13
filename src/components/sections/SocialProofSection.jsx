@@ -39,7 +39,8 @@ const SocialProofSection = ({ content }) => {
   const scrollToTestimonial = (index) => {
     if (carouselRef.current) {
       const cardWidth = carouselRef.current.children[0].offsetWidth
-      const gap = 48 // gap em pixels (var(--space-2xl))
+      const computedStyle = window.getComputedStyle(carouselRef.current)
+      const gap = parseFloat(computedStyle.gap) || 0
       const scrollPosition = index * (cardWidth + gap)
       carouselRef.current.scrollTo({
         left: scrollPosition,
@@ -66,7 +67,8 @@ const SocialProofSection = ({ content }) => {
 
     const handleScroll = () => {
       const cardWidth = carousel.children[0].offsetWidth
-      const gap = 48 // gap em pixels (var(--space-2xl))
+      const computedStyle = window.getComputedStyle(carousel)
+      const gap = parseFloat(computedStyle.gap) || 0
       const scrollLeft = carousel.scrollLeft
       const newIndex = Math.round(scrollLeft / (cardWidth + gap))
       
@@ -92,36 +94,56 @@ const SocialProofSection = ({ content }) => {
         
         <div className="social-proof-section__content">
           <div className="carousel-container">
-            <button 
-              className="carousel-nav carousel-nav--prev"
-              onClick={handlePrev}
-              aria-label="Depoimento anterior"
-            >
-              ←
-            </button>
-            
-            <button 
-              className="carousel-nav carousel-nav--next"
-              onClick={handleNext}
-              aria-label="Próximo depoimento"
-            >
-              →
-            </button>
+            <div className="carousel-wrapper">
+              <button 
+                className="carousel-nav carousel-nav--prev carousel-nav--desktop"
+                onClick={handlePrev}
+                aria-label="Depoimento anterior"
+              >
+                ←
+              </button>
+              
+              <button 
+                className="carousel-nav carousel-nav--next carousel-nav--desktop"
+                onClick={handleNext}
+                aria-label="Próximo depoimento"
+              >
+                →
+              </button>
 
-            <div className="social-proof__testimonials" ref={carouselRef}>
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="testimonial-card">
-                  <div className="testimonial-card__content">
-                    <p className="testimonial-card__text">"{testimonial.text}"</p>
-                  </div>
-                  <div className="testimonial-card__author">
-                    <div className="testimonial-card__info">
-                      <h4 className="testimonial-card__name">{testimonial.name}</h4>
-                      <p className="testimonial-card__company">{testimonial.company}</p>
+              <div className="social-proof__testimonials" ref={carouselRef}>
+                {testimonials.map((testimonial, index) => (
+                  <div key={index} className="testimonial-card">
+                    <div className="testimonial-card__content">
+                      <p className="testimonial-card__text">"{testimonial.text}"</p>
+                    </div>
+                    <div className="testimonial-card__author">
+                      <div className="testimonial-card__info">
+                        <h4 className="testimonial-card__name">{testimonial.name}</h4>
+                        <p className="testimonial-card__company">{testimonial.company}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            <div className="carousel-nav-wrapper carousel-nav-wrapper--mobile">
+              <button 
+                className="carousel-nav carousel-nav--prev carousel-nav--mobile"
+                onClick={handlePrev}
+                aria-label="Depoimento anterior"
+              >
+                ←
+              </button>
+              
+              <button 
+                className="carousel-nav carousel-nav--next carousel-nav--mobile"
+                onClick={handleNext}
+                aria-label="Próximo depoimento"
+              >
+                →
+              </button>
             </div>
 
             <div className="carousel-dots">

@@ -1,3 +1,7 @@
+.home {
+  overflow-x: hidden;
+}
+
 .home-hero {
   min-height: 80vh;
   display: flex;
@@ -6,6 +10,7 @@
   background: radial-gradient(ellipse at top right, rgba(245, 166, 35, 0.08) 0%, transparent 50%), linear-gradient(135deg, var(--bg) 0%, var(--bg-alt) 100%);
   position: relative;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .home-hero .container {

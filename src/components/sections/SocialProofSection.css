@@ -35,6 +35,13 @@
   transform: translateY(20px);
   transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4s,
               transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  overflow-x: hidden;
+  padding: 0 var(--space-lg);
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .social-proof-section.visible .carousel-container {
@@ -49,6 +56,7 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding: var(--space-lg) 0;
+  margin: 0 calc(-1 * var(--space-lg));
 }
 
 .testimonial-card {
@@ -61,7 +69,7 @@
   max-width: 420px;
   min-height: 280px;
   flex-shrink: 0;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -147,6 +155,8 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
   backdrop-filter: blur(10px);
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .carousel-nav:hover {
@@ -156,12 +166,21 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+
 .carousel-nav--prev {
-  left: -24px;
+  left: var(--space-md);
 }
 
 .carousel-nav--next {
-  right: -24px;
+  right: var(--space-md);
+}
+
+.carousel-nav-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .carousel-dots {
@@ -169,6 +188,7 @@
   justify-content: center;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
+  padding: 0 var(--space-lg);
 }
 
 .carousel-dot {
@@ -242,13 +262,13 @@
   .social-proof__testimonials {
     gap: var(--space-xl);
   }
-  
+
   .carousel-nav--prev {
-    left: -20px;
+    left: var(--space-sm);
   }
-  
+
   .carousel-nav--next {
-    right: -20px;
+    right: var(--space-sm);
   }
 }
 
@@ -256,11 +276,15 @@
   .social-proof-section {
     padding: var(--space-xl) 0;
   }
+
+  .carousel-container {
+    padding: 0 var(--space-md);
+  }
   
   .testimonial-card {
-    min-width: 340px;
-    max-width: 340px;
-    min-height: 240px;
+    min-width: calc(100vw - var(--space-2xl));
+    max-width: calc(100vw - var(--space-2xl));
+    min-height: auto;
     padding: var(--space-lg);
   }
   
@@ -272,28 +296,48 @@
     top: var(--space-md);
     left: var(--space-md);
   }
-  
-  .carousel-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-  
-  .carousel-nav--prev {
-    left: -20px;
-  }
-  
-  .carousel-nav--next {
-    right: -20px;
-  }
-  
+
   .social-proof__testimonials {
     gap: var(--space-lg);
     padding: var(--space-md) 0;
+    margin: 0 calc(-1 * var(--space-md));
+  }
+  
+  .carousel-nav--desktop {
+    display: none;
+  }
+
+  .carousel-nav--mobile {
+    display: flex;
+    position: relative;
+    top: auto;
+    transform: none;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .carousel-nav--mobile.carousel-nav--prev,
+  .carousel-nav--mobile.carousel-nav--next {
+    left: auto;
+    right: auto;
+  }
+
+  .carousel-nav--mobile:hover {
+    transform: scale(1.1);
+  }
+
+  .carousel-nav-wrapper {
+    display: flex;
+  }
+
+  .carousel-dots {
+    margin-top: var(--space-md);
+    padding: 0;
   }
   
   .social-proof__stats {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
   }
   
@@ -307,10 +351,14 @@
 }
 
 @media (max-width: 480px) {
+  .carousel-container {
+    padding: 0 var(--space-sm);
+  }
+
   .testimonial-card {
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 220px;
+    min-width: calc(100vw - var(--space-lg));
+    max-width: calc(100vw - var(--space-lg));
+    min-height: auto;
     padding: var(--space-md);
   }
   
@@ -320,7 +368,7 @@
   }
   
   .testimonial-card__text {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
   }
   
@@ -331,13 +379,33 @@
   .testimonial-card__company {
     font-size: 0.8rem;
   }
-  
+
   .carousel-nav {
-    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
   
   .social-proof__testimonials {
     gap: var(--space-md);
     padding: var(--space-sm) 0;
+    margin: 0 calc(-1 * var(--space-sm));
+  }
+
+  .social-proof__stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+  
+  .stat-item {
+    padding: var(--space-md);
+  }
+  
+  .stat-item__number {
+    font-size: 1.75rem;
+  }
+  
+  .stat-item__label {
+    font-size: 0.8rem;
   }
 }
