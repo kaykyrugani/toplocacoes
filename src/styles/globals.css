@@ -75,7 +75,7 @@ body {
     );
 }
 
-.site-bg > * {
+.site-bg > *:not(.header) {
   position: relative;
   z-index: 1;
 }

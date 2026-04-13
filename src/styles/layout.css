@@ -109,8 +109,8 @@
   }
   
   .nav-list {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 60px;
     left: 0;
     right: 0;
     background-color: var(--bg-alt);
@@ -123,6 +123,7 @@
     transform: translateY(-10px);
     transition: all 0.3s ease;
     box-shadow: var(--shadow-lg);
+    z-index: 1030;
   }
   
   .nav-list.active {
