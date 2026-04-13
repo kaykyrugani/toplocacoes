@@ -1,3 +1,6 @@
+import baEleImage from '../assets/images/baEle (1).png'
+import baManImage from '../assets/images/baMan.png'
+
 export const homeContent = {
   hero: {
     badge: "Especialistas em balancins",
@@ -56,7 +59,7 @@ export const homeContent = {
         title: "Balancim Elétrico",
         description: "Ideal para obras maiores, com mais agilidade e operação elétrica.",
         features: ["400kg de capacidade", "Até 100m de altura", "Operação elétrica", "Mais produtividade na obra"],
-        image: "/src/assets/images/baEle (1).png",
+        image: baEleImage,
         cta: {
           text: "Ver balancim elétrico",
           href: "/balancim-eletrico"
@@ -67,7 +70,7 @@ export const homeContent = {
         title: "Balancim Manual",
         description: "Perfeito para serviços menores, com operação simples e excelente custo-benefício.",
         features: ["250kg de capacidade", "Até 50m de altura", "Operação manual", "Mais leve e prático"],
-        image: "/src/assets/images/baMan.png",
+        image: baManImage,
         cta: {
           text: "Ver balancim manual",
           href: "/balancim-manual"

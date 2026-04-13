@@ -1,11 +1,12 @@
 import React from 'react'
 import Container from '../ui/Container'
+import baManImage from '../../assets/images/baMan.png'
 import './ProductSummary.css'
 
 const ProductSummary = ({ content }) => {
   const featuredItem = content.benefits[0]
   const secondaryItems = content.benefits.slice(1)
-  const featuredImage = content.gallery?.[0]?.image || '/src/assets/images/baMan.png'
+  const featuredImage = content.gallery?.[0]?.image || baManImage
   const featuredTitleLines = featuredItem.title.split('|').map((line) => line.trim())
 
   return (

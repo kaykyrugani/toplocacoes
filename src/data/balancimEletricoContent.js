@@ -1,3 +1,7 @@
+import imgBE1 from '../assets/images/imgBE1.png'
+import imgBE2 from '../assets/images/imgBE2.png'
+import imgBE3 from '../assets/images/imgBE3.png'
+
 export const balancimEletricoContent = {
   hero: {
     eyebrow: "Locação técnica para obras em altura",
@@ -112,21 +116,21 @@ export const balancimEletricoContent = {
         id: "eletrico-1",
         title: "Balancim elétrico em operação",
         description: "Movimentação contínua e estável para produtividade em fachadas e serviços em altura.",
-        image: "/src/assets/images/imgBE1.png",
+        image: imgBE1,
         alt: "Balancim elétrico operando em fachada predial"
       },
       {
         id: "eletrico-2",
         title: "Painel de controle elétrico",
         description: "Controle intuitivo para subida e descida com resposta suave durante a operação.",
-        image: "/src/assets/images/imgBE2.png",
+        image: imgBE2,
         alt: "Painel de controle do balancim elétrico"
       },
       {
         id: "eletrico-3",
         title: "Estrutura reforçada",
         description: "Base robusta com foco em segurança operacional e estabilidade em grandes obras.",
-        image: "/src/assets/images/imgBE3.png",
+        image: imgBE3,
         alt: "Estrutura reforçada de balancim elétrico"
       }
     ]
