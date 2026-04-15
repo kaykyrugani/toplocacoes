@@ -209,24 +209,18 @@ export const balancimManualContent = {
 
   downloads: {
     title: "Downloads e Documentação",
-    subtitle: "Manuais, fichas técnicas e normas para consulta",
+    subtitle: "Manuais e fichas técnicas para consulta",
     files: [
       {
-        label: "Manual do Balancim Manual",
+        label: "Manual de Uso — Balancim Manual",
         icon: "📄",
-        href: "/downloads/manual-balancim-manual.pdf",
+        href: "/downloads/MANUAL BL MAUNAL REV3 A4.pdf",
         type: "PDF"
       },
       {
         label: "Ficha Técnica — Balancim Manual",
         icon: "📋",
-        href: "/downloads/ficha-tecnica-balancim-manual.pdf",
-        type: "PDF"
-      },
-      {
-        label: "NR-18 — Andaimes Suspensos",
-        icon: "⚖️",
-        href: "/downloads/nr-18-balancim.pdf",
+        href: "/downloads/Ficha Tecnica PADRAO Balancim G2 MANUAL  REV1.pdf",
         type: "PDF"
       }
     ]

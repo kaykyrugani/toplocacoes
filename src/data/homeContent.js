@@ -189,9 +189,11 @@ export const homeContent = {
     formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
     placeholders: {
       name: "Ex: João Silva",
-      whatsapp: "Ex: (11) 91234-5678",
+      profile: "Selecione seu perfil",
+      city: "Ex: Belo Horizonte",
       state: "Selecione o estado da obra",
-      email: "Ex: seuemail@empresa.com (opcional)"
+      email: "Ex: seuemail@empresa.com (opcional)",
+      whatsapp: "Ex: (11) 91234-5678"
     },
     buttonText: "Quero receber contato",
     microcopy: "Retorno rápido • Sem compromisso"

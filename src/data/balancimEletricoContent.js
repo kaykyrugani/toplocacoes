@@ -213,24 +213,18 @@ export const balancimEletricoContent = {
 
   downloads: {
     title: "Downloads e Documentação",
-    subtitle: "Manuais, fichas técnicas e normas para consulta",
+    subtitle: "Manuais e fichas técnicas para consulta",
     files: [
       {
-        label: "Manual do Balancim Elétrico",
+        label: "Manual de Montagem — Balancim Elétrico",
         icon: "📄",
-        href: "/downloads/manual-balancim-eletrico.pdf",
+        href: "/downloads/MANUAL DE MONTAGEM BALANCIM ELÉTRICO (Livreto) 14042025_REV5.pdf",
         type: "PDF"
       },
       {
         label: "Ficha Técnica — Balancim Elétrico",
         icon: "📋",
-        href: "/downloads/ficha-tecnica-balancim-eletrico.pdf",
-        type: "PDF"
-      },
-      {
-        label: "NR-18 — Andaimes Suspensos",
-        icon: "⚖️",
-        href: "/downloads/nr-18-balancim.pdf",
+        href: "/downloads/Ficha Tecnica PADRAO Balancim G2 ELETRICO REV1.pdf",
         type: "PDF"
       }
     ]
