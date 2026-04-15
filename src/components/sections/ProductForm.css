@@ -101,25 +101,78 @@
   line-height: 1.4;
 }
 
+.product-form__success {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.product-form__success-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.product-form__success-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.product-form__resend-btn {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-family: var(--font-sub);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-form__resend-btn:hover {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+.product-form__error {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #ef4444;
+  text-align: center;
+  margin: var(--space-sm) 0 0 0;
+  line-height: 1.4;
+}
+
+.product-form__input:disabled,
+.product-form__select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
   .product-form {
     padding: var(--space-xl) 0;
   }
-  
+
   .product-form__card {
     padding: var(--space-xl);
   }
-  
+
   .product-form__card-title {
     font-size: 1.25rem;
   }
-  
+
   .product-form__input,
   .product-form__select {
     padding: var(--space-sm) var(--space-md);
     font-size: 0.95rem;
   }
-  
+
   .product-form__button {
     font-size: 1rem;
     padding: var(--space-md) var(--space-xl);
