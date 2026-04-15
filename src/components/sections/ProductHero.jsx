@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
 import './ProductHero.css'
-import productImage from '../../assets/images/baEle (1).png'
+import productImage from '../../assets/images/baEle (1).webp'
 
 const ProductHero = ({ content }) => {
   const trustBullets = content.trustBullets || []

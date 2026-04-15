@@ -1,6 +1,6 @@
-import imgBE1 from '../assets/images/imgBE1.png'
-import imgBE2 from '../assets/images/imgBE2.png'
-import imgBE3 from '../assets/images/imgBE3.png'
+import imgBE1 from '../assets/images/imgBE1.webp'
+import imgBE2 from '../assets/images/imgBE2.webp'
+import imgBE3 from '../assets/images/imgBE3.webp'
 
 export const balancimEletricoContent = {
   hero: {

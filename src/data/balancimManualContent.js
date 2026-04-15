@@ -1,6 +1,6 @@
-import imgBM1 from '../assets/images/imgBM1.png'
-import imgBM2 from '../assets/images/imgBM2.png'
-import imgBM3 from '../assets/images/imgBM3.png'
+import imgBM1 from '../assets/images/imgBM1.webp'
+import imgBM2 from '../assets/images/imgBM2.webp'
+import imgBM3 from '../assets/images/imgBM3.webp'
 
 export const balancimManualContent = {
   hero: {

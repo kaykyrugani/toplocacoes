@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../ui/Container'
-import baManImage from '../../assets/images/baMan.png'
+import baManImage from '../../assets/images/baMan.webp'
 import './ProductSummary.css'
 
 const ProductSummary = ({ content }) => {
