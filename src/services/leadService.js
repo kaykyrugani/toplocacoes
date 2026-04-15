@@ -4,9 +4,11 @@ import { db } from '../lib/firebase'
 /**
  * @typedef {Object} LeadData
  * @property {string} name
- * @property {string} whatsapp
+ * @property {string} profile
+ * @property {string} email
+ * @property {string} city
  * @property {string} state
- * @property {string} [email]
+ * @property {string} whatsapp
  * @property {string} page
  */
 
@@ -21,9 +23,11 @@ export const createLead = async (data) => {
   try {
     const leadPayload = {
       name: data.name,
-      whatsapp: data.whatsapp,
-      state: data.state,
+      profile: data.profile,
       email: data.email || '',
+      city: data.city,
+      state: data.state,
+      whatsapp: data.whatsapp,
       page: data.page,
       source: 'site',
       status: 'new',

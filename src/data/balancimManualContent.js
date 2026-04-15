@@ -142,38 +142,124 @@ export const balancimManualContent = {
   },
   
   specifications: {
-    title: "Ficha Técnica Completa",
-    subtitle: "Todas as especificações para planejamento seguro",
+    title: "Ficha Técnica Resumida",
+    subtitle: "Dados essenciais para decisão rápida",
     specs: [
       {
-        category: "Capacidade e Dimensões",
+        category: "Estrutura",
         items: [
-          { label: "Capacidade de Carga", value: "250 kg" },
-          { label: "Altura Máxima", value: "50 metros" },
-          { label: "Largura da Plataforma", value: "2,0 metros" },
-          { label: "Comprimento da Plataforma", value: "5 metros" },
-          { label: "Peso do Equipamento", value: "80 kg" }
+          { label: "Largura útil", value: "83 cm" },
+          { label: "Tubo", value: "30x30 mm" },
+          { label: "Espessura do tubo", value: "1,5 mm" }
         ]
       },
       {
-        category: "Sistema de Operação",
+        category: "Cabo de Aço",
         items: [
-          { label: "Tipo de Movimentação", value: "Manual por corda" },
-          { label: "Sistema de Freio", value: "Manual por alavanca" },
-          { label: "Velocidade de Operação", value: "Controlada pelo operador" },
-          { label: "Requisito de Força", value: "Mínima para operação segura" },
-          { label: "Controles", value: "Alavanca e sistema de corda" }
+          { label: "Diâmetro", value: 'Ø5/16" (8 mm)' },
+          { label: "Tipo", value: "Galvanizado, alma de fibra" }
         ]
       },
       {
-        category: "Segurança",
+        category: "Norma e Fixação",
         items: [
-          { label: "Sistema de Freio", value: "Manual com travamento automático" },
-          { label: "Limitador de Curso", value: "Ajustável manualmente" },
-          { label: "Cinto de Segurança", value: "2 pontos com mosquetão" },
-          { label: "Material da Plataforma", value: "Alumínio antiderrapante" },
-          { label: "Inspeção", value: "Conforme boas práticas de uso" }
+          { label: "Norma", value: "NR 18" },
+          { label: "Fixação", value: "Superior com viga I ou afastador" }
         ]
+      }
+    ]
+  },
+
+  loadTable: {
+    title: "Tabela de Carga",
+    subtitle: "Capacidade de carga por comprimento da plataforma",
+    headers: ["Carga de Trabalho (kg)", "Carga de Ruptura (kg)"],
+    rows: [
+      { length: "1 m", loadA: "100 kg", loadB: "225 kg" },
+      { length: "1,5 m", loadA: "115 kg", loadB: "235 kg" },
+      { length: "2 m", loadA: "130 kg", loadB: "250 kg" },
+      { length: "2,5 m", loadA: "145 kg", loadB: "260 kg" },
+      { length: "3 m", loadA: "160 kg", loadB: "275 kg" },
+      { length: "3,5 m", loadA: "175 kg", loadB: "280 kg" },
+      { length: "4 m", loadA: "190 kg", loadB: "300 kg" },
+      { length: "4,5 m", loadA: "205 kg", loadB: "310 kg" },
+      { length: "5 m", loadA: "220 kg", loadB: "325 kg" },
+      { length: "5,5 m", loadA: "235 kg", loadB: "335 kg" },
+      { length: "6 m", loadA: "250 kg", loadB: "350 kg" },
+      { length: "6,5 m", loadA: "270 kg", loadB: "360 kg" },
+      { length: "7 m", loadA: "290 kg", loadB: "375 kg" },
+      { length: "7,5 m", loadA: "305 kg", loadB: "385 kg" },
+      { length: "8 m", loadA: "320 kg", loadB: "400 kg" }
+    ]
+  },
+
+  techSpecs: {
+    title: "Dimensões e Dados Técnicos",
+    subtitle: "Informações detalhadas para planejamento e instalação",
+    specs: [
+      { label: "Largura útil da plataforma", value: "83 cm" },
+      { label: "Perfil do tubo", value: "30x30 mm" },
+      { label: "Espessura da parede do tubo", value: "1,5 mm" },
+      { label: "Cabo de aço", value: 'Ø5/16" (8 mm)' },
+      { label: "Tipo de cabo", value: "Galvanizado, alma de fibra" },
+      { label: "Norma aplicável", value: "NR 18" },
+      { label: "Tipo de fixação", value: "Superior com viga I ou afastador" }
+    ]
+  },
+
+  downloads: {
+    title: "Downloads e Documentação",
+    subtitle: "Manuais, fichas técnicas e normas para consulta",
+    files: [
+      {
+        label: "Manual do Balancim Manual",
+        icon: "📄",
+        href: "/downloads/manual-balancim-manual.pdf",
+        type: "PDF"
+      },
+      {
+        label: "Ficha Técnica — Balancim Manual",
+        icon: "📋",
+        href: "/downloads/ficha-tecnica-balancim-manual.pdf",
+        type: "PDF"
+      },
+      {
+        label: "NR-18 — Andaimes Suspensos",
+        icon: "⚖️",
+        href: "/downloads/nr-18-balancim.pdf",
+        type: "PDF"
+      }
+    ]
+  },
+
+  differentials: {
+    title: "Por que Alugar com TopLocações?",
+    subtitle: "Diferenciais que fazem a diferença no seu projeto",
+    items: [
+      {
+        icon: "🚀",
+        title: "Entrega em até 72 horas",
+        description: "Logística ágil para o equipamento chegar na obra no prazo combinado."
+      },
+      {
+        icon: "🔧",
+        title: "Assistência técnica especializada",
+        description: "Equipe técnica dedicada para suporte durante toda a locação."
+      },
+      {
+        icon: "📞",
+        title: "Orçamento em até 24h",
+        description: "Resposta rápida com proposta detalhada e sem surpresas."
+      },
+      {
+        icon: "🔩",
+        title: "Cabos de aço galvanizados",
+        description: "Maior durabilidade e resistência à corrosão em qualquer condição."
+      },
+      {
+        icon: "⚡",
+        title: "Quadro elétrico com detecção de falhas",
+        description: "Segurança reforçada com monitoramento automático do sistema elétrico."
       }
     ]
   },
@@ -251,44 +337,6 @@ export const balancimManualContent = {
       }
     ]
   },
-  
-  differentials: {
-    title: "Por que Alugar Manual com TopLocações?",
-    subtitle: "Diferenciais que otimizam seu pequeno projeto",
-    items: [
-      {
-        icon: "🚀",
-        title: "Entrega Imediata",
-        description: "Equipamento pronto para entrega em até 24h"
-      },
-      {
-        icon: "📞",
-        title: "Atendimento Rápido",
-        description: "Contato direto sem burocracia para orçamento imediato"
-      },
-      {
-        icon: "📋",
-        title: "Contrato Simples",
-        description: "Aluguel por dias ou semanas conforme sua necessidade"
-      },
-      {
-        icon: "🔧",
-        title: "Suporte Básico",
-        description: "Orientação sobre montagem e uso seguro inclusos"
-      },
-      {
-        icon: "💰",
-        title: "Preço Econômico",
-        description: "Solução acessível para pequenos projetos e reformas"
-      },
-      {
-        icon: "🛡️",
-        title: "Equipamento Verificado",
-        description: "Inspeção de segurança antes de cada entrega garantida"
-      }
-    ]
-  },
-  
   cta: {
     title: "Precisa de balancim hoje?",
     subtitle: "Receba retorno rápido da nossa equipe.",
@@ -296,9 +344,11 @@ export const balancimManualContent = {
     formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
     placeholders: {
       name: "Ex: João Silva",
-      whatsapp: "Ex: (11) 91234-5678",
+      profile: "Selecione seu perfil",
+      city: "Ex: Belo Horizonte",
       state: "Selecione o estado da obra",
-      email: "Ex: seuemail@empresa.com (opcional)"
+      email: "Ex: seuemail@empresa.com (opcional)",
+      whatsapp: "Ex: (11) 91234-5678"
     },
     buttonText: "Quero receber contato",
     microcopy: "Retorno rápido • Sem compromisso"

@@ -7,6 +7,7 @@ import { createLead } from '../../services/leadService'
 import './ProductForm.css'
 
 const BRAZILIAN_STATES = ['MG', 'SP']
+const PROFILES = ['Construtora', 'Autônomo']
 
 /* ---- utilitários de validação ---- */
 
@@ -29,9 +30,11 @@ const ProductForm = ({ content }) => {
 
   const [formData, setFormData] = useState({
     name: '',
-    whatsapp: '',
+    profile: '',
+    city: '',
     state: '',
-    email: ''
+    email: '',
+    whatsapp: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null) // 'success' | 'error' | null
@@ -57,14 +60,16 @@ const ProductForm = ({ content }) => {
     setSubmitStatus(null)
     setErrorMessage('')
 
-    // validação inline (evita staleness de state assíncrono)
+    // validação inline
     const errors = {}
     if (formData.name.length < 2) errors.name = 'Informe seu nome completo'
-    if (cleanPhone(formData.whatsapp).length !== 10 && cleanPhone(formData.whatsapp).length !== 11)
-      errors.whatsapp = 'Informe um número válido com DDD, ex: (31) 91234-5678'
+    if (!formData.profile) errors.profile = 'Selecione seu perfil'
+    if (formData.city.length < 2) errors.city = 'Informe sua cidade'
     if (!formData.state) errors.state = 'Selecione seu estado'
     if (formData.email && !validateEmail(formData.email))
       errors.email = 'E-mail inválido'
+    if (cleanPhone(formData.whatsapp).length !== 10 && cleanPhone(formData.whatsapp).length !== 11)
+      errors.whatsapp = 'Informe um número válido com DDD, ex: (31) 91234-5678'
     setFieldErrors(errors)
 
     if (Object.keys(errors).length > 0) return
@@ -77,7 +82,7 @@ const ProductForm = ({ content }) => {
         page: location.pathname
       })
       setSubmitStatus('success')
-      setFormData({ name: '', whatsapp: '', state: '', email: '' })
+      setFormData({ name: '', profile: '', city: '', state: '', email: '', whatsapp: '' })
     } catch (error) {
       setSubmitStatus('error')
       setErrorMessage(error.message)
@@ -136,18 +141,37 @@ const ProductForm = ({ content }) => {
                   </div>
 
                   <div className="product-form__field">
-                    <input
-                      type="tel"
-                      name="whatsapp"
-                      value={formData.whatsapp}
+                    <select
+                      name="profile"
+                      value={formData.profile}
                       onChange={handleInputChange}
-                      placeholder={content.placeholders.whatsapp}
+                      className="product-form__input product-form__select"
+                      required
+                      disabled={isSubmitting}
+                    >
+                      <option value="">{content.placeholders.profile}</option>
+                      {PROFILES.map(profile => (
+                        <option key={profile} value={profile}>{profile}</option>
+                      ))}
+                    </select>
+                    {hasFieldError('profile') && (
+                      <p className="product-form__error">{fieldErrors.profile}</p>
+                    )}
+                  </div>
+
+                  <div className="product-form__field">
+                    <input
+                      type="text"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleInputChange}
+                      placeholder={content.placeholders.city}
                       className="product-form__input"
                       required
                       disabled={isSubmitting}
                     />
-                    {hasFieldError('whatsapp') && (
-                      <p className="product-form__error">{fieldErrors.whatsapp}</p>
+                    {hasFieldError('city') && (
+                      <p className="product-form__error">{fieldErrors.city}</p>
                     )}
                   </div>
 
@@ -182,6 +206,22 @@ const ProductForm = ({ content }) => {
                     />
                     {hasFieldError('email') && (
                       <p className="product-form__error">{fieldErrors.email}</p>
+                    )}
+                  </div>
+
+                  <div className="product-form__field">
+                    <input
+                      type="tel"
+                      name="whatsapp"
+                      value={formData.whatsapp}
+                      onChange={handleInputChange}
+                      placeholder={content.placeholders.whatsapp}
+                      className="product-form__input"
+                      required
+                      disabled={isSubmitting}
+                    />
+                    {hasFieldError('whatsapp') && (
+                      <p className="product-form__error">{fieldErrors.whatsapp}</p>
                     )}
                   </div>
 

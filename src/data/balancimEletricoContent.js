@@ -137,38 +137,133 @@ export const balancimEletricoContent = {
   },
   
   specifications: {
-    title: "Ficha Técnica Completa",
-    subtitle: "Todas as especificações para planejamento seguro",
+    title: "Ficha Técnica Resumida",
+    subtitle: "Dados essenciais para decisão rápida",
     specs: [
       {
-        category: "Capacidade e Dimensões",
+        category: "Estrutura",
         items: [
-          { label: "Capacidade de Carga", value: "400 kg" },
-          { label: "Altura Máxima", value: "100 metros" },
-          { label: "Largura da Plataforma", value: "2,5 metros" },
-          { label: "Comprimento da Plataforma", value: "6 metros" },
-          { label: "Peso do Equipamento", value: "180 kg" }
+          { label: "Largura útil", value: "83 cm" },
+          { label: "Tubo", value: "30x30 mm" },
+          { label: "Espessura do tubo", value: "1,5 mm" }
         ]
       },
       {
-        category: "Sistema Elétrico",
+        category: "Motor e Elétrica",
         items: [
-          { label: "Tensão de Alimentação", value: "220V / 380V" },
-          { label: "Potência do Motor", value: "1,5 CV" },
-          { label: "Velocidade de Subida", value: "8 m/min" },
-          { label: "Velocidade de Descida", value: "8 m/min" },
-          { label: "Sistema de Controle", value: "Painel digital com botoneira" }
+          { label: "Tensão", value: "220V ou 380V trifásico" },
+          { label: "Potência do motor", value: "1,5 CV" }
         ]
       },
       {
-        category: "Segurança",
+        category: "Cabo de Aço",
         items: [
-          { label: "Sistema de Freio", value: "Automático por falta de energia" },
-          { label: "Limitador de Curso", value: "Ajustável com parada suave" },
-          { label: "Cinto de Segurança", value: "2 pontos com mosquetão" },
-          { label: "Material da Plataforma", value: "Alumínio antiderrapante" },
-          { label: "Certificação", value: "Conforme normas de segurança" }
+          { label: "Diâmetro", value: 'Ø5/16" (8 mm)' },
+          { label: "Tipo", value: "Galvanizado, alma de fibra" }
         ]
+      },
+      {
+        category: "Norma e Fixação",
+        items: [
+          { label: "Norma", value: "NR 18" },
+          { label: "Fixação", value: "Superior com viga I ou afastador" }
+        ]
+      }
+    ]
+  },
+
+  loadTable: {
+    title: "Tabela de Carga",
+    subtitle: "Capacidade de carga por comprimento da plataforma",
+    headers: ["Carga de Trabalho (kg)", "Carga de Ruptura (kg)"],
+    rows: [
+      { length: "1 m", loadA: "160 kg", loadB: "225 kg" },
+      { length: "1,5 m", loadA: "175 kg", loadB: "235 kg" },
+      { length: "2 m", loadA: "190 kg", loadB: "250 kg" },
+      { length: "2,5 m", loadA: "205 kg", loadB: "260 kg" },
+      { length: "3 m", loadA: "220 kg", loadB: "275 kg" },
+      { length: "3,5 m", loadA: "235 kg", loadB: "280 kg" },
+      { length: "4 m", loadA: "250 kg", loadB: "300 kg" },
+      { length: "4,5 m", loadA: "275 kg", loadB: "310 kg" },
+      { length: "5 m", loadA: "280 kg", loadB: "325 kg" },
+      { length: "5,5 m", loadA: "295 kg", loadB: "335 kg" },
+      { length: "6 m", loadA: "310 kg", loadB: "350 kg" },
+      { length: "6,5 m", loadA: "330 kg", loadB: "360 kg" },
+      { length: "7 m", loadA: "350 kg", loadB: "375 kg" },
+      { length: "7,5 m", loadA: "365 kg", loadB: "380 kg" },
+      { length: "8 m", loadA: "380 kg", loadB: "380 kg" }
+    ]
+  },
+
+  techSpecs: {
+    title: "Dimensões e Dados Técnicos",
+    subtitle: "Informações detalhadas para planejamento e instalação",
+    specs: [
+      { label: "Largura útil da plataforma", value: "83 cm" },
+      { label: "Perfil do tubo", value: "30x30 mm" },
+      { label: "Espessura da parede do tubo", value: "1,5 mm" },
+      { label: "Tensão de alimentação", value: "220V ou 380V trifásico" },
+      { label: "Potência do motor", value: "1,5 CV" },
+      { label: "Cabo de aço", value: 'Ø5/16" (8 mm)' },
+      { label: "Tipo de cabo", value: "Galvanizado, alma de fibra" },
+      { label: "Norma aplicável", value: "NR 18" },
+      { label: "Tipo de fixação", value: "Superior com viga I ou afastador" }
+    ]
+  },
+
+  downloads: {
+    title: "Downloads e Documentação",
+    subtitle: "Manuais, fichas técnicas e normas para consulta",
+    files: [
+      {
+        label: "Manual do Balancim Elétrico",
+        icon: "📄",
+        href: "/downloads/manual-balancim-eletrico.pdf",
+        type: "PDF"
+      },
+      {
+        label: "Ficha Técnica — Balancim Elétrico",
+        icon: "📋",
+        href: "/downloads/ficha-tecnica-balancim-eletrico.pdf",
+        type: "PDF"
+      },
+      {
+        label: "NR-18 — Andaimes Suspensos",
+        icon: "⚖️",
+        href: "/downloads/nr-18-balancim.pdf",
+        type: "PDF"
+      }
+    ]
+  },
+
+  differentials: {
+    title: "Por que Alugar com TopLocações?",
+    subtitle: "Diferenciais que fazem a diferença no seu projeto",
+    items: [
+      {
+        icon: "🚀",
+        title: "Entrega em até 72 horas",
+        description: "Logística ágil para o equipamento chegar na obra no prazo combinado."
+      },
+      {
+        icon: "🔧",
+        title: "Assistência técnica especializada",
+        description: "Equipe técnica dedicada para suporte durante toda a locação."
+      },
+      {
+        icon: "📞",
+        title: "Orçamento em até 24h",
+        description: "Resposta rápida com proposta detalhada e sem surpresas."
+      },
+      {
+        icon: "🔩",
+        title: "Cabos de aço galvanizados",
+        description: "Maior durabilidade e resistência à corrosão em qualquer condição."
+      },
+      {
+        icon: "⚡",
+        title: "Quadro elétrico com detecção de falhas",
+        description: "Segurança reforçada com monitoramento automático do sistema elétrico."
       }
     ]
   },
@@ -246,44 +341,6 @@ export const balancimEletricoContent = {
       }
     ]
   },
-  
-  differentials: {
-    title: "Por que Alugar Elétrico com TopLocações?",
-    subtitle: "Diferenciais que fazem a diferença no seu projeto",
-    items: [
-      {
-        icon: "🚀",
-        title: "Entrega Imediata",
-        description: "Equipamento pronto em até 24h na sua obra"
-      },
-      {
-        icon: "📞",
-        title: "Atendimento Rápido",
-        description: "Equipe técnica disponível para dúvidas e orientação"
-      },
-      {
-        icon: "📋",
-        title: "Contrato Simples",
-        description: "Aluguel pelo período exato que sua obra precisa"
-      },
-      {
-        icon: "🔧",
-        title: "Instalação Completa",
-        description: "Montagem, teste e treinamento inclusos no serviço"
-      },
-      {
-        icon: "💰",
-        title: "Preço Transparente",
-        description: "Melhor custo-benefício sem perder qualidade e segurança"
-      },
-      {
-        icon: "🛡️",
-        title: "Segurança Garantida",
-        description: "Equipamentos com manutenção e certificação em dia"
-      }
-    ]
-  },
-  
   cta: {
     title: "Precisa de balancim hoje?",
     subtitle: "Receba retorno rápido da nossa equipe.",
@@ -291,9 +348,11 @@ export const balancimEletricoContent = {
     formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
     placeholders: {
       name: "Ex: João Silva",
-      whatsapp: "Ex: (11) 91234-5678",
+      profile: "Selecione seu perfil",
+      city: "Ex: Belo Horizonte",
       state: "Selecione o estado da obra",
-      email: "Ex: seuemail@empresa.com (opcional)"
+      email: "Ex: seuemail@empresa.com (opcional)",
+      whatsapp: "Ex: (11) 91234-5678"
     },
     buttonText: "Quero receber contato",
     microcopy: "Retorno rápido • Sem compromisso"
