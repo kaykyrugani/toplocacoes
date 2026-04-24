@@ -20,7 +20,7 @@ const ProdutoEletrico = () => {
     <>
       <MetaTags
         title="Balancim Elétrico - Locação Profissional"
-        description="Balancim elétrico profissional para construção civil. Capacidade 400kg, até 100m, movimentação elétrica suave. Entrega rápida e suporte técnico."
+        description="Balancim elétrico profissional para construção civil. Até 100m, movimentação elétrica suave. Entrega rápida e suporte técnico."
         canonical="/balancim-eletrico"
       />
       <div className="produto-eletrico">

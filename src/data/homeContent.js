@@ -24,7 +24,7 @@ export const homeContent = {
   },
   
   valueProposition: {
-    title: "Por que TopLocações é a Melhor Escolha?",
+    title: "Por que Top Locações é a Melhor Escolha?",
     subtitle: "Atendimento imediato. Entrega garantida. Orçamento em minutos.",
     points: [
       {
@@ -58,7 +58,7 @@ export const homeContent = {
         id: "eletrico",
         title: "Balancim Elétrico",
         description: "Ideal para obras maiores, com mais agilidade e operação elétrica.",
-        features: ["400kg de capacidade", "Até 100m de altura", "Operação elétrica", "Mais produtividade na obra"],
+        features: ["Capacidade de acordo com a metragem", "Até 100m de altura", "Operação elétrica", "Mais produtividade na obra"],
         image: baEleImage,
         cta: {
           text: "Ver balancim elétrico",
@@ -69,7 +69,7 @@ export const homeContent = {
         id: "manual",
         title: "Balancim Manual",
         description: "Perfeito para serviços menores, com operação simples e excelente custo-benefício.",
-        features: ["250kg de capacidade", "Até 50m de altura", "Operação manual", "Mais leve e prático"],
+        features: ["Capacidade de acordo com a metragem", "Até 50m de altura", "Operação manual", "Mais leve e prático"],
         image: baManImage,
         cta: {
           text: "Ver balancim manual",
@@ -81,7 +81,7 @@ export const homeContent = {
   
   differentials: {
     title: "Diferenciais que Fazem a Diferença",
-    subtitle: "Por que clientes confiam na TopLocações",
+    subtitle: "Por que clientes confiam na Top Locações",
     items: [
       {
         icon: "⚡",
@@ -111,7 +111,7 @@ export const homeContent = {
       {
         icon: "🚚",
         title: "Logística Completa",
-        description: "Entrega, montagem e retirada. Tudo incluso."
+        description: "Entrega, montagem e retirada."
       }
     ]
   },

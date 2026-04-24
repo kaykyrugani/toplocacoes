@@ -1,6 +1,6 @@
 export const company = {
-  name: 'TopLocações',
-  fullName: 'TopLocações Equipamentos',
+  name: 'Top Locações',
+  fullName: 'Top Locações Equipamentos',
   phone: '(00) 0000-0000',
   whatsapp: '5500000000000',
   email: 'contato@toplocacoes.com',
@@ -18,8 +18,8 @@ export const company = {
     linkedin: '#'
   },
   about: {
-    title: 'Sobre a TopLocações',
-    description: 'Há mais de 10 anos no mercado, a TopLocações é referência em aluguel de equipamentos para construção civil, oferecendo soluções seguras e eficientes para seus projetos.',
+    title: 'Sobre a Top Locações',
+    description: 'Há mais de 10 anos no mercado, a Top Locações é referência em aluguel de equipamentos para construção civil, oferecendo soluções seguras e eficientes para seus projetos.',
     mission: 'Proporcionar acesso seguro e eficiente a equipamentos de qualidade para construção civil.',
     vision: 'Ser a maior referência em locação de equipamentos de construção civil no Brasil.',
     values: [

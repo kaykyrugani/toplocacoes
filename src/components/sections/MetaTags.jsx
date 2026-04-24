@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const MetaTags = ({ title, description, canonical }) => {
-  const fullTitle = title ? `${title} | TopLocações` : 'TopLocações - Locação de Balancimos'
+  const fullTitle = title ? `${title} | Top Locações` : 'Top Locações - Locação de Balancimos'
   
   return (
     <Helmet>

@@ -17,7 +17,7 @@ export const balancimManualContent = {
       title: "Balancim Manual",
       badge: "Mais econômico",
       highlights: [
-        "250kg de capacidade",
+        "Capacidade de acordo com a metragem",
         "até 50m de altura",
         "operação simples e econômica"
       ]
@@ -38,7 +38,7 @@ export const balancimManualContent = {
     description: "O balancim manual é a escolha inteligente para pequenos serviços e reformas. Com operação simplificada e estrutura leve, oferece mobilidade total onde a precisão elétrica não é essencial. Perfeito para manutenção residencial, pequenas reformas e serviços rápidos.",
     benefits: [
       {
-        title: "Equipe próxima|Resposta rápida|Orçamento sem fricção",
+        title: "Equipe próxima|Resposta rápida|Orçamento sem compromisso",
         description: "Atendimento direto com suporte técnico ágil para alinhar escopo, preço e prazo em minutos."
       },
       {
@@ -93,8 +93,8 @@ export const balancimManualContent = {
       },
       {
         icon: "🔧",
-        title: "Treinamento rápido",
-        description: "Operador domina em menos de 30 minutos"
+        title: "Treinamento quando solicitado",
+        description: "Somente quando solicitado pelo locatário"
       },
       {
         icon: "🛡️",
@@ -109,7 +109,7 @@ export const balancimManualContent = {
       {
         icon: "🚚",
         title: "Logística completa",
-        description: "Entrega, montagem e retirada inclusos"
+        description: "Entregamos o equipamento. Montagem e treinamento somente quando solicitados pelo locatário"
       }
     ]
   },
@@ -227,7 +227,7 @@ export const balancimManualContent = {
   },
 
   differentials: {
-    title: "Por que Alugar com TopLocações?",
+    title: "Por que Alugar com Top Locações?",
     subtitle: "Diferenciais que fazem a diferença no seu projeto",
     items: [
       {
@@ -326,8 +326,8 @@ export const balancimManualContent = {
         description: "Verificação regular de cordas e sistema de freio quando necessário"
       },
       {
-        title: "Treinamento Rápido",
-        description: "Orientação básica sobre operação segura e inspeção visual"
+        title: "Cabos de aço",
+        description: "Trabalhamos com cabos de aço de até 100 metros"
       }
     ]
   },
@@ -357,7 +357,7 @@ export const balancimManualContent = {
       },
       {
         question: "O equipamento inclui treinamento?",
-        answer: "Sim, orientação básica na instalação. Operador domina em menos de 30 minutos."
+        answer: "Somente quando solicitado pelo locatário."
       },
       {
         question: "Qual a altura máxima recomendada?",
@@ -365,11 +365,11 @@ export const balancimManualContent = {
       },
       {
         question: "Como funciona a entrega?",
-        answer: "Entregamos, montamos e damos orientação no local. Tudo rápido e simples."
+        answer: "Entregamos o equipamento. Montagem e treinamento somente quando solicitados pelo locatário."
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Balancim completo, sistema de corda, cintos e orientação básica de uso."
+        answer: "Balancim manual completo. Sem EPI's ou linha de vida."
       },
       {
         question: "Funciona sem energia elétrica?",

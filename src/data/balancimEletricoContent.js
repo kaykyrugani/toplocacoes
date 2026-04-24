@@ -16,7 +16,7 @@ export const balancimEletricoContent = {
       title: "Balancim Elétrico",
       badge: "Entrega rápida",
       highlights: [
-        "400kg de capacidade",
+        "Capacidade de acordo com a metragem",
         "até 100m de altura",
         "operação elétrica suave"
       ]
@@ -34,7 +34,7 @@ export const balancimEletricoContent = {
   
   summary: {
     title: "Produtividade 3x Maior para Sua Obra",
-    description: "O balancim elétrico é a escolha inteligente para grandes projetos. Com movimentação elétrica suave e capacidade de 400kg, oferece 3x mais produtividade que sistemas manuais. Ideal para fachadas de edifícios, obras industriais e projetos que exigem precisão e velocidade.",
+    description: "O balancim elétrico é a escolha inteligente para grandes projetos. Com movimentação elétrica suave, oferece 3x mais produtividade que sistemas manuais. Ideal para fachadas de edifícios, obras industriais e projetos que exigem precisão e velocidade.",
     benefits: [
       {
         title: "Equipe dedicada|Atendimento ágil|Orçamento imediato",
@@ -45,8 +45,8 @@ export const balancimEletricoContent = {
         description: "Controles simples que qualquer operador domina em minutos"
       },
       {
-        title: "Capacidade Robusta",
-        description: "Suporta 400kg com segurança total para equipe e materiais"
+        title: "Capacidade conforme metragem",
+        description: "Capacidade de acordo com a metragem da sua obra"
       },
       {
         title: "Operação Silenciosa",
@@ -83,8 +83,8 @@ export const balancimEletricoContent = {
       },
       {
         icon: "🔧",
-        title: "Montagem e treinamento inclusos",
-        description: "Equipe especializada monta e treina sua equipe"
+        title: "Montagem quando solicitada",
+        description: "Entregamos o equipamento. Montagem e treinamento somente quando solicitados pelo locatário"
       },
       {
         icon: "📞",
@@ -231,7 +231,7 @@ export const balancimEletricoContent = {
   },
 
   differentials: {
-    title: "Por que Alugar com TopLocações?",
+    title: "Por que Alugar com Top Locações?",
     subtitle: "Diferenciais que fazem a diferença no seu projeto",
     items: [
       {
@@ -322,8 +322,8 @@ export const balancimEletricoContent = {
         description: "Botões de parada e limitadores de curso em todos os pontos"
       },
       {
-        title: "Treinamento Incluso",
-        description: "Orientação completa sobre operação segura no momento da entrega"
+        title: "Treinamento quando solicitado",
+        description: "Ministramos o treinamento quando solicitado pelo locatário"
       },
       {
         title: "Manutenção Preventiva",
@@ -357,11 +357,11 @@ export const balancimEletricoContent = {
     questions: [
       {
         question: "Qual o prazo mínimo de locação?",
-        answer: "Trabalhamos com locação mínima de 7 dias, com flexibilidade conforme sua necessidade."
+        answer: "Locação mínima de 15 dias."
       },
       {
         question: "O equipamento inclui treinamento?",
-        answer: "Sim, fornecemos treinamento completo na instalação. Operador domina em minutos."
+        answer: "Ministramos o treinamento quando solicitado pelo locatário."
       },
       {
         question: "Qual a altura máxima de operação?",
@@ -369,11 +369,11 @@ export const balancimEletricoContent = {
       },
       {
         question: "Como funciona entrega e instalação?",
-        answer: "Nossa equipe entrega, instala, testa e treina no local. Tudo incluso."
+        answer: "Entregamos o equipamento. Montagem e treinamento somente quando solicitados pelo locatário."
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Balancim completo, painel de controle, cintos de segurança e suporte técnico."
+        answer: "Balancim elétrico completo. Sem EPI's ou linha de vida."
       },
       {
         question: "Preciso fornecer energia elétrica?",

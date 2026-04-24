@@ -20,7 +20,7 @@ const ProdutoManual = () => {
     <>
       <MetaTags
         title="Balancim Manual - Locação Econômica"
-        description="Balancim manual econômico para pequenas obras. Capacidade 250kg, até 50m, operação simplificada. Ideal para reformas e manutenção."
+        description="Balancim manual econômico para pequenas obras. Até 50m, operação simplificada. Ideal para reformas e manutenção."
         canonical="/balancim-manual"
       />
       <div className="produto-manual">
