@@ -1,10 +1,17 @@
 import React from 'react'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
-import balancimImage from '../../assets/images/obrebalancim.png'
+import balancimImage from '../../assets/images/obrebalancim2.png'
 import './HomeHero.css'
 
 const HomeHero = ({ content }) => {
+  const scrollToProductForm = () => {
+    const element = document.getElementById('product-form')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="home-hero">
       <Container>
@@ -33,10 +40,8 @@ const HomeHero = ({ content }) => {
             <Button 
               variant="primary" 
               size="large"
-              href={`https://wa.me/${content.primaryCTA.whatsapp}?text=${encodeURIComponent(content.primaryCTA.message)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Solicitar orçamento via WhatsApp"
+              onClick={scrollToProductForm}
+              aria-label="Ir para formulário de orçamento"
             >
               {content.primaryCTA.text}
             </Button>

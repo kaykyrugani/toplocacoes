@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logoTopLoc from '../../assets/images/LogoTopLoc.webp'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,7 +13,12 @@ const Header = () => {
       <div className="container">
         <nav className="nav">
           <Link to="/" className="logo">
-            <h2>TopLocações</h2>
+            <img 
+              src={logoTopLoc} 
+              alt="Top Locações" 
+              className="logo-image"
+              style={{ height: '40px', width: 'auto' }}
+            />
           </Link>
           
           <button 

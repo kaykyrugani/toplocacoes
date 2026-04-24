@@ -12,7 +12,7 @@ export const homeContent = {
       "Orçamento sem compromisso"
     ],
     primaryCTA: {
-      text: "CHAMAR NO WHATSAPP AGORA",
+      text: "Fazer Orçamento",
       whatsapp: "5500000000000",
       message: "Olá, vi o site e preciso de balancim urgente para minha obra."
     },

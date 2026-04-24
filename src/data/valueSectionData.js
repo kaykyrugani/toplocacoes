@@ -1,7 +1,7 @@
 import { Truck, MessageCircle, ShieldCheck, BadgePercent } from 'lucide-react'
 
 export const valueSectionData = {
-  title: "Por que TopLocações é a Melhor Escolha?",
+  title: "Porque escolher o Balancim da Top Locações?",
   subtitle: "Atendimento imediato. Entrega garantida. Orçamento em minutos.",
   items: [
     {

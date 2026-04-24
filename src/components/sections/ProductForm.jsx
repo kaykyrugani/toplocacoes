@@ -94,7 +94,7 @@ const ProductForm = ({ content }) => {
   const hasFieldError = (name) => !!fieldErrors[name]
 
   return (
-    <section className="product-form">
+    <section id="product-form" className="product-form">
       <Container>
         <div className="product-form__content">
           <SectionTitle
