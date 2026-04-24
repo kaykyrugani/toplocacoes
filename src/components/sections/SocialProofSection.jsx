@@ -1,15 +1,21 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Container from '../ui/Container'
 import SectionTitle from '../ui/SectionTitle'
 import './SocialProofSection.css'
 
+// Função para obter a inicial do nome
+const getInitial = (name) => {
+  if (!name) return '?'
+  return name.charAt(0).toUpperCase()
+}
+
 const SocialProofSection = ({ content }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const carouselRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
 
   const testimonials = content.testimonials
   const totalTestimonials = testimonials.length
+  const currentTestimonial = testimonials[currentIndex]
 
   // Intersection Observer para animação
   useEffect(() => {
@@ -36,50 +42,19 @@ const SocialProofSection = ({ content }) => {
     }
   }, [])
 
-  const scrollToTestimonial = (index) => {
-    if (carouselRef.current) {
-      const cardWidth = carouselRef.current.children[0].offsetWidth
-      const computedStyle = window.getComputedStyle(carouselRef.current)
-      const gap = parseFloat(computedStyle.gap) || 0
-      const scrollPosition = index * (cardWidth + gap)
-      carouselRef.current.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
-      })
-      setCurrentIndex(index)
-    }
-  }
-
   const handlePrev = () => {
     const newIndex = currentIndex > 0 ? currentIndex - 1 : totalTestimonials - 1
-    scrollToTestimonial(newIndex)
+    setCurrentIndex(newIndex)
   }
 
   const handleNext = () => {
     const newIndex = currentIndex < totalTestimonials - 1 ? currentIndex + 1 : 0
-    scrollToTestimonial(newIndex)
+    setCurrentIndex(newIndex)
   }
 
-  // Detectar quando o scroll muda para atualizar o índice
-  useEffect(() => {
-    const carousel = carouselRef.current
-    if (!carousel) return
-
-    const handleScroll = () => {
-      const cardWidth = carousel.children[0].offsetWidth
-      const computedStyle = window.getComputedStyle(carousel)
-      const gap = parseFloat(computedStyle.gap) || 0
-      const scrollLeft = carousel.scrollLeft
-      const newIndex = Math.round(scrollLeft / (cardWidth + gap))
-      
-      if (newIndex !== currentIndex && newIndex >= 0 && newIndex < totalTestimonials) {
-        setCurrentIndex(newIndex)
-      }
-    }
-
-    carousel.addEventListener('scroll', handleScroll)
-    return () => carousel.removeEventListener('scroll', handleScroll)
-  }, [currentIndex, totalTestimonials])
+  const goToTestimonial = (index) => {
+    setCurrentIndex(index)
+  }
 
   return (
     <section className={`social-proof-section ${isVisible ? 'visible' : ''}`}>
@@ -93,71 +68,124 @@ const SocialProofSection = ({ content }) => {
         </div>
         
         <div className="social-proof-section__content">
-          <div className="carousel-container">
-            <div className="carousel-wrapper">
-              <button 
-                className="carousel-nav carousel-nav--prev carousel-nav--desktop"
-                onClick={handlePrev}
-                aria-label="Depoimento anterior"
-              >
-                ←
-              </button>
-              
-              <button 
-                className="carousel-nav carousel-nav--next carousel-nav--desktop"
-                onClick={handleNext}
-                aria-label="Próximo depoimento"
-              >
-                →
-              </button>
+          <div className="testimonial-showcase">
+            {/* Botão Anterior */}
+            <button 
+              className="testimonial-nav testimonial-nav--prev"
+              onClick={handlePrev}
+              aria-label="Depoimento anterior"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
 
-              <div className="social-proof__testimonials" ref={carouselRef}>
-                {testimonials.map((testimonial, index) => (
-                  <div key={index} className="testimonial-card">
-                    <div className="testimonial-card__content">
-                      <p className="testimonial-card__text">"{testimonial.text}"</p>
-                    </div>
-                    <div className="testimonial-card__author">
-                      <div className="testimonial-card__info">
-                        <h4 className="testimonial-card__name">{testimonial.name}</h4>
-                        <p className="testimonial-card__company">{testimonial.company}</p>
-                      </div>
+            {/* Card Principal */}
+            <div className="testimonial-card-main">
+              {/* Aspas decorativas */}
+              <div className="testimonial-quote-mark">"</div>
+              
+              {/* Header do Card */}
+              <div className="testimonial-card-main__header">
+                <div className="testimonial-author">
+                  <div className="testimonial-avatar">
+                    <span className="testimonial-avatar__initial">{getInitial(currentTestimonial.name)}</span>
+                  </div>
+                  <div className="testimonial-author__info">
+                    <h4 className="testimonial-author__name">{currentTestimonial.name}</h4>
+                    <div className="testimonial-author__meta">
+                      {currentTestimonial.reviewCount && (
+                        <span className="testimonial-author__reviews">{currentTestimonial.reviewCount}</span>
+                      )}
+                      {currentTestimonial.dateLabel && (
+                        <span className="testimonial-author__date">{currentTestimonial.dateLabel}</span>
+                      )}
                     </div>
                   </div>
-                ))}
+                </div>
+                
+                <div className="testimonial-rating">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="testimonial-rating__star">★</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Separador */}
+              <div className="testimonial-card-main__divider"></div>
+
+              {/* Conteúdo do Card */}
+              <div className="testimonial-card-main__body">
+                {currentTestimonial.comment ? (
+                  <p className="testimonial-card-main__text">"{currentTestimonial.comment}"</p>
+                ) : (
+                  <div className="testimonial-card-main__no-comment">
+                    <span className="testimonial-card-main__verified-badge">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Cliente verificado
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              {/* Footer do Card */}
+              <div className="testimonial-card-main__footer">
+                {currentTestimonial.source && (
+                  <span className="testimonial-source-badge">{currentTestimonial.source}</span>
+                )}
+                <span className="testimonial-verified-text">Avaliação verificada</span>
               </div>
             </div>
 
-            <div className="carousel-nav-wrapper carousel-nav-wrapper--mobile">
-              <button 
-                className="carousel-nav carousel-nav--prev carousel-nav--mobile"
-                onClick={handlePrev}
-                aria-label="Depoimento anterior"
-              >
-                ←
-              </button>
-              
-              <button 
-                className="carousel-nav carousel-nav--next carousel-nav--mobile"
-                onClick={handleNext}
-                aria-label="Próximo depoimento"
-              >
-                →
-              </button>
-            </div>
+            {/* Botão Próximo */}
+            <button 
+              className="testimonial-nav testimonial-nav--next"
+              onClick={handleNext}
+              aria-label="Próximo depoimento"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
 
-            <div className="carousel-dots">
+          {/* Indicadores/Paginação */}
+          <div className="testimonial-pagination">
+            <button 
+              className="testimonial-nav testimonial-nav--prev testimonial-nav--small"
+              onClick={handlePrev}
+              aria-label="Depoimento anterior"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div className="testimonial-dots">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`carousel-dot ${index === currentIndex ? 'active' : ''}`}
-                  onClick={() => scrollToTestimonial(index)}
+                  className={`testimonial-dot ${index === currentIndex ? 'active' : ''}`}
+                  onClick={() => goToTestimonial(index)}
                   aria-label={`Ir para depoimento ${index + 1}`}
                 />
               ))}
             </div>
+
+            <button 
+              className="testimonial-nav testimonial-nav--next testimonial-nav--small"
+              onClick={handleNext}
+              aria-label="Próximo depoimento"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
           </div>
           
+          {/* Stats */}
           <div className="social-proof__stats">
             {content.stats.map((stat, index) => (
               <div key={index} className="stat-item">

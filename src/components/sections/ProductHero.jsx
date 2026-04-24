@@ -34,17 +34,6 @@ const ProductHero = ({ content }) => {
 
           <div className="product-hero__actions">
             <Button
-              variant="primary"
-              size="large"
-              href={`https://wa.me/${content.primaryCTA.whatsapp}?text=${encodeURIComponent(content.primaryCTA.message)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Solicitar orçamento via WhatsApp"
-            >
-              {content.primaryCTA.text}
-            </Button>
-
-            <Button
               variant="secondary"
               size="large"
               href={content.secondaryCTA.href}

@@ -17,7 +17,6 @@ const Header = () => {
               src={logoTopLoc} 
               alt="Top Locações" 
               className="logo-image"
-              style={{ height: '40px', width: 'auto' }}
             />
           </Link>
           

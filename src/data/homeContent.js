@@ -148,22 +148,70 @@ export const homeContent = {
   
   socialProof: {
     title: "Clientes que Confiam e Recomendam",
-    subtitle: "Prova de que entregamos o que prometemos",
+    subtitle: "Avaliações reais no Google",
     testimonials: [
       {
-        name: "João Silva",
-        company: "Construtora ABC",
-        text: "Entrega no dia certo e equipamento perfeito. Atendimento excelente. Recomendo!"
+        name: "Guimarães e Silva Advogados",
+        reviewCount: "2 reviews",
+        dateLabel: "11 months ago",
+        comment: "melhor empresa de locação de equipamento.",
+        rating: 5,
+        source: "Google"
       },
       {
-        name: "Maria Santos",
-        company: "Serviços Gerais Ltda",
-        text: "Atendimento rápido e suporte sempre que precisei. Sem burocracia. Parceria confiável."
+        name: "Richard Álvares",
+        reviewCount: "2 reviews",
+        dateLabel: "11 months ago",
+        comment: "Melhor suporte de Ribeirão!",
+        rating: 5,
+        source: "Google"
       },
       {
-        name: "Pedro Costa",
-        company: "Manutenção Predial",
-        text: "Melhor preço e serviço rápido. Sem surpresas no orçamento. TopLocações é referência."
+        name: "Henrique CURY",
+        reviewCount: "1 review",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Henrique Araujo",
+        reviewCount: "3 reviews",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Marly Avelar",
+        reviewCount: "3 reviews",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Rafael Sene",
+        reviewCount: "11 reviews",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Ulisses Alves",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Gabriel Sene",
+        reviewCount: "2 reviews",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
+      },
+      {
+        name: "Natália Avelar",
+        dateLabel: "11 months ago",
+        rating: 5,
+        source: "Google"
       }
     ],
     stats: [
@@ -172,11 +220,11 @@ export const homeContent = {
         label: "Obras Entregues"
       },
       {
-        number: "10+",
+        number: "+7",
         label: "Anos de Mercado"
       },
       {
-        number: "98%",
+        number: "100%",
         label: "Clientes Satisfeitos"
       }
     ]

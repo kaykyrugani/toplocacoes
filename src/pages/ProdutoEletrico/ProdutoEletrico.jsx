@@ -7,7 +7,6 @@ import LoadCapacityTable from '../../components/sections/LoadCapacityTable'
 import TechSpecs from '../../components/sections/TechSpecs'
 import DownloadsSection from '../../components/sections/DownloadsSection'
 import ProductForm from '../../components/sections/ProductForm'
-import ProductSummary from '../../components/sections/ProductSummary'
 import IdealFor from '../../components/sections/IdealFor'
 import ProductGallery from '../../components/sections/ProductGallery'
 import ProductApplications from '../../components/sections/ProductApplications'
@@ -34,7 +33,6 @@ const ProdutoEletrico = () => {
         <ProductForm content={balancimEletricoContent.cta} />
 
         {/* Seções existentes preservadas */}
-        <ProductSummary content={balancimEletricoContent.summary} />
         <IdealFor
           title="Ideal para:"
           items={balancimEletricoContent.idealFor}
