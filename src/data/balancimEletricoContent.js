@@ -16,7 +16,6 @@ export const balancimEletricoContent = {
       title: "Balancim Elétrico",
       badge: "Entrega rápida",
       highlights: [
-        "Capacidade de acordo com a metragem",
         "até 100m de altura",
         "operação elétrica suave"
       ]

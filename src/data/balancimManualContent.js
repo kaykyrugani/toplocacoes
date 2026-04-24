@@ -17,7 +17,6 @@ export const balancimManualContent = {
       title: "Balancim Manual",
       badge: "Mais econômico",
       highlights: [
-        "Capacidade de acordo com a metragem",
         "até 50m de altura",
         "operação simples e econômica"
       ]
