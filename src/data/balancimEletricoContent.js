@@ -4,8 +4,8 @@ import imgBE3 from '../assets/images/imgBE3.webp'
 
 export const balancimEletricoContent = {
   hero: {
-    eyebrow: "Locação técnica para obras em altura",
-    title: "Aluguel de Balancim Elétrico com Entrega Rápida na Obra",
+    eyebrow: "Alugue-se",
+    title: "Balancim elétrico",
     subtitle: "Ideal para fachadas, manutenção predial e serviços em altura. Equipamentos revisados e atendimento imediato no WhatsApp.",
     trustBullets: [
       "Entrega rápida na região",

@@ -25,7 +25,10 @@ const ProdutoManual = () => {
       />
       <div className="produto-manual">
         {/* Novas seções técnicas */}
-        <ProductHero content={balancimManualContent.hero} />
+        <ProductHero
+          content={balancimManualContent.hero}
+          galleryImages={balancimManualContent.gallery.images}
+        />
         <ProductSpecs content={balancimManualContent.specifications} />
         <LoadCapacityTable content={balancimManualContent.loadTable} />
         <TechSpecs content={balancimManualContent.techSpecs} />

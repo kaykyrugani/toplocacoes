@@ -1,12 +1,11 @@
 import React from 'react'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
+import ProductImageCarousel from './ProductImageCarousel'
 import './ProductHero.css'
-import productImage from '../../assets/images/baEle (1).webp'
 
-const ProductHero = ({ content }) => {
+const ProductHero = ({ content, galleryImages = [] }) => {
   const trustBullets = content.trustBullets || []
-  const visualHighlights = content.visualCard?.highlights || []
 
   return (
     <section className="product-hero">
@@ -46,39 +45,14 @@ const ProductHero = ({ content }) => {
         <div className="product-hero__visual">
           <div
             className={`product-hero__visual-stage${content.visualTone === 'subtle' ? ' product-hero__visual-stage--subtle' : ''}`}
-            aria-label="Composição visual do balancim elétrico"
+            aria-label={`Galeria visual: ${content.title}`}
           >
-            <div className="product-hero__image-wrap">
-              <img
-                src={productImage}
-                alt="Balancim elétrico profissional"
-                className="product-hero__image"
-                loading="eager"
-              />
-              <div className="product-hero__image-overlay" aria-hidden="true"></div>
-              <div className="product-hero__image-glow" aria-hidden="true"></div>
-            </div>
-
-            <article className="product-hero__tech-card" aria-label="Painel técnico do balancim elétrico">
-              {content.visualCard?.badge && (
-                <span className="product-hero__tech-badge">{content.visualCard.badge}</span>
-              )}
-
-              <h2 className="product-hero__tech-title">
-                {content.visualCard?.title || content.title}
-              </h2>
-
-              {visualHighlights.length > 0 && (
-                <ul className="product-hero__tech-list" aria-label="Especificações rápidas">
-                  {visualHighlights.map((highlight, index) => (
-                    <li key={`${highlight}-${index}`} className="product-hero__tech-item">
-                      <span className="product-hero__tech-dot" aria-hidden="true"></span>
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </article>
+            <ProductImageCarousel
+              items={galleryImages}
+              variant="hero"
+              showCaption={false}
+              showIndicators={false}
+            />
           </div>
         </div>
       </Container>

@@ -1,30 +1,35 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect, useCallback } from 'react'
 
-const ProductImageCarousel = ({ items = [] }) => {
+const ProductImageCarousel = ({
+  items = [],
+  variant = 'gallery',
+  showCaption = true,
+  showIndicators = true
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [touchStart, setTouchStart] = useState(null)
   const [touchEnd, setTouchEnd] = useState(null)
   const containerRef = useRef(null)
 
-  if (!items.length) return null
-
-  const goToSlide = (index) => {
-    if (isTransitioning) return
+  const goToSlide = useCallback((index) => {
+    if (isTransitioning || !items.length) return
     setIsTransitioning(true)
     setCurrentIndex(index)
     setTimeout(() => setIsTransitioning(false), 300)
-  }
+  }, [isTransitioning, items.length])
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
+    if (!items.length) return
     const newIndex = currentIndex === 0 ? items.length - 1 : currentIndex - 1
     goToSlide(newIndex)
-  }
+  }, [currentIndex, goToSlide, items.length])
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
+    if (!items.length) return
     const newIndex = currentIndex === items.length - 1 ? 0 : currentIndex + 1
     goToSlide(newIndex)
-  }
+  }, [currentIndex, goToSlide, items.length])
 
   const handleTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX)
@@ -49,13 +54,13 @@ const ProductImageCarousel = ({ items = [] }) => {
     setTouchEnd(null)
   }
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (e.key === 'ArrowLeft') {
       goToPrevious()
     } else if (e.key === 'ArrowRight') {
       goToNext()
     }
-  }
+  }, [goToNext, goToPrevious])
 
   useEffect(() => {
     const container = containerRef.current
@@ -68,13 +73,15 @@ const ProductImageCarousel = ({ items = [] }) => {
         container.removeEventListener('keydown', handleKeyDown)
       }
     }
-  }, [currentIndex])
+  }, [handleKeyDown])
+
+  if (!items.length) return null
 
   const currentItem = items[currentIndex]
 
   return (
-    <div 
-      className="premium-carousel" 
+    <div
+      className={`premium-carousel premium-carousel--${variant}`}
       ref={containerRef}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
@@ -82,6 +89,7 @@ const ProductImageCarousel = ({ items = [] }) => {
     >
       <div className="premium-carousel__main">
         <button
+          type="button"
           className="premium-carousel__nav premium-carousel__nav--prev"
           onClick={goToPrevious}
           aria-label="Imagem anterior"
@@ -105,6 +113,7 @@ const ProductImageCarousel = ({ items = [] }) => {
         </div>
 
         <button
+          type="button"
           className="premium-carousel__nav premium-carousel__nav--next"
           onClick={goToNext}
           aria-label="Próxima imagem"
@@ -116,14 +125,17 @@ const ProductImageCarousel = ({ items = [] }) => {
         </button>
       </div>
 
-      <div className="premium-carousel__caption">
-        <h3 className="premium-carousel__title">{currentItem.title}</h3>
-        <p className="premium-carousel__description">{currentItem.description}</p>
-      </div>
+      {showCaption && (
+        <div className="premium-carousel__caption">
+          <h3 className="premium-carousel__title">{currentItem.title}</h3>
+          <p className="premium-carousel__description">{currentItem.description}</p>
+        </div>
+      )}
 
       <div className="premium-carousel__thumbnails">
         {items.map((item, index) => (
           <button
+            type="button"
             key={item.id}
             className={`premium-carousel__thumbnail ${index === currentIndex ? 'premium-carousel__thumbnail--active' : ''}`}
             onClick={() => goToSlide(index)}
@@ -140,17 +152,20 @@ const ProductImageCarousel = ({ items = [] }) => {
         ))}
       </div>
 
-      <div className="premium-carousel__indicators">
-        {items.map((item, index) => (
-          <button
-            key={item.id}
-            className={`premium-carousel__indicator ${index === currentIndex ? 'premium-carousel__indicator--active' : ''}`}
-            onClick={() => goToSlide(index)}
-            aria-label={`Ir para slide ${index + 1}: ${item.title}`}
-            disabled={isTransitioning}
-          />
-        ))}
-      </div>
+      {showIndicators && (
+        <div className="premium-carousel__indicators">
+          {items.map((item, index) => (
+            <button
+              type="button"
+              key={item.id}
+              className={`premium-carousel__indicator ${index === currentIndex ? 'premium-carousel__indicator--active' : ''}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Ir para slide ${index + 1}: ${item.title}`}
+              disabled={isTransitioning}
+            />
+          ))}
+        </div>
+      )}
     </div>
   )
 }

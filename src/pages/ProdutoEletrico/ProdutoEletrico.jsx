@@ -25,7 +25,10 @@ const ProdutoEletrico = () => {
       />
       <div className="produto-eletrico">
         {/* Novas seções técnicas */}
-        <ProductHero content={balancimEletricoContent.hero} />
+        <ProductHero
+          content={balancimEletricoContent.hero}
+          galleryImages={balancimEletricoContent.gallery.images}
+        />
         <ProductSpecs content={balancimEletricoContent.specifications} />
         <LoadCapacityTable content={balancimEletricoContent.loadTable} />
         <TechSpecs content={balancimEletricoContent.techSpecs} />

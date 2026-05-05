@@ -4,8 +4,8 @@ import imgBM3 from '../assets/images/imgBM3.webp'
 
 export const balancimManualContent = {
   hero: {
-    eyebrow: "Solução econômica para obras em altura",
-    title: "Balancim Manual com Melhor Custo-Benefício para Sua Obra",
+    eyebrow: "Alugue-se",
+    title: "Balancim manual",
     subtitle: "Ideal para obras menores e serviços pontuais. Solução econômica, segura e com entrega rápida na região.",
     trustBullets: [
       "Opção mais econômica para sua obra",

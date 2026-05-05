@@ -216,16 +216,16 @@ export const homeContent = {
     ],
     stats: [
       {
-        number: "500+",
-        label: "Obras Entregues"
+        number: "98%",
+        label: "Clientes Satisfeitos"
       },
       {
-        number: "+7",
+        number: "8",
         label: "Anos de Mercado"
       },
       {
-        number: "100%",
-        label: "Clientes Satisfeitos"
+        number: "+ 800",
+        label: "Obras Entregues"
       }
     ]
   },
