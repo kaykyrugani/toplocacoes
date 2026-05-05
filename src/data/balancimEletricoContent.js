@@ -26,8 +26,8 @@ export const balancimEletricoContent = {
       message: "Olá, preciso de balancim elétrico urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
-      text: "Ver ficha técnica",
-      href: "#especificacoes"
+      text: "Entrar em contato",
+      href: "#product-form"
     }
   },
   
@@ -262,7 +262,7 @@ export const balancimEletricoContent = {
   },
   
   applications: {
-    title: "Aplicações de Alta Demanda em Obras em Altura",
+    title: "Aplicações de alta demanda em obras em altura",
     subtitle: "Cenários técnicos onde o balancim elétrico amplia produtividade com acesso seguro e operação contínua",
     scenarios: [
       {
@@ -297,7 +297,7 @@ export const balancimEletricoContent = {
       },
       {
         microTag: "Serviço técnico especializado",
-        title: "Instalação de equipamentos HVAC em altura",
+        title: "Instalação de equipamentos hvac em altura",
         description: "Acelera instalação e substituição de condensadoras e equipamentos externos com acesso seguro em pavimentos elevados.",
         icon: "snowflake"
       }

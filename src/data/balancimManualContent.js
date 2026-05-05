@@ -27,8 +27,8 @@ export const balancimManualContent = {
       message: "Olá, preciso de balancim manual urgente para minha obra. Podem me atender hoje?"
     },
     secondaryCTA: {
-      text: "Ver ficha técnica",
-      href: "#especificacoes"
+      text: "Entrar em contato",
+      href: "#product-form"
     }
   },
   
@@ -258,7 +258,7 @@ export const balancimManualContent = {
   },
   
   applications: {
-    title: "Aplicações Reais em Serviços de Menor Escala",
+    title: "Aplicações reais em serviços de menor escala",
     subtitle: "Cenários de uso em que o balancim manual entrega acesso seguro, agilidade e economia",
     scenarios: [
       {

@@ -1,5 +1,5 @@
-import baEleImage from '../assets/images/baEle (1).webp'
-import baManImage from '../assets/images/baMan.webp'
+import baEleImage from '../assets/images/imgBE3.webp'
+import baManImage from '../assets/images/imgBM3.webp'
 
 export const homeContent = {
   hero: {

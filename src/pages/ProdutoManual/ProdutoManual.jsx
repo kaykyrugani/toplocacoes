@@ -8,7 +8,6 @@ import TechSpecs from '../../components/sections/TechSpecs'
 import DownloadsSection from '../../components/sections/DownloadsSection'
 import ProductForm from '../../components/sections/ProductForm'
 import IdealFor from '../../components/sections/IdealFor'
-import ProductGallery from '../../components/sections/ProductGallery'
 import ProductApplications from '../../components/sections/ProductApplications'
 import ProductSafety from '../../components/sections/ProductSafety'
 import ProductDifferentials from '../../components/sections/ProductDifferentials'
@@ -40,7 +39,6 @@ const ProdutoManual = () => {
           title="Ideal para:"
           items={balancimManualContent.idealFor}
         />
-        <ProductGallery content={balancimManualContent.gallery} />
         <ProductApplications content={balancimManualContent.applications} />
         <ProductSafety content={balancimManualContent.safety} />
         <ProductDifferentials content={balancimManualContent.differentials} />

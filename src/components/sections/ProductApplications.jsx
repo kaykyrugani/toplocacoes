@@ -62,8 +62,8 @@ const ProductApplications = ({ content }) => {
             <h3 className="application-card__title featured-title">{featuredScenario.title}</h3>
             <p className="application-card__description featured-description">{featuredScenario.description}</p>
 
-            <a href="#contato" className="application-card__cta" aria-label="Falar com especialista sobre esta aplicação">
-              Solicitar orientação técnica
+            <a href="#product-form" className="application-card__cta" aria-label="Entrar em contato sobre esta aplicação">
+              Entrar em contato
               <span aria-hidden="true">→</span>
             </a>
           </article>

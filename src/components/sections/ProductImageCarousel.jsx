@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
+import './ProductGallery.css'
 
 const ProductImageCarousel = ({
   items = [],
