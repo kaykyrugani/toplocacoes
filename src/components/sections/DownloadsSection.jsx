@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../ui/Container'
 import SectionTitle from '../ui/SectionTitle'
-import './DownloadsSection.css'
+import '../../../DownloadsSection.css'
 
 const DownloadsSection = ({ content }) => {
   return (
