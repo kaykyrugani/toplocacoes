@@ -69,7 +69,7 @@ export const homeContent = {
         id: "manual",
         title: "Balancim Manual",
         description: "Perfeito para serviços menores, com operação simples e excelente custo-benefício.",
-        features: ["Capacidade de acordo com a metragem", "Até 50m de altura", "Operação manual", "Mais leve e prático"],
+        features: ["Capacidade de acordo com a metragem", "Até 100m de altura", "Operação manual", "Mais leve e prático"],
         image: baManImage,
         cta: {
           text: "Ver balancim manual",
@@ -80,7 +80,7 @@ export const homeContent = {
   },
   
   differentials: {
-    title: "Diferenciais que Fazem a Diferença",
+    title: "Diferenciais que fazem a diferença",
     subtitle: "Por que clientes confiam na Top Locações",
     items: [
       {
@@ -147,7 +147,7 @@ export const homeContent = {
   },
   
   socialProof: {
-    title: "Clientes que Confiam e Recomendam",
+    title: "Clientes que confiam e recomendam",
     subtitle: "Avaliações reais no Google",
     testimonials: [
       {

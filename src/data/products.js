@@ -40,7 +40,7 @@ export const products = {
     ],
     specifications: {
       capacity: '250 kg',
-      height: '50 metros',
+      height: '100 metros',
       operation: 'Manual',
       weight: '80 kg'
     },
