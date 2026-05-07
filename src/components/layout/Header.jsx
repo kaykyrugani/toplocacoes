@@ -8,6 +8,20 @@ const Header = () => {
 
   const isActive = (path) => location.pathname === path
 
+  const handleBudgetClick = (e) => {
+    e.preventDefault()
+    setIsMenuOpen(false)
+
+    const formSection = document.getElementById('product-form')
+
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      return
+    }
+
+    window.location.href = '/#product-form'
+  }
+
   return (
     <header className="header">
       <div className="container">
@@ -37,10 +51,8 @@ const Header = () => {
             <li><Link to="/balancim-manual" className={isActive('/balancim-manual') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Balancim Manual</Link></li>
             <li className="nav-list__cta">
               <a 
-                href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
+                href="#product-form"
+                onClick={handleBudgetClick}
               >
                 Orçamento
               </a>

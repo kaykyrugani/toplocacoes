@@ -6,8 +6,8 @@ import Button from '../ui/Button'
 import { createLead } from '../../services/leadService'
 import './ProductForm.css'
 
-const BRAZILIAN_STATES = ['MG', 'SP']
-const PROFILES = ['Construtora', 'Autônomo']
+const PROFILES = ['Construtora', 'Pintores', 'Síndicos', 'Autônomos', 'Empreiteiras']
+const BALANCIM_QUANTITIES = Array.from({ length: 10 }, (_, index) => index + 1)
 
 /* ---- utilitários de validação ---- */
 
@@ -30,11 +30,11 @@ const ProductForm = ({ content }) => {
 
   const [formData, setFormData] = useState({
     name: '',
-    profile: '',
-    city: '',
-    state: '',
     email: '',
-    whatsapp: ''
+    phone: '',
+    city: '',
+    profile: '',
+    balancimQuantity: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null) // 'success' | 'error' | null
@@ -45,11 +45,9 @@ const ProductForm = ({ content }) => {
     const { name, value } = e.target
     setFieldErrors(prev => ({ ...prev, [name]: '' }))
 
-    if (name === 'whatsapp') {
+    if (name === 'phone') {
       const digits = cleanPhone(value)
-      setFormData(prev => ({ ...prev, whatsapp: formatPhone(digits) }))
-    } else if (name === 'name') {
-      setFormData(prev => ({ ...prev, name: normalizeName(value) }))
+      setFormData(prev => ({ ...prev, phone: formatPhone(digits) }))
     } else {
       setFormData(prev => ({ ...prev, [name]: value }))
     }
@@ -62,14 +60,15 @@ const ProductForm = ({ content }) => {
 
     // validação inline
     const errors = {}
-    if (formData.name.length < 2) errors.name = 'Informe seu nome completo'
-    if (!formData.profile) errors.profile = 'Selecione seu perfil'
+    const normalizedName = normalizeName(formData.name)
+
+    if (normalizedName.split(' ').length < 2) errors.name = 'Informe nome e sobrenome'
+    if (!validateEmail(formData.email)) errors.email = 'Informe um e-mail válido'
+    if (cleanPhone(formData.phone).length !== 10 && cleanPhone(formData.phone).length !== 11)
+      errors.phone = 'Informe um telefone válido com DDD, ex: (31) 91234-5678'
     if (formData.city.length < 2) errors.city = 'Informe sua cidade'
-    if (!formData.state) errors.state = 'Selecione seu estado'
-    if (formData.email && !validateEmail(formData.email))
-      errors.email = 'E-mail inválido'
-    if (cleanPhone(formData.whatsapp).length !== 10 && cleanPhone(formData.whatsapp).length !== 11)
-      errors.whatsapp = 'Informe um número válido com DDD, ex: (31) 91234-5678'
+    if (!formData.profile) errors.profile = 'Selecione seu perfil'
+    if (!formData.balancimQuantity) errors.balancimQuantity = 'Selecione a quantidade de balancins'
     setFieldErrors(errors)
 
     if (Object.keys(errors).length > 0) return
@@ -79,10 +78,12 @@ const ProductForm = ({ content }) => {
     try {
       await createLead({
         ...formData,
+        name: normalizedName,
+        balancimQuantity: Number(formData.balancimQuantity),
         page: location.pathname
       })
       setSubmitStatus('success')
-      setFormData({ name: '', profile: '', city: '', state: '', email: '', whatsapp: '' })
+      setFormData({ name: '', email: '', phone: '', city: '', profile: '', balancimQuantity: '' })
     } catch (error) {
       setSubmitStatus('error')
       setErrorMessage(error.message)
@@ -131,6 +132,7 @@ const ProductForm = ({ content }) => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder={content.placeholders.name}
+                      aria-label="Nome e sobrenome"
                       className="product-form__input"
                       required
                       disabled={isSubmitting}
@@ -141,10 +143,62 @@ const ProductForm = ({ content }) => {
                   </div>
 
                   <div className="product-form__field">
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder={content.placeholders.email}
+                      aria-label="E-mail"
+                      className="product-form__input"
+                      required
+                      disabled={isSubmitting}
+                    />
+                    {hasFieldError('email') && (
+                      <p className="product-form__error">{fieldErrors.email}</p>
+                    )}
+                  </div>
+
+                  <div className="product-form__field">
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder={content.placeholders.phone}
+                      aria-label="Telefone"
+                      className="product-form__input"
+                      required
+                      disabled={isSubmitting}
+                    />
+                    {hasFieldError('phone') && (
+                      <p className="product-form__error">{fieldErrors.phone}</p>
+                    )}
+                  </div>
+
+                  <div className="product-form__field">
+                    <input
+                      type="text"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleInputChange}
+                      placeholder={content.placeholders.city}
+                      aria-label="Cidade"
+                      className="product-form__input"
+                      required
+                      disabled={isSubmitting}
+                    />
+                    {hasFieldError('city') && (
+                      <p className="product-form__error">{fieldErrors.city}</p>
+                    )}
+                  </div>
+
+                  <div className="product-form__field">
                     <select
                       name="profile"
                       value={formData.profile}
                       onChange={handleInputChange}
+                      aria-label="Selecione o seu perfil"
                       className="product-form__input product-form__select"
                       required
                       disabled={isSubmitting}
@@ -160,68 +214,22 @@ const ProductForm = ({ content }) => {
                   </div>
 
                   <div className="product-form__field">
-                    <input
-                      type="text"
-                      name="city"
-                      value={formData.city}
-                      onChange={handleInputChange}
-                      placeholder={content.placeholders.city}
-                      className="product-form__input"
-                      required
-                      disabled={isSubmitting}
-                    />
-                    {hasFieldError('city') && (
-                      <p className="product-form__error">{fieldErrors.city}</p>
-                    )}
-                  </div>
-
-                  <div className="product-form__field">
                     <select
-                      name="state"
-                      value={formData.state}
+                      name="balancimQuantity"
+                      value={formData.balancimQuantity}
                       onChange={handleInputChange}
+                      aria-label="Quantidade de balancins"
                       className="product-form__input product-form__select"
                       required
                       disabled={isSubmitting}
                     >
-                      <option value="">{content.placeholders.state}</option>
-                      {BRAZILIAN_STATES.map(state => (
-                        <option key={state} value={state}>{state}</option>
+                      <option value="">{content.placeholders.balancimQuantity}</option>
+                      {BALANCIM_QUANTITIES.map(quantity => (
+                        <option key={quantity} value={quantity}>{quantity}</option>
                       ))}
                     </select>
-                    {hasFieldError('state') && (
-                      <p className="product-form__error">{fieldErrors.state}</p>
-                    )}
-                  </div>
-
-                  <div className="product-form__field">
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder={content.placeholders.email}
-                      className="product-form__input"
-                      disabled={isSubmitting}
-                    />
-                    {hasFieldError('email') && (
-                      <p className="product-form__error">{fieldErrors.email}</p>
-                    )}
-                  </div>
-
-                  <div className="product-form__field">
-                    <input
-                      type="tel"
-                      name="whatsapp"
-                      value={formData.whatsapp}
-                      onChange={handleInputChange}
-                      placeholder={content.placeholders.whatsapp}
-                      className="product-form__input"
-                      required
-                      disabled={isSubmitting}
-                    />
-                    {hasFieldError('whatsapp') && (
-                      <p className="product-form__error">{fieldErrors.whatsapp}</p>
+                    {hasFieldError('balancimQuantity') && (
+                      <p className="product-form__error">{fieldErrors.balancimQuantity}</p>
                     )}
                   </div>
 

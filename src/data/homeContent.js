@@ -236,12 +236,12 @@ export const homeContent = {
     formTitle: "Quer que a gente te chame?",
     formDescription: "Preencha os dados abaixo e nossa equipe entra em contato rapidamente com a melhor solução para sua necessidade.",
     placeholders: {
-      name: "Ex: João Silva",
+      name: "Nome e sobrenome",
+      email: "E-mail",
+      phone: "Telefone",
+      city: "Cidade",
       profile: "Selecione seu perfil",
-      city: "Ex: Belo Horizonte",
-      state: "Selecione o estado da obra",
-      email: "Ex: seuemail@empresa.com (opcional)",
-      whatsapp: "Ex: (11) 91234-5678"
+      balancimQuantity: "Quantidade de balancins"
     },
     buttonText: "Quero receber contato",
     microcopy: "Retorno rápido • Sem compromisso"
