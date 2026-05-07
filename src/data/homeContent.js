@@ -3,9 +3,8 @@ import baManImage from '../assets/images/imgBM3.webp'
 
 export const homeContent = {
   hero: {
-    badge: "Especialistas em balancins",
-    title: "Precisa de balancim para sua obra hoje?",
-    subtitle: "Entrega rápida na obra. Orçamento imediato no WhatsApp. Atendimento direto, sem burocracia.",
+    badge: "ALUGUEL DE BALANCINS",
+    title: "Precisando de Balancin para a sua obra?",
     microbenefits: [
       "Entrega rápida na obra",
       "Atendimento direto no WhatsApp", 
