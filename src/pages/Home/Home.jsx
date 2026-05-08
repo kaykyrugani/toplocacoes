@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <MetaTags 
-        title="Locação de Balancimos Profissionais"
-        description="Especialistas em locação de balancimos elétricos e manuais para construção civil. Entrega rápida, equipamentos verificados e atendimento especializado."
+        title="Locação de Balancins Profissionais"
+        description="Especialistas em locação de balancins elétricos e manuais para construção civil. Entrega rápida, equipamentos verificados e atendimento especializado."
         canonical="/"
       />
       <div className="home">

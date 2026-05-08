@@ -15,7 +15,7 @@ const Footer = () => {
       icon: FaMapMarkerAlt,
       title: 'Endereço',
       description:
-        'Rua Dr Julio Dante Risso, 557, jardim anhanguera CEP: 14.092-190 Ribeirão Preto/SP'
+        'Rua Dr. Julio Dante Risso, 557, Jardim Anhanguera, CEP: 14.092-190, Ribeirão Preto/SP'
     },
     {
       icon: FaPhone,
@@ -32,8 +32,8 @@ const Footer = () => {
     },
     {
       icon: FaClock,
-      title: 'Horário de Funcionamento',
-      description: 'Segunda a Sexta: 09:00 às 17:00'
+      title: 'Horário de funcionamento',
+      description: 'Segunda a sexta: 09:00 às 17:00'
     }
   ]
 
@@ -55,11 +55,14 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="site-footer__content">
         <section className="site-footer__section site-footer__section--contact">
-          <h3 className="site-footer__title">Entre em Contato</h3>
+          <h3 className="site-footer__title">Entre em contato</h3>
           <div className="site-footer__contact-grid">
-            {contactInfo.map(({ icon: Icon, title, description, link }) => (
+            {contactInfo.map(({ icon, title, description, link }) => (
               <article className="site-footer__contact-item" key={title}>
-                <Icon className="site-footer__item-icon" aria-hidden="true" />
+                {React.createElement(icon, {
+                  className: 'site-footer__item-icon',
+                  'aria-hidden': 'true'
+                })}
                 <div className="site-footer__item-content">
                   <h4 className="site-footer__item-title">{title}</h4>
                   {link ? (
@@ -84,7 +87,7 @@ const Footer = () => {
           <h3 className="site-footer__title">Redes Sociais</h3>
           <span className="site-footer__social-divider" aria-hidden="true" />
           <div className="site-footer__social-links">
-            {socialLinks.map(({ icon: Icon, url, label }) => (
+            {socialLinks.map(({ icon, url, label }) => (
               <a
                 key={label}
                 href={url}
@@ -93,7 +96,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label={label}
               >
-                <Icon aria-hidden="true" />
+                {React.createElement(icon, { 'aria-hidden': 'true' })}
               </a>
             ))}
           </div>

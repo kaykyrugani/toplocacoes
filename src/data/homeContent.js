@@ -4,7 +4,7 @@ import baManImage from '../assets/images/imgBM3.webp'
 export const homeContent = {
   hero: {
     badge: "ALUGUEL DE BALANCINS",
-    title: "Precisando de Balancin para a sua obra?",
+    title: "Precisando de balancim para a sua obra?",
     microbenefits: [
       "Entrega rápida na obra",
       "Atendimento direto no WhatsApp", 
@@ -151,64 +151,64 @@ export const homeContent = {
     testimonials: [
       {
         name: "Guimarães e Silva Advogados",
-        reviewCount: "2 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "2 avaliações",
+        dateLabel: "há 11 meses",
         comment: "melhor empresa de locação de equipamento.",
         rating: 5,
         source: "Google"
       },
       {
         name: "Richard Álvares",
-        reviewCount: "2 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "2 avaliações",
+        dateLabel: "há 11 meses",
         comment: "Melhor suporte de Ribeirão!",
         rating: 5,
         source: "Google"
       },
       {
         name: "Henrique CURY",
-        reviewCount: "1 review",
-        dateLabel: "11 months ago",
+        reviewCount: "1 avaliação",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Henrique Araujo",
-        reviewCount: "3 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "3 avaliações",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Marly Avelar",
-        reviewCount: "3 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "3 avaliações",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Rafael Sene",
-        reviewCount: "11 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "11 avaliações",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Ulisses Alves",
-        dateLabel: "11 months ago",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Gabriel Sene",
-        reviewCount: "2 reviews",
-        dateLabel: "11 months ago",
+        reviewCount: "2 avaliações",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       },
       {
         name: "Natália Avelar",
-        dateLabel: "11 months ago",
+        dateLabel: "há 11 meses",
         rating: 5,
         source: "Google"
       }

@@ -4,7 +4,7 @@ import imgBE3 from '../assets/images/imgBE3.webp'
 
 export const balancimEletricoContent = {
   hero: {
-    eyebrow: "Alugue-se",
+    eyebrow: "Aluguel",
     title: "Balancim elétrico",
     subtitle: "Ideal para fachadas, manutenção predial e serviços em altura. Equipamentos revisados e atendimento imediato no WhatsApp.",
     trustBullets: [
@@ -297,7 +297,7 @@ export const balancimEletricoContent = {
       },
       {
         microTag: "Serviço técnico especializado",
-        title: "Instalação de equipamentos hvac em altura",
+        title: "Instalação de equipamentos HVAC em altura",
         description: "Acelera instalação e substituição de condensadoras e equipamentos externos com acesso seguro em pavimentos elevados.",
         icon: "snowflake"
       }
@@ -372,7 +372,7 @@ export const balancimEletricoContent = {
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Balancim elétrico completo. Sem EPI's ou linha de vida."
+        answer: "Balancim elétrico completo. Sem EPIs ou linha de vida."
       },
       {
         question: "Preciso fornecer energia elétrica?",

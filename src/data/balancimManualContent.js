@@ -4,7 +4,7 @@ import imgBM3 from '../assets/images/imgBM3.webp'
 
 export const balancimManualContent = {
   hero: {
-    eyebrow: "Alugue-se",
+    eyebrow: "Aluguel",
     title: "Balancim manual",
     subtitle: "Ideal para obras menores e serviços pontuais. Solução econômica, segura e com entrega rápida na região.",
     trustBullets: [
@@ -368,7 +368,7 @@ export const balancimManualContent = {
       },
       {
         question: "O que está incluído na locação?",
-        answer: "Balancim manual completo. Sem EPI's ou linha de vida."
+        answer: "Balancim manual completo. Sem EPIs ou linha de vida."
       },
       {
         question: "Funciona sem energia elétrica?",
