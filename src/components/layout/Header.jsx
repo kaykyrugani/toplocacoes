@@ -51,7 +51,7 @@ const Header = () => {
             <li><Link to="/balancim-manual" className={isActive('/balancim-manual') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Balancim Manual</Link></li>
             <li className="nav-list__cta">
               <a 
-                href="#product-form"
+                href="/#product-form"
                 onClick={handleBudgetClick}
               >
                 Orçamento
