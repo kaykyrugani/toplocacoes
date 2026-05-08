@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import Container from '../ui/Container'
 import SectionTitle from '../ui/SectionTitle'
 import Button from '../ui/Button'
@@ -27,6 +27,7 @@ const validateEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
 
 const ProductForm = ({ content }) => {
   const location = useLocation()
+  const navigate = useNavigate()
 
   const [formData, setFormData] = useState({
     name: '',
@@ -84,6 +85,7 @@ const ProductForm = ({ content }) => {
       })
       setSubmitStatus('success')
       setFormData({ name: '', email: '', phone: '', city: '', profile: '', balancimQuantity: '' })
+      navigate('/obrigado')
     } catch (error) {
       setSubmitStatus('error')
       setErrorMessage(error.message)
