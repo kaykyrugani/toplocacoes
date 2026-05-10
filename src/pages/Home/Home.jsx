@@ -12,12 +12,12 @@ import ProductForm from '../../components/sections/ProductForm'
 import ProductFAQ from '../../components/sections/ProductFAQ'
 import HomeSeoSection from '../../components/sections/HomeSeoSection'
 
-const homeTitle = 'Locação de Balancins em Ribeirão Preto | Top Locações'
+const homeTitle = 'Locação de balancins em Ribeirão Preto | Top Locações'
 const homeDescription = 'Locação de balancins elétricos e manuais em Ribeirão Preto e região para obras, fachadas e manutenção predial. Equipamentos revisados, atendimento rápido e orçamento sem compromisso.'
 
 const homeHeroContent = {
   ...homeContent.hero,
-  title: 'Locação de Balancins em Ribeirão Preto e Região',
+  title: 'Locação de balancins em Ribeirão Preto e região',
   subtitle: 'Balancins elétricos e manuais para obras, fachadas e manutenção predial, com equipamentos revisados e atendimento rápido.'
 }
 
@@ -32,10 +32,10 @@ const homeProductSelectionContent = {
 }
 
 const homeSeoContent = {
-  title: 'Locação de Balancins para Obras, Fachadas e Manutenção Predial',
+  title: 'Locação de balancins para obras, fachadas e manutenção predial',
   paragraphs: [
     'A Top Locações é especializada em locação de balancins elétricos e manuais para construção civil, pintura de fachadas, manutenção predial e serviços em altura. Trabalhamos com equipamentos revisados, suporte rápido e atendimento para obras em Ribeirão Preto e região.',
-    'Se você precisa de um balancim seguro, prático e adequado para sua operação, nossa equipe ajuda na escolha do modelo ideal para sua demanda. Solicite seu orçamento e receba atendimento direto.'
+    'Se você precisa de um balancim seguro, prático e adequado para sua operação, nossa equipe ajuda na escolha do modelo ideal para a sua demanda. Solicite seu orçamento e receba atendimento direto.'
   ],
   links: [
     {
@@ -50,7 +50,7 @@ const homeSeoContent = {
 }
 
 const homeFaqContent = {
-  title: 'Dúvidas Frequentes sobre Locação de Balancins',
+  title: 'Dúvidas frequentes sobre locação de balancins',
   questions: [
     {
       question: 'Qual a diferença entre balancim elétrico e manual?',
@@ -70,7 +70,7 @@ const homeFaqContent = {
     },
     {
       question: 'O treinamento está incluso?',
-      answer: 'O treinamento é ministrado quando solicitado pelo locatário. A necessidade deve ser informada no atendimento para alinhamento da locação.'
+      answer: 'O treinamento é ministrado quando solicitado pelo locatário. A necessidade deve ser informada no atendimento para o alinhamento da locação.'
     },
     {
       question: 'O balancim acompanha EPI e linha de vida?',

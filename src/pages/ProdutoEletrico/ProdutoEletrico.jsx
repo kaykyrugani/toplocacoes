@@ -15,17 +15,17 @@ import YouReceive from '../../components/sections/YouReceive'
 import ProductFAQ from '../../components/sections/ProductFAQ'
 import ProductSeoDetails from '../../components/sections/ProductSeoDetails'
 
-const eletricoTitle = 'Balancim Elétrico para Locação | Top Locações'
-const eletricoDescription = 'Locação de balancim elétrico para fachadas, obras e manutenção predial. Equipamento revisado, até 100m de altura e atendimento rápido em Ribeirão Preto e região.'
+const eletricoTitle = 'Balancim elétrico para locação | Top Locações'
+const eletricoDescription = 'Locação de balancim elétrico para fachadas, obras e manutenção predial. Equipamento revisado, até 100 m de altura e atendimento rápido em Ribeirão Preto e região.'
 
 const eletricoHeroContent = {
   ...balancimEletricoContent.hero,
-  title: 'Balancim Elétrico para Obras e Fachadas',
+  title: 'Balancim elétrico para obras e fachadas',
   subtitle: 'Locação de balancim elétrico para fachadas, obras e manutenção predial, com equipamento revisado e atendimento rápido em Ribeirão Preto e região.'
 }
 
 const eletricoSeoDetails = {
-  title: 'Informações para Locação do Balancim Elétrico',
+  title: 'Informações para locação do balancim elétrico',
   subtitle: 'Detalhes importantes para escolher o equipamento certo para a sua obra',
   groups: [
     {
@@ -41,7 +41,7 @@ const eletricoSeoDetails = {
       items: [
         'Operação com cabos de aço de até 100 metros.',
         'Capacidade definida conforme o comprimento da plataforma e a tabela de carga.',
-        'Plataforma com largura útil de 83 cm e alimentação 220V ou 380V trifásica.'
+        'Plataforma com largura útil de 83 cm e alimentação 220 V ou 380 V trifásica.'
       ]
     },
     {
@@ -73,14 +73,14 @@ const eletricoSeoDetails = {
       items: [
         'Orçamento definido conforme período, quantidade e configuração necessária.',
         'Montagem e treinamento são realizados quando solicitados pelo locatário.',
-        'A necessidade de energia 220V ou 380V deve ser confirmada antes da locação.'
+        'A necessidade de energia 220 V ou 380 V deve ser confirmada antes da locação.'
       ]
     }
   ]
 }
 
 const eletricoFaqContent = {
-  title: 'Dúvidas sobre Balancim Elétrico',
+  title: 'Dúvidas sobre balancim elétrico',
   questions: [
     {
       question: 'Qual a diferença entre balancim elétrico e manual?',

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import logoOgImage from '../../assets/images/LogoTopLoc.webp'
 
 const SITE_URL = 'https://locacoestop.com.br'
-const DEFAULT_TITLE = 'Locação de Balancins em Ribeirão Preto | Top Locações'
+const DEFAULT_TITLE = 'Locação de balancins em Ribeirão Preto | Top Locações'
 const DEFAULT_DESCRIPTION = 'Locação de balancins elétricos e manuais em Ribeirão Preto e região para obras, fachadas e manutenção predial.'
 
 const toAbsoluteUrl = (value) => {

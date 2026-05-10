@@ -15,18 +15,18 @@ import YouReceive from '../../components/sections/YouReceive'
 import ProductFAQ from '../../components/sections/ProductFAQ'
 import ProductSeoDetails from '../../components/sections/ProductSeoDetails'
 
-const manualTitle = 'Balancim Manual para Locação | Top Locações'
+const manualTitle = 'Balancim manual para locação | Top Locações'
 const manualDescription = 'Locação de balancim manual para serviços em altura, fachadas e manutenção predial. Equipamento prático, revisado e com atendimento rápido em Ribeirão Preto e região.'
 
 const manualHeroContent = {
   ...balancimManualContent.hero,
-  title: 'Balancim Manual para Serviços em Altura',
+  title: 'Balancim manual para serviços em altura',
   subtitle: 'Locação de balancim manual para fachadas, reformas e manutenção predial, com equipamento prático, revisado e atendimento rápido.'
 }
 
 const manualSeoDetails = {
-  title: 'Informações para Locação do Balancim Manual',
-  subtitle: 'Conteúdo direto para avaliar se o modelo manual atende a sua demanda',
+  title: 'Informações para locação do balancim manual',
+  subtitle: 'Conteúdo direto para avaliar se o modelo manual atende à sua demanda',
   groups: [
     {
       title: 'Indicado para',
@@ -79,7 +79,7 @@ const manualSeoDetails = {
 }
 
 const manualFaqContent = {
-  title: 'Dúvidas sobre Balancim Manual',
+  title: 'Dúvidas sobre balancim manual',
   questions: [
     {
       question: 'Qual a diferença entre balancim elétrico e manual?',
