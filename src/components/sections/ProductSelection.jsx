@@ -56,12 +56,23 @@ const ProductSelection = ({ content }) => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="product-card__image-wrapper">
-                <img 
-                  src={product.image} 
-                  alt={product.alt || product.title}
-                  className="product-card__image"
-                  loading="lazy"
-                />
+                <picture className="product-card__picture">
+                  {product.avifSrcSet && (
+                    <source type="image/avif" srcSet={product.avifSrcSet} sizes={product.sizes} />
+                  )}
+                  {product.webpSrcSet && (
+                    <source type="image/webp" srcSet={product.webpSrcSet} sizes={product.sizes} />
+                  )}
+                  <img
+                    src={product.image}
+                    alt={product.alt || product.title}
+                    className="product-card__image"
+                    width={product.width || 640}
+                    height={product.height || 480}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               
               <div className="product-card__content">

@@ -1,6 +1,3 @@
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
-import { db } from '../lib/firebase'
-
 /**
  * @typedef {Object} LeadData
  * @property {string} name
@@ -21,6 +18,11 @@ import { db } from '../lib/firebase'
  */
 export const createLead = async (data) => {
   try {
+    const [{ collection, addDoc, serverTimestamp }, { db }] = await Promise.all([
+      import('firebase/firestore'),
+      import('../lib/firebase')
+    ])
+
     const leadPayload = {
       name: data.name,
       email: data.email,

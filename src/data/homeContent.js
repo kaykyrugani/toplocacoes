@@ -1,5 +1,13 @@
-import baEleImage from '../assets/images/imgBE3.webp'
-import baManImage from '../assets/images/imgBM3.webp'
+import baEle384Avif from '../assets/images/optimized/card-balancim-eletrico-384.avif'
+import baEle640Avif from '../assets/images/optimized/card-balancim-eletrico-640.avif'
+import baEle384Webp from '../assets/images/optimized/card-balancim-eletrico-384.webp'
+import baEle640Webp from '../assets/images/optimized/card-balancim-eletrico-640.webp'
+import baMan384Avif from '../assets/images/optimized/card-balancim-manual-384.avif'
+import baMan640Avif from '../assets/images/optimized/card-balancim-manual-640.avif'
+import baMan384Webp from '../assets/images/optimized/card-balancim-manual-384.webp'
+import baMan640Webp from '../assets/images/optimized/card-balancim-manual-640.webp'
+
+const productCardSizes = '(max-width: 480px) 260px, (max-width: 768px) 320px, 300px'
 
 export const homeContent = {
   hero: {
@@ -58,7 +66,12 @@ export const homeContent = {
         title: "Balancim Elétrico",
         description: "Ideal para obras maiores, com mais agilidade e operação elétrica.",
         features: ["Capacidade de acordo com a metragem", "Até 100m de altura", "Operação elétrica", "Mais produtividade na obra"],
-        image: baEleImage,
+        image: baEle640Webp,
+        avifSrcSet: `${baEle384Avif} 384w, ${baEle640Avif} 640w`,
+        webpSrcSet: `${baEle384Webp} 384w, ${baEle640Webp} 640w`,
+        sizes: productCardSizes,
+        width: 640,
+        height: 480,
         cta: {
           text: "Ver balancim elétrico",
           href: "/balancim-eletrico"
@@ -69,7 +82,12 @@ export const homeContent = {
         title: "Balancim Manual",
         description: "Perfeito para serviços menores, com operação simples e excelente custo-benefício.",
         features: ["Capacidade de acordo com a metragem", "Até 100m de altura", "Operação manual", "Mais leve e prático"],
-        image: baManImage,
+        image: baMan640Webp,
+        avifSrcSet: `${baMan384Avif} 384w, ${baMan640Avif} 640w`,
+        webpSrcSet: `${baMan384Webp} 384w, ${baMan640Webp} 640w`,
+        sizes: productCardSizes,
+        width: 640,
+        height: 480,
         cta: {
           text: "Ver balancim manual",
           href: "/balancim-manual"

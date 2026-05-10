@@ -116,15 +116,19 @@
 
 /* Accordion Panel */
 .value-accordion__panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
 
 .value-accordion__panel--open {
-  max-height: 200px;
+  grid-template-rows: 1fr;
   opacity: 1;
+}
+
+.value-accordion__panel-inner {
+  overflow: hidden;
 }
 
 .value-accordion__description {
@@ -197,10 +201,6 @@
   .value-accordion__chevron {
     width: 18px;
     height: 18px;
-  }
-
-  .value-accordion__panel--open {
-    max-height: 150px;
   }
 
   .value-accordion__description {

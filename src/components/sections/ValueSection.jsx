@@ -9,6 +9,7 @@ const ValueSection = ({ title, subtitle, items }) => {
   const sectionRef = useRef(null)
 
   useEffect(() => {
+    const section = sectionRef.current
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -22,13 +23,13 @@ const ValueSection = ({ title, subtitle, items }) => {
       }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    if (section) {
+      observer.observe(section)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (section) {
+        observer.unobserve(section)
       }
     }
   }, [])
@@ -92,7 +93,9 @@ const ValueSection = ({ title, subtitle, items }) => {
                   aria-labelledby={`trigger-${item.id}`}
                   className={`value-accordion__panel ${isItemOpen ? 'value-accordion__panel--open' : ''}`}
                 >
-                  <p className="value-accordion__description">{item.description}</p>
+                  <div className="value-accordion__panel-inner">
+                    <p className="value-accordion__description">{item.description}</p>
+                  </div>
                 </div>
               </div>
             )

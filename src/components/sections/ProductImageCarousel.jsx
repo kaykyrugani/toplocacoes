@@ -79,6 +79,7 @@ const ProductImageCarousel = ({
   if (!items.length) return null
 
   const currentItem = items[currentIndex]
+  const isPriorityImage = variant === 'hero' && currentIndex === 0
 
   return (
     <div
@@ -107,7 +108,11 @@ const ProductImageCarousel = ({
               src={currentItem.image}
               alt={currentItem.alt || currentItem.title}
               className={`premium-carousel__image ${isTransitioning ? 'premium-carousel__image--transitioning' : ''}`}
-              loading="lazy"
+              width={currentItem.width || 1448}
+              height={currentItem.height || 1086}
+              loading={isPriorityImage ? 'eager' : 'lazy'}
+              fetchPriority={isPriorityImage ? 'high' : 'auto'}
+              decoding="async"
               key={currentItem.id}
             />
           </div>
@@ -147,7 +152,10 @@ const ProductImageCarousel = ({
               src={item.image}
               alt={item.alt || item.title}
               className="premium-carousel__thumbnail-image"
+              width={item.thumbnailWidth || item.width || 144}
+              height={item.thumbnailHeight || item.height || 108}
               loading="lazy"
+              decoding="async"
             />
           </button>
         ))}

@@ -1,8 +1,19 @@
 import React from 'react'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
-import balancimImage from '../../assets/images/obrebalancim2.png'
+import hero360Avif from '../../assets/images/optimized/home-hero-360.avif'
+import hero480Avif from '../../assets/images/optimized/home-hero-480.avif'
+import hero640Avif from '../../assets/images/optimized/home-hero-640.avif'
+import hero753Avif from '../../assets/images/optimized/home-hero-753.avif'
+import hero360Webp from '../../assets/images/optimized/home-hero-360.webp'
+import hero480Webp from '../../assets/images/optimized/home-hero-480.webp'
+import hero640Webp from '../../assets/images/optimized/home-hero-640.webp'
+import hero753Webp from '../../assets/images/optimized/home-hero-753.webp'
 import './HomeHero.css'
+
+const heroAvifSrcSet = `${hero360Avif} 360w, ${hero480Avif} 480w, ${hero640Avif} 640w, ${hero753Avif} 753w`
+const heroWebpSrcSet = `${hero360Webp} 360w, ${hero480Webp} 480w, ${hero640Webp} 640w, ${hero753Webp} 753w`
+const heroSizes = '(max-width: 768px) calc(100vw - 32px), 500px'
 
 const HomeHero = ({ content }) => {
   const scrollToProductForm = () => {
@@ -64,11 +75,20 @@ const HomeHero = ({ content }) => {
         
         <div className="home-hero__visual">
           <div className="home-hero__image-container">
-            <img 
-              src={balancimImage} 
-              alt="Balancim profissional em obra"
-              className="home-hero__image"
-            />
+            <picture className="home-hero__picture">
+              <source type="image/avif" srcSet={heroAvifSrcSet} sizes={heroSizes} />
+              <source type="image/webp" srcSet={heroWebpSrcSet} sizes={heroSizes} />
+              <img
+                src={hero753Webp}
+                alt="Balancim profissional em obra"
+                className="home-hero__image"
+                width="753"
+                height="1024"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
             <div className="home-hero__image-overlay"></div>
           </div>
         </div>
