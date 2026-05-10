@@ -20,18 +20,27 @@ const ProductFAQ = ({ content }) => {
         
         <div className="product-faq__questions">
           {content.questions.map((faq, index) => (
-            <div key={index} className="faq-item">
+            <div key={faq.question} className="faq-item">
               <button
+                type="button"
+                id={`faq-question-${index}`}
                 className={`faq-question ${activeIndex === index ? 'active' : ''}`}
                 onClick={() => toggleQuestion(index)}
+                aria-expanded={activeIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
                 <span className="faq-question__text">{faq.question}</span>
-                <span className="faq-question__toggle">
+                <span className="faq-question__toggle" aria-hidden="true">
                   {activeIndex === index ? '−' : '+'}
                 </span>
               </button>
               
-              <div className={`faq-answer ${activeIndex === index ? 'active' : ''}`}>
+              <div
+                id={`faq-answer-${index}`}
+                className={`faq-answer ${activeIndex === index ? 'active' : ''}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
+              >
                 <p>{faq.answer}</p>
               </div>
             </div>

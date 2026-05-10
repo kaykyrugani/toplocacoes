@@ -9,9 +9,10 @@ const Obrigado = () => {
   return (
     <>
       <MetaTags
-        title="Obrigado pelo contato"
+        title="Obrigado pelo contato | Top Locações"
         description="Recebemos suas informações com sucesso. Em breve nossa equipe entrará em contato com você."
-        canonical="/obrigado"
+        canonical="https://locacoestop.com.br/obrigado"
+        robots="noindex, nofollow"
       />
       <section className="thank-you" aria-labelledby="thank-you-title">
         <Container>

@@ -9,26 +9,98 @@ import DifferentialsSection from '../../components/sections/DifferentialsSection
 import BenefitsSection from '../../components/sections/BenefitsSection'
 import SocialProofSection from '../../components/sections/SocialProofSection'
 import ProductForm from '../../components/sections/ProductForm'
+import ProductFAQ from '../../components/sections/ProductFAQ'
+import HomeSeoSection from '../../components/sections/HomeSeoSection'
+
+const homeTitle = 'Locação de Balancins em Ribeirão Preto | Top Locações'
+const homeDescription = 'Locação de balancins elétricos e manuais em Ribeirão Preto e região para obras, fachadas e manutenção predial. Equipamentos revisados, atendimento rápido e orçamento sem compromisso.'
+
+const homeHeroContent = {
+  ...homeContent.hero,
+  title: 'Locação de Balancins em Ribeirão Preto e Região',
+  subtitle: 'Balancins elétricos e manuais para obras, fachadas e manutenção predial, com equipamentos revisados e atendimento rápido.'
+}
+
+const homeProductSelectionContent = {
+  ...homeContent.productSelection,
+  products: homeContent.productSelection.products.map((product) => ({
+    ...product,
+    alt: product.id === 'eletrico'
+      ? 'Balancim elétrico disponível para locação em Ribeirão Preto'
+      : 'Balancim manual disponível para locação em Ribeirão Preto'
+  }))
+}
+
+const homeSeoContent = {
+  title: 'Locação de Balancins para Obras, Fachadas e Manutenção Predial',
+  paragraphs: [
+    'A Top Locações é especializada em locação de balancins elétricos e manuais para construção civil, pintura de fachadas, manutenção predial e serviços em altura. Trabalhamos com equipamentos revisados, suporte rápido e atendimento para obras em Ribeirão Preto e região.',
+    'Se você precisa de um balancim seguro, prático e adequado para sua operação, nossa equipe ajuda na escolha do modelo ideal para sua demanda. Solicite seu orçamento e receba atendimento direto.'
+  ],
+  links: [
+    {
+      label: 'Locação de balancim elétrico',
+      href: '/balancim-eletrico'
+    },
+    {
+      label: 'Locação de balancim manual',
+      href: '/balancim-manual'
+    }
+  ]
+}
+
+const homeFaqContent = {
+  title: 'Dúvidas Frequentes sobre Locação de Balancins',
+  questions: [
+    {
+      question: 'Qual a diferença entre balancim elétrico e manual?',
+      answer: 'O balancim elétrico usa motorização para subir e descer, sendo indicado para rotinas mais contínuas e fachadas maiores. O balancim manual tem operação manual e costuma atender bem serviços pontuais, reformas e demandas menores.'
+    },
+    {
+      question: 'Qual balancim é mais indicado para fachada?',
+      answer: 'Para fachadas maiores ou serviços com maior produtividade, o balancim elétrico costuma ser a melhor escolha. Para intervenções menores, o balancim manual pode entregar bom custo-benefício. A indicação final depende da obra.'
+    },
+    {
+      question: 'A Top Locações atende Ribeirão Preto e região?',
+      answer: 'Sim. A Top Locações atende obras em Ribeirão Preto e região com locação de balancins elétricos e manuais.'
+    },
+    {
+      question: 'O equipamento acompanha montagem?',
+      answer: 'A Top Locações entrega o equipamento. A montagem é realizada quando solicitada pelo locatário e deve ser alinhada durante o orçamento.'
+    },
+    {
+      question: 'O treinamento está incluso?',
+      answer: 'O treinamento é ministrado quando solicitado pelo locatário. A necessidade deve ser informada no atendimento para alinhamento da locação.'
+    },
+    {
+      question: 'O balancim acompanha EPI e linha de vida?',
+      answer: 'Não. A locação do balancim não inclui EPIs ou linha de vida; esses itens devem ser providenciados conforme as exigências da obra e normas aplicáveis.'
+    }
+  ]
+}
 
 const Home = () => {
   return (
     <>
       <MetaTags 
-        title="Locação de Balancins Profissionais"
-        description="Especialistas em locação de balancins elétricos e manuais para construção civil. Entrega rápida, equipamentos verificados e atendimento especializado."
-        canonical="/"
+        title={homeTitle}
+        description={homeDescription}
+        canonical="https://locacoestop.com.br/"
+        faqItems={homeFaqContent.questions}
       />
       <div className="home">
-        <HomeHero content={homeContent.hero} />
+        <HomeHero content={homeHeroContent} />
         <ValueSection 
           title={valueSectionData.title}
           subtitle={valueSectionData.subtitle}
           items={valueSectionData.items}
         />
-        <ProductSelection content={homeContent.productSelection} />
+        <HomeSeoSection content={homeSeoContent} />
+        <ProductSelection content={homeProductSelectionContent} />
         <DifferentialsSection content={homeContent.differentials} />
         <BenefitsSection content={homeContent.benefits} />
         <SocialProofSection content={homeContent.socialProof} />
+        <ProductFAQ content={homeFaqContent} />
         <ProductForm content={homeContent.finalCTA} />
       </div>
     </>

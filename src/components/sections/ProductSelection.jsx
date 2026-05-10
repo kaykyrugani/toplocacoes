@@ -58,7 +58,7 @@ const ProductSelection = ({ content }) => {
               <div className="product-card__image-wrapper">
                 <img 
                   src={product.image} 
-                  alt={product.title}
+                  alt={product.alt || product.title}
                   className="product-card__image"
                   loading="lazy"
                 />
