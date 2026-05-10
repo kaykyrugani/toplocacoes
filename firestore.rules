@@ -1,0 +1,67 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leads/{leadId} {
+      allow create: if isValidLeadCreate();
+      allow read, update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+
+  function isValidLeadCreate() {
+    let data = request.resource.data;
+
+    return request.auth == null
+      && data.keys().hasOnly([
+        'name',
+        'email',
+        'whatsapp',
+        'city',
+        'profile',
+        'balancimQuantity',
+        'page',
+        'source',
+        'status',
+        'createdAt'
+      ])
+      && data.keys().hasAll([
+        'name',
+        'email',
+        'whatsapp',
+        'city',
+        'profile',
+        'balancimQuantity',
+        'page',
+        'source',
+        'status',
+        'createdAt'
+      ])
+      && data.name is string
+      && data.name.size() >= 3
+      && data.name.size() <= 120
+      && data.email is string
+      && data.email.size() >= 5
+      && data.email.size() <= 160
+      && data.email.matches('^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$')
+      && data.whatsapp is string
+      && data.whatsapp.matches('^[0-9]{10,11}$')
+      && data.city is string
+      && data.city.size() >= 2
+      && data.city.size() <= 100
+      && data.profile is string
+      && data.profile.size() >= 2
+      && data.profile.size() <= 60
+      && data.balancimQuantity is int
+      && data.balancimQuantity >= 1
+      && data.balancimQuantity <= 10
+      && data.page is string
+      && data.page in ['/', '/balancim-eletrico', '/balancim-manual']
+      && data.source == 'site'
+      && data.status == 'new'
+      && data.createdAt == request.time;
+  }
+}

@@ -32,7 +32,7 @@ const ProductForm = ({ content }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    whatsapp: '',
     city: '',
     profile: '',
     balancimQuantity: ''
@@ -46,9 +46,9 @@ const ProductForm = ({ content }) => {
     const { name, value } = e.target
     setFieldErrors(prev => ({ ...prev, [name]: '' }))
 
-    if (name === 'phone') {
+    if (name === 'whatsapp') {
       const digits = cleanPhone(value)
-      setFormData(prev => ({ ...prev, phone: formatPhone(digits) }))
+      setFormData(prev => ({ ...prev, whatsapp: formatPhone(digits) }))
     } else {
       setFormData(prev => ({ ...prev, [name]: value }))
     }
@@ -65,8 +65,8 @@ const ProductForm = ({ content }) => {
 
     if (normalizedName.split(' ').length < 2) errors.name = 'Informe nome e sobrenome'
     if (!validateEmail(formData.email)) errors.email = 'Informe um e-mail válido'
-    if (cleanPhone(formData.phone).length !== 10 && cleanPhone(formData.phone).length !== 11)
-      errors.phone = 'Informe um telefone válido com DDD, ex: (31) 91234-5678'
+    if (cleanPhone(formData.whatsapp).length !== 10 && cleanPhone(formData.whatsapp).length !== 11)
+      errors.whatsapp = 'Informe um telefone válido com DDD, ex: (31) 91234-5678'
     if (formData.city.length < 2) errors.city = 'Informe sua cidade'
     if (!formData.profile) errors.profile = 'Selecione seu perfil'
     if (!formData.balancimQuantity) errors.balancimQuantity = 'Selecione a quantidade de balancins'
@@ -84,7 +84,7 @@ const ProductForm = ({ content }) => {
         page: location.pathname
       })
       setSubmitStatus('success')
-      setFormData({ name: '', email: '', phone: '', city: '', profile: '', balancimQuantity: '' })
+      setFormData({ name: '', email: '', whatsapp: '', city: '', profile: '', balancimQuantity: '' })
       navigate('/obrigado')
     } catch (error) {
       setSubmitStatus('error')
@@ -164,8 +164,8 @@ const ProductForm = ({ content }) => {
                   <div className="product-form__field">
                     <input
                       type="tel"
-                      name="phone"
-                      value={formData.phone}
+                      name="whatsapp"
+                      value={formData.whatsapp}
                       onChange={handleInputChange}
                       placeholder={content.placeholders.phone}
                       aria-label="Telefone"
@@ -173,8 +173,8 @@ const ProductForm = ({ content }) => {
                       required
                       disabled={isSubmitting}
                     />
-                    {hasFieldError('phone') && (
-                      <p className="product-form__error">{fieldErrors.phone}</p>
+                    {hasFieldError('whatsapp') && (
+                      <p className="product-form__error">{fieldErrors.whatsapp}</p>
                     )}
                   </div>
 
