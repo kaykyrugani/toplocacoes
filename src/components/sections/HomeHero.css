@@ -3,7 +3,7 @@
 }
 
 .home-hero {
-  min-height: 80vh;
+  min-height: 720px;
   display: flex;
   align-items: center;
   padding: var(--space-2xl) 0;
@@ -157,7 +157,7 @@
 
 @media (max-width: 768px) {
   .home-hero {
-    min-height: auto;
+    min-height: 940px;
     padding: var(--space-xl) 0;
   }
   

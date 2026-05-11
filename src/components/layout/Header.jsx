@@ -31,8 +31,10 @@ const Header = () => {
               src={logoTopLoc} 
               alt="Top Locações" 
               className="logo-image"
-              width="1024"
-              height="1024"
+              width="256"
+              height="256"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
             />
           </Link>

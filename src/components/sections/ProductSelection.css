@@ -23,6 +23,7 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
+  min-height: 620px;
 }
 
 .product-card::before {
@@ -218,6 +219,7 @@
   
   .product-card {
     border-radius: 16px;
+    min-height: 560px;
   }
   
   .product-card__content {
@@ -244,6 +246,10 @@
 @media (max-width: 480px) {
   .product-card__image-wrapper {
     height: 160px;
+  }
+
+  .product-card {
+    min-height: 520px;
   }
   
   .product-card__content {
