@@ -13,13 +13,15 @@ const normalizeString = (value) => String(value || '').replace(/\s+/g, ' ').trim
 
 const cleanWhatsapp = (value) => String(value || '').replace(/\D/g, '').slice(0, 11)
 
+const allowedLeadPages = ['/', '/balancim-eletrico', '/balancim-manual']
+
 const buildLeadPayload = (data) => ({
   name: normalizeString(data.name),
   email: normalizeString(data.email).toLowerCase(),
   whatsapp: cleanWhatsapp(data.whatsapp),
   city: normalizeString(data.city),
   profile: normalizeString(data.profile),
-  balancimQuantity: Number(data.balancimQuantity),
+  balancimQuantity: parseInt(data.balancimQuantity, 10),
   page: normalizeString(data.page),
   source: 'site',
   status: 'new'
@@ -33,7 +35,7 @@ const validateLeadPayload = (leadPayload) => {
   if (leadPayload.profile.length < 2) return false
   if (!Number.isInteger(leadPayload.balancimQuantity)) return false
   if (leadPayload.balancimQuantity < 1 || leadPayload.balancimQuantity > 10) return false
-  if (!leadPayload.page) return false
+  if (!allowedLeadPages.includes(leadPayload.page)) return false
 
   return true
 }
